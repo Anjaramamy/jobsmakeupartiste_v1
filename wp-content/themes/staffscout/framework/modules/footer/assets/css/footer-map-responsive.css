@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Footer responsive styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* ==========================================================================
+   Footer responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-3 {
+    width: 50%;
+    float: left;
+  }
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-3:nth-child(2n+1) {
+    clear: both;
+  }
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-3:nth-child(3), .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-3:nth-child(4) {
+    margin-top: 30px;
+  }
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-4 {
+    width: 33.33333333333333%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-page-footer .mkdf-column-content:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
+/* ==========================================================================
+   Footer responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Footer responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/footer-map-responsive.css.map */

@@ -1,0 +1,234 @@
+/*
+Theme Name: StaffScout Child
+Theme URI: http://staffscout.mikado-themes.com
+Description: A child theme of StaffScout Theme
+Author: Mikado Themes
+Author URI: http://themeforest.net/user/mikado-themes
+Version: 1.0.0
+Text Domain: staffscout
+Template: staffscout
+*/
+.mkdf-light-header .mkdf-page-header>div:not(.fixed):not(.mkdf-sticky-header) .mkdf-logo-wrapper .mkdf-dark-logo, .mkdf-light-header .mkdf-page-header>div:not(.fixed):not(.mkdf-sticky-header) .mkdf-logo-wrapper .mkdf-normal-logo{opacity:1 !important;}
+ .home .cntActuHp .mkdf-ls-list-holder .mkdf-ls-list-items-holder.mkdf-ls-list-four-columns .mkdf-ls-item .mkdf-ls-item-inner .mkdf-ls-item-type, 
+ .home .cntActuHp .mkdf-ls-list-holder .mkdf-ls-list-items-holder.mkdf-ls-list-four-columns .mkdf-ls-item .mkdf-ls-item-inner .mkdf-ls-item-location, 
+ .home .cntActuHp .mkdf-ls-list-holder .mkdf-ls-list-items-holder .mkdf-ls-item .mkdf-ls-item-image>a.mkdf-ls-item-author-image{/*display:none*/} 
+.mkdf-sticky-header .mkdf-sticky-holder .mkdf-vertical-align-containers{    max-width: 1300px;
+    margin: 0 auto;}
+
+body.home .cntSearchHp .mkdf-ls-main-search-holder div.mkdf-ls-main-search-holder-part.submit{    border: 1px solid rgba(0, 0, 0, 0.9) !important;}
+.cntSearchHp .mkdf-ls-main-search-holder{background: transparent !important}
+.cntSearchHp .mkdf-ls-main-search-holder .mkdf-ls-main-search-holder-part{    background: #fff;
+  border:none;  border-right: 15px solid rgba(0, 0, 0, 0.78);}
+  
+.cntSearchHp .mkdf-ls-main-search-holder .mkdf-ls-main-search-holder-part * {
+    max-height: 50px;
+    line-height: 50px !important;
+}  
+  
+  
+  
+body.home .cntSearchHp .mkdf-ls-main-search-holder div.mkdf-ls-main-search-holder-part.submit button{      background-color: rgba(0, 0, 0, 0.87) !important;
+    border-color: rgba(0, 0, 0, 0.87) !important;    padding: 0 22px;}
+	body.home .mkdf-parallax-row-holder{    background-size: cover;}
+	.vc_row.wpb_row.vc_row-fluid.cntSearchHp{    background: rgba(0, 0, 0, 0.78);
+    padding: 10px !important;}
+	
+	body.page-template .mkdf-wrapper footer.mkdf-page-footer .mkdf-footer-top-holder{    background-color: #000 !important;}
+	.mkdf-page-footer .mkdf-grid-row .mkdf-column-content:nth-child(1){display:none}
+	.mkdf-page-footer .mkdf-grid-row .mkdf-column-content:nth-child(2){text-align:left}
+	.mkdf-page-footer .mkdf-grid-row .mkdf-column-content:nth-child(3){text-align:center}
+	.mkdf-page-footer .mkdf-grid-row .mkdf-column-content:nth-child(2) img{max-width: 190px !important;}
+	.mkdf-page-footer .mkdf-grid-row .mkdf-column-content:nth-child(4){text-align:right;}
+	.mkdf-page-footer .mkdf-grid-row .mkdf-column-content:nth-child(4) li{list-style:none}
+	.mkdf-page-footer .mkdf-grid-row .mkdf-column-content:nth-child(4) li a:after{display:none}
+.mkdf-page-footer .mkdf-column-content{    width: 33.33333%;}
+.mkdf-page-footer .mkdf-grid{max-width:1300px; width:100%}
+.mkdf-page-footer .footerInstagram .mkdf-grid{max-width:none; width:100%}
+		
+.vc_row.cntActuHp{padding-top: 0 !important;}
+
+.page-template-template-offre .attachment-post-thumbnail {margin-bottom: 50px;}
+
+.page-template-user-dashboard .mkdf-fixed-wrapper:not(.fixed) .mkdf-logo-wrapper,
+.single .mkdf-fixed-wrapper:not(.fixed) .mkdf-logo-wrapper,
+.page-template-default .mkdf-fixed-wrapper:not(.fixed) .mkdf-logo-wrapper,
+.page-id-103 .mkdf-fixed-wrapper:not(.fixed) .mkdf-logo-wrapper{position:relative;}
+
+.page-template-user-dashboard .mkdf-fixed-wrapper:not(.fixed) .mkdf-logo-wrapper img,
+.single .mkdf-logo-wrapper .mkdf-fixed-wrapper:not(.fixed) img,
+.page-template-default .mkdf-fixed-wrapper:not(.fixed) .mkdf-logo-wrapper img,
+.page-id-103 .mkdf-fixed-wrapper:not(.fixed) .mkdf-logo-wrapper img{visibility:hidden; opacity:0}
+
+.page-template-user-dashboard .mkdf-fixed-wrapper:not(.fixed) .mkdf-logo-wrapper:before,
+.single .mkdf-fixed-wrapper:not(.fixed) .mkdf-logo-wrapper:before,
+.page-template-default .mkdf-fixed-wrapper:not(.fixed) .mkdf-logo-wrapper:before,
+.page-id-103 .mkdf-logo-wrapper:before,
+.page-id-508 .mkdf-logo-wrapper:before,
+.page-id-349 .mkdf-logo-wrapper:before{position:absolute; width:100%; height:100%; content:""; display:block; background:url(images/logoBlack.png) no-repeat center; background-size:contain}
+.footerInstagram .mkdf-widget-title{position:relative}
+.footerInstagram .mkdf-widget-title:before {
+    content: "";
+    background: #323a45;
+    display: block;
+    width: 40%;
+    height: 1px;
+    position: absolute;
+    top: 60%; left:0
+}
+.footerInstagram .mkdf-widget-title:after {
+    content: "";
+    background: #323a45;
+    display: block;
+    width: 40%;
+    height: 1px;
+    position: absolute;
+    top: 60%; right:0;
+}
+.titleDesc *{text-align:14px}
+.page-id-508 .mkdf-container.mkdf-default-page-template:after {
+    content: "";
+    background: #fff url(images/insta3.png) no-repeat center;
+	background-size:cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.1;
+}
+
+
+.page-id-103 .mkdf-full-width:after {
+    content: "";
+    background: #fff url(images/insta3.png) no-repeat center;
+	background-size:cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.1;
+}
+
+.page-id-508 .mkdf-container.mkdf-default-page-template input,
+.page-id-508 .mkdf-container.mkdf-default-page-template textarea{border-color:#000;}
+.page-id-508  .mkdf-container.mkdf-default-page-template{color:#000;}
+.wdgBasFooter p{    text-align: center;
+    color: #fff;
+    background: #222222 !important;
+    margin: 0;
+    padding: 10px 0;}
+	
+	
+	
+	
+	
+.mkdf-page-footer .mkdf-grid-row .mkdf-column-content:nth-child(3) a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 5px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 5px 11px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.mkdf-login-register-holder:after {
+    content: "";
+    background: #fff url(images/insta3.png) no-repeat center;
+	background-size:cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+}
+body.login{
+	 background: #fff url(images/insta3.png) no-repeat center;
+	 background-size:cover;
+}
+body.login form{margin-top: 0;
+       padding: 20px 30px;
+    box-shadow: none;}
+body.login .button{ 
+          background-color: #f36 !important;
+    border: none !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    margin: 10px 0 0;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    padding: 9px 23px !important;
+    height: auto !important;
+    border-radius: 50px;}
+
+body.login #login_error, 
+body.login .message, 
+body.login .success{border:none}
+
+body.login .message{ margin-bottom: 0;
+
+    background: #000;
+    box-shadow: none;
+    color: #fff;
+    border: none;
+    outline: none;
+	padding: 0 30px 20px;}
+body.login .titlePopup{
+	    background: #000;
+    color: #fff;
+	line-height: normal;
+	    padding: 20px 30px 0;
+}
+body.login #login{
+    padding: 0;
+    margin: auto;
+    box-shadow: 0px 24px 142px rgba(64, 56, 56, 0.5);
+    max-width: 520px;
+    width: 100%;
+	    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+	background-color: #fff;
+	}
+
+body .mkdf-login-register-content{
+	box-shadow: 0px 24px 142px rgba(64, 56, 56, 0.5); max-width:520px; width:100%;
+}
+.titlePopup {
+    text-align: center;
+    font-size: 28px;
+    padding: 0 0 20px;
+}
+body .mkdf-login-register-content ul li a{display: inline-block;  margin-left: 5px; color: #ff3366 !important; margin-bottom: 5px;}
+body .mkdf-login-register-content ul li{width: 100%;
+    line-height: normal;
+    padding: 20px 0;
+    background: #000;
+    color: #fff;     border: none;}
+body .mkdf-login-register-content ul li.ui-tabs-active{display:none}
+body .mkdf-login-register-holder .mkdf-login-register-content .mkdf-login-action-btn{float:none;}
+body .mkdf-login-register-content .mkdf-register-content-inner .mkdf-login-action-btn{margin: 0;}
+body .mkdf-login-register-content .mkdf-lost-pass-remember-holder .mkdf-login-remember{margin-right: 5px; vertical-align: top; margin-top:0}
+.mkdf-login-register-content form .mkdf-lost-pass-remember-holder{display:none;}
+body .mkdf-login-register-content ul{border:none;}
+body .mkdf-login-register-content .mkdf-login-button-holder,
+body .mkdf-login-register-content .mkdf-register-button-holder .mkdf-btn{margin-top: 0;}
+body .mkdf-login-register-content .mkdf-login-content-inner, 
+body .mkdf-login-register-content .mkdf-register-content-inner, 
+body .mkdf-login-register-content .mkdf-reset-pass-content-inner{padding: 20px 30px;}
+body .mkdf-login-register-content input[type="text"], 
+body .mkdf-login-register-content input[type="email"]{margin-bottom: 10px;}
+body .mkdf-login-register-content .mkdf-login-button-holder, 
+body .mkdf-login-register-content .mkdf-register-button-holder, 
+body .mkdf-login-register-content .mkdf-reset-password-button-holder{margin-top: 0;}
+
+
+

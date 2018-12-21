@@ -1,0 +1,4 @@
+1.1
+- Added Envato Market plugin as required
+- Updated Mikado Listing to version 1.0.1
+- Fixed Mikado shortcodes integration

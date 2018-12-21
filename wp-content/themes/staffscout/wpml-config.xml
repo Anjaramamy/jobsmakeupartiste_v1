@@ -1,0 +1,28 @@
+<wpml-config>
+	<custom-types>
+		<custom-type translate="1">masonry-gallery</custom-type>
+		<custom-type translate="1">portfolio-item</custom-type>
+		<custom-type translate="1">proofing-gallery</custom-type>
+		<custom-type translate="1">stock-photography</custom-type>
+		<custom-type translate="1">team-member</custom-type>
+		<custom-type translate="1">testimonials</custom-type>
+		<custom-type translate="1">tour-item</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">masonry-gallery-category</taxonomy>
+		<taxonomy translate="1">portfolio-category</taxonomy>
+		<taxonomy translate="1">portfolio-tags</taxonomy>
+		<taxonomy translate="1">stock-photography-category</taxonomy>
+		<taxonomy translate="1">team-category</taxonomy>
+		<taxonomy translate="1">testimonials-category</taxonomy>
+		<taxonomy translate="1">tour-category</taxonomy>
+		<taxonomy translate="1">tour-attribute</taxonomy>
+		<taxonomy translate="0">publisher</taxonomy>
+	</taxonomies>
+	<admin-texts>
+		<key name="mkdf_options_staffscout">
+			<key name="meta_keywords"/>
+			<key name="meta_description"/>
+		</key>
+	</admin-texts>
+</wpml-config>

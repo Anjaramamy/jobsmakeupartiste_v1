@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Side area styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* ==========================================================================
+# Side area style - begin
+========================================================================== */
+.mkdf-light-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-side-menu-button-opener,
+.mkdf-light-header .mkdf-top-bar .mkdf-side-menu-button-opener {
+  color: #fff !important;
+}
+
+.mkdf-light-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-side-menu-button-opener.opened, .mkdf-light-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-side-menu-button-opener:hover,
+.mkdf-light-header .mkdf-top-bar .mkdf-side-menu-button-opener.opened,
+.mkdf-light-header .mkdf-top-bar .mkdf-side-menu-button-opener:hover {
+  color: #ff3366 !important;
+}
+
+.mkdf-dark-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-side-menu-button-opener,
+.mkdf-dark-header .mkdf-top-bar .mkdf-side-menu-button-opener {
+  color: #333 !important;
+}
+
+.mkdf-dark-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-side-menu-button-opener.opened, .mkdf-dark-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-side-menu-button-opener:hover,
+.mkdf-dark-header .mkdf-top-bar .mkdf-side-menu-button-opener.opened,
+.mkdf-dark-header .mkdf-top-bar .mkdf-side-menu-button-opener:hover {
+  color: #ff3366 !important;
+}
+
+.mkdf-side-menu-button-opener {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkdf-side-menu-button-opener .mkdf-side-menu-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 8px 0 0;
+  color: currentColor;
+}
+
+.mkdf-side-menu-button-opener .mkdf-side-menu-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+  top: 2px;
+}
+
+.mkdf-side-menu-button-opener .mkdf-side-menu-icon span {
+  display: block;
+  line-height: inherit;
+}
+
+.mkdf-side-menu-button-opener .mkdf-side-menu-icon span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.mkdf-side-menu-button-opener.opened, .mkdf-side-menu-button-opener:hover {
+  color: #ff3366;
+}
+
+.mkdf-side-menu {
+  position: fixed;
+  top: 0;
+  right: -405px;
+  width: 405px;
+  height: 100%;
+  min-height: 100%;
+  padding: 66px 42px 36px;
+  background-color: #fff;
+  text-align: left;
+  overflow: hidden;
+  visibility: hidden;
+  z-index: 9999;
+  -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 1px 23.28px 0.72px rgba(255, 51, 102, 0.07);
+  -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.mkdf-side-menu .mkdf-close-side-menu-holder {
+  position: absolute;
+  top: 22px;
+  right: 23px;
+  z-index: 1000;
+}
+
+.admin-bar .mkdf-side-menu .mkdf-close-side-menu-holder {
+  top: 48px;
+}
+
+.mkdf-side-menu a.mkdf-close-side-menu {
+  display: block;
+  color: #323a45;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+.mkdf-side-menu a.mkdf-close-side-menu:hover {
+  color: #ff3366;
+}
+
+.mkdf-side-menu a.mkdf-close-side-menu span {
+  display: block;
+  line-height: inherit;
+}
+
+.mkdf-side-menu a.mkdf-close-side-menu span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.mkdf-side-menu-slide-from-right.mkdf-right-side-menu-opened .mkdf-wrapper .mkdf-cover {
+  z-index: 3000;
+}
+
+.mkdf-side-menu-slide-from-right.mkdf-right-side-menu-opened .mkdf-side-menu {
+  right: 0;
+  visibility: visible;
+}
+
+.mkdf-side-menu-slide-from-right .mkdf-wrapper .mkdf-cover {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* ==========================================================================
+# Side area style - end
+========================================================================== */
+/* ==========================================================================
+   Side area styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/sidearea-map.css.map */

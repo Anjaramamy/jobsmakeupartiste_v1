@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1024px){
+/* generated in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\themes\staffscout\assets\custom-styles\general-custom-styles-responsive.php staffscout_mikado_content_responsive_styles function */
+.mkdf-content .mkdf-content-inner > .mkdf-container > .mkdf-container-inner, .mkdf-content .mkdf-content-inner > .mkdf-full-width > .mkdf-full-width-inner { padding-top: 0px!important;}
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+/* generated in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\themes\staffscout\assets\custom-styles\general-custom-styles-responsive.php staffscout_mikado_h1_responsive_styles3 function */
+h1 { font-size: 40px;}
+
+/* generated in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\themes\staffscout\assets\custom-styles\general-custom-styles-responsive.php staffscout_mikado_h2_responsive_styles3 function */
+h2 { font-size: 32px;}
+
+}
+
+@media only screen and (min-width: 681px) and (max-width: 768px){
+/* generated in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\themes\staffscout\assets\custom-styles\general-custom-styles-responsive.php staffscout_mikado_h1_responsive_styles function */
+h1 { font-size: 38px;}
+
+/* generated in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\themes\staffscout\assets\custom-styles\general-custom-styles-responsive.php staffscout_mikado_h2_responsive_styles function */
+h2 { font-size: 29px;}
+
+/* generated in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\themes\staffscout\assets\custom-styles\general-custom-styles-responsive.php staffscout_mikado_h3_responsive_styles function */
+h3 { font-size: 21px;}
+
+}
+
+@media only screen and (max-width: 680px){
+/* generated in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\themes\staffscout\assets\custom-styles\general-custom-styles-responsive.php staffscout_mikado_h1_responsive_styles2 function */
+h1 { font-size: 36px;}
+
+/* generated in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\themes\staffscout\assets\custom-styles\general-custom-styles-responsive.php staffscout_mikado_h2_responsive_styles2 function */
+h2 { font-size: 26px;}
+
+/* generated in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\themes\staffscout\assets\custom-styles\general-custom-styles-responsive.php staffscout_mikado_h3_responsive_styles2 function */
+h3 { font-size: 21px;}
+
+}

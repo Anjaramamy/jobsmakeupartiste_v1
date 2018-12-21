@@ -1,0 +1,216 @@
+/* ==========================================================================
+   Footer styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* ==========================================================================
+   #Content bottom styles - begin
+   ========================================================================== */
+.mkdf-content-bottom .mkdf-content-bottom-inner {
+  box-sizing: border-box;
+}
+
+.mkdf-content-bottom .mkdf-content-bottom-inner.mkdf-grid {
+  padding: 20px 0;
+}
+
+.mkdf-content-bottom .mkdf-content-bottom-inner.mkdf-full-width {
+  padding: 20px 50px;
+}
+
+/* ==========================================================================
+   #Content bottom styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Footer style - begin
+   ========================================================================== */
+.mkdf-page-footer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.mkdf-page-footer .mkdf-footer-top-holder {
+  position: relative;
+  display: block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #252b33;
+  box-sizing: border-box;
+}
+
+.mkdf-page-footer .mkdf-footer-top-holder .mkdf-footer-top-alignment-center {
+  text-align: center;
+}
+
+.mkdf-page-footer .mkdf-footer-top-holder .mkdf-footer-top-alignment-left {
+  text-align: left;
+}
+
+.mkdf-page-footer .mkdf-footer-top-holder .mkdf-footer-top-alignment-right {
+  text-align: right;
+}
+
+.mkdf-page-footer .mkdf-footer-top-holder .mkdf-footer-top-inner {
+  box-sizing: border-box;
+}
+
+.mkdf-page-footer .mkdf-footer-top-holder .mkdf-footer-top-inner.mkdf-grid {
+  padding: 103px 0 41px;
+}
+
+.mkdf-page-footer .mkdf-footer-top-holder .mkdf-footer-top-inner.mkdf-full-width {
+  padding: 76px 50px;
+}
+
+.mkdf-page-footer .mkdf-footer-bottom-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #252b33;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.mkdf-page-footer .mkdf-footer-bottom-holder .mkdf-footer-bottom-inner {
+  box-sizing: border-box;
+}
+
+.mkdf-page-footer .mkdf-footer-bottom-holder .mkdf-footer-bottom-inner.mkdf-grid {
+  padding: 19px 0;
+}
+
+.mkdf-page-footer .mkdf-footer-bottom-holder .mkdf-footer-bottom-inner.mkdf-full-width {
+  padding: 19px 50px;
+}
+
+.mkdf-page-footer .mkdf-listing-widget .mkdf-ls-list-holder .mkdf-ls-list-items-holder.mkdf-ls-list-simple .mkdf-ls-adr-pin a {
+  color: #fff;
+}
+
+.mkdf-page-footer .mkdf-listing-widget .mkdf-ls-list-holder .mkdf-ls-list-items-holder.mkdf-ls-list-simple .mkdf-ls-adr-pin a:hover {
+  color: #ff3366;
+}
+
+.mkdf-page-footer .mkdf-listing-widget .mkdf-ls-list-holder .mkdf-ls-list-items-holder.mkdf-ls-list-simple .mkdf-ls-adr-pin a i {
+  color: #fff;
+}
+
+.mkdf-page-footer .mkdf-listing-widget .mkdf-ls-list-holder .mkdf-ls-list-items-holder.mkdf-ls-list-simple .mkdf-ls-adr-pin a i:hover {
+  color: #ff3366;
+}
+
+.mkdf-page-footer .mkdf-listing-widget .mkdf-ls-list-holder .mkdf-ls-list-items-holder.mkdf-ls-list-simple .mkdf-ls-adr-city .mkdf-city {
+  color: #fff;
+}
+
+.mkdf-page-footer .mkdf-listing-widget .mkdf-ls-list-holder .mkdf-ls-list-items-holder.mkdf-ls-list-simple .mkdf-ls-adr-city .mkdf-city:hover {
+  color: #ff3366;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget {
+  color: #7e8890;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget .mkdf-widget-title-holder .mkdf-widget-title {
+  color: #252b33;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_mkdf_twitter_widget .mkdf-twitter-widget.mkdf-twitter-standard li .mkdf-tweet-text {
+  color: #7e8890;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_mkdf_twitter_widget .mkdf-twitter-widget.mkdf-twitter-standard li .mkdf-tweet-text a,
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_mkdf_twitter_widget .mkdf-twitter-widget.mkdf-twitter-standard li .mkdf-tweet-text span {
+  color: #7e8890;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_mkdf_twitter_widget .mkdf-twitter-widget.mkdf-twitter-standard li .mkdf-tweet-text a:hover,
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_mkdf_twitter_widget .mkdf-twitter-widget.mkdf-twitter-standard li .mkdf-tweet-text span:hover {
+  color: #ff3366;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget a {
+  color: #7e8890;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget a:hover {
+  color: #ff3366;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget p {
+  color: #7e8890;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_pages ul li a, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_archive ul li a, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_categories ul li a, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_meta ul li a, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_recent_entries ul li a, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_nav_menu ul li a {
+  color: #8a959e;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_pages ul li a:after, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_archive ul li a:after, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_categories ul li a:after, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_meta ul li a:after, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_recent_entries ul li a:after, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_nav_menu ul li a:after {
+  color: #97a1a9;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_pages ul li a:hover, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_archive ul li a:hover, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_categories ul li a:hover, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_meta ul li a:hover, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_recent_entries ul li a:hover, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_nav_menu ul li a:hover {
+  color: #ff3366;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_pages ul li a:hover:after, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_archive ul li a:hover:after, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_categories ul li a:hover:after, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_meta ul li a:hover:after, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_recent_entries ul li a:hover:after, footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.widget_nav_menu ul li a:hover:after {
+  color: #ff3366;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.mkdf-listing-widget .mkdf-ls-list-simple .mkdf-listing-title a {
+  color: #323a45;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.mkdf-listing-widget .mkdf-ls-list-simple .mkdf-listing-title a:hover {
+  color: #ff3366;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.mkdf-listing-widget .mkdf-ls-list-simple .mkdf-ls-adr-pin a {
+  color: #8a959e;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.mkdf-listing-widget .mkdf-ls-list-simple .mkdf-ls-adr-pin a:hover {
+  color: #ff3366;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.mkdf-listing-widget .mkdf-ls-list-simple .mkdf-ls-adr-pin a i {
+  color: #8a959e;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.mkdf-listing-widget .mkdf-ls-list-simple .mkdf-ls-adr-pin a i:hover {
+  color: #ff3366;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.mkdf-listing-widget .mkdf-ls-list-simple .mkdf-ls-adr-city .mkdf-city {
+  color: #8a959e;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .widget.mkdf-listing-widget .mkdf-ls-list-simple .mkdf-ls-adr-city .mkdf-city:hover {
+  color: #ff3366;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin a {
+  color: #97a1a9;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin a:hover {
+  color: #ff3366;
+}
+
+footer.mkdf-page-footer.mkdf-footer-dark-skin .mkdf-footer-bottom-holder p {
+  color: #8a959e;
+}
+
+/* ==========================================================================
+   Footer style - end
+   ========================================================================== */
+/* ==========================================================================
+   Footer styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/footer-map.css.map */
