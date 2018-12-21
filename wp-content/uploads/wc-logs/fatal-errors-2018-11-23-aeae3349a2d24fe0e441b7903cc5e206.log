@@ -1,0 +1,46 @@
+2018-11-23T11:22:58+00:00 CRITICAL syntax error, unexpected '?>' dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\dashboard\page-templates\template-parts\profile.php à la ligne 17
+
+2018-11-23T12:49:37+00:00 CRITICAL Uncaught Error: Class 'WC_Customer' not found in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\woocommerce\includes\class-woocommerce.php:489
+Stack trace:
+#0 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(286): WooCommerce->init('')
+#1 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-settings.php(450): do_action('init')
+#4 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-config.php(94): require_once('D:\\xamp\\htdocs\\...')
+#5 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-load.php(37): require_once('D:\\xamp\\htdocs\\...')
+#6 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-blog-header.php(13): require_once('D:\\xamp\\htdocs\\...')
+#7 D:\xamp\htdocs\jobsmakeupartiste-v1\index.php(17): require('D:\\xamp\\htdocs\\...')
+#8 {main}
+  thrown dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\woocommerce\includes\class-woocommerce.php à la ligne 489
+
+2018-11-23T13:55:49+00:00 CRITICAL syntax error, unexpected '?>' dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\dashboard\page-templates\template-parts\profile.php à la ligne 8
+
+2018-11-23T15:35:05+00:00 CRITICAL Uncaught Error: Call to undefined function namesociete_exists() in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\login\wordpress-login.php:74
+Stack trace:
+#0 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(286): mkdf_membership_register_user('')
+#1 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-admin\admin-ajax.php(115): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\login\wordpress-login.php à la ligne 74
+
+2018-11-23T15:35:24+00:00 CRITICAL Uncaught Error: Call to undefined function namesociete_exists() in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\login\wordpress-login.php:74
+Stack trace:
+#0 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(286): mkdf_membership_register_user('')
+#1 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-admin\admin-ajax.php(115): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\login\wordpress-login.php à la ligne 74
+
+2018-11-23T15:36:01+00:00 CRITICAL Uncaught Error: Call to undefined function namesociete_exists() in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\login\wordpress-login.php:74
+Stack trace:
+#0 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(286): mkdf_membership_register_user('')
+#1 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-admin\admin-ajax.php(115): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\login\wordpress-login.php à la ligne 74
+
+2018-11-23T19:20:30+00:00 CRITICAL Maximum execution time of 30 seconds exceeded dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-phpmailer.php à la ligne 698
+

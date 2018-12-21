@@ -1,0 +1,68 @@
+2018-11-24T07:39:02+00:00 CRITICAL Uncaught Error: Unsupported operand types in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php:1692
+Stack trace:
+#0 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php(2060): wp_insert_user(Array)
+#1 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\login\wordpress-login.php(81): wp_create_user('zaaho', '123', 'zaaho@zaaho.zaa...', 'zaaho societe')
+#2 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(286): mkdf_membership_register_user('')
+#3 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-admin\admin-ajax.php(115): do_action('wp_ajax_nopriv_...')
+#6 {main}
+  thrown dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php à la ligne 1692
+
+2018-11-24T07:39:41+00:00 CRITICAL Uncaught Error: Unsupported operand types in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php:1692
+Stack trace:
+#0 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php(2060): wp_insert_user(Array)
+#1 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\login\wordpress-login.php(81): wp_create_user('zaaho', '123', 'zaaho@zaaho.zaa...', 'zaaho societe')
+#2 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(286): mkdf_membership_register_user('')
+#3 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-admin\admin-ajax.php(115): do_action('wp_ajax_nopriv_...')
+#6 {main}
+  thrown dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php à la ligne 1692
+
+2018-11-24T07:40:04+00:00 CRITICAL Uncaught Error: Unsupported operand types in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php:1692
+Stack trace:
+#0 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php(2060): wp_insert_user(Array)
+#1 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\login\wordpress-login.php(81): wp_create_user('zaaho', '123', 'zaaho@zaaho.zaa...', 'zaaho societe')
+#2 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(286): mkdf_membership_register_user('')
+#3 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-admin\admin-ajax.php(115): do_action('wp_ajax_nopriv_...')
+#6 {main}
+  thrown dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php à la ligne 1692
+
+2018-11-24T07:40:32+00:00 CRITICAL Uncaught Error: Unsupported operand types in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php:1692
+Stack trace:
+#0 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php(2060): wp_insert_user(Array)
+#1 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\login\wordpress-login.php(81): wp_create_user('zaaho', '123', 'zaaho@zaaho.zaa...', 'zaaho societe')
+#2 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(286): mkdf_membership_register_user('')
+#3 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-admin\admin-ajax.php(115): do_action('wp_ajax_nopriv_...')
+#6 {main}
+  thrown dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php à la ligne 1692
+
+2018-11-24T07:40:47+00:00 CRITICAL Uncaught Error: Unsupported operand types in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php:1692
+Stack trace:
+#0 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php(2060): wp_insert_user(Array)
+#1 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\login\wordpress-login.php(81): wp_create_user('zaaho', '123', 'zaaho@zaaho.zaa...', 'zaaho societe')
+#2 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(286): mkdf_membership_register_user('')
+#3 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-admin\admin-ajax.php(115): do_action('wp_ajax_nopriv_...')
+#6 {main}
+  thrown dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php à la ligne 1692
+
+2018-11-24T07:40:49+00:00 CRITICAL Uncaught Error: Unsupported operand types in D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php:1692
+Stack trace:
+#0 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php(2060): wp_insert_user(Array)
+#1 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-content\plugins\mkdf-membership\login\wordpress-login.php(81): wp_create_user('zaaho', '123', 'zaaho@zaaho.zaa...', 'zaaho societe')
+#2 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(286): mkdf_membership_register_user('')
+#3 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 D:\xamp\htdocs\jobsmakeupartiste-v1\wp-admin\admin-ajax.php(115): do_action('wp_ajax_nopriv_...')
+#6 {main}
+  thrown dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\user.php à la ligne 1692
+
+2018-11-24T12:26:11+00:00 CRITICAL Maximum execution time of 30 seconds exceeded dans D:\xamp\htdocs\jobsmakeupartiste-v1\wp-includes\class-phpmailer.php à la ligne 698
+
