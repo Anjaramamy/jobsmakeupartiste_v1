@@ -1,0 +1,152 @@
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+
+.mkdf-image-with-text-holder {
+    @include mkdfRelativeHolderLayout();
+	
+	&.mkdf-has-shadow {
+		
+		.mkdf-iwt-image {
+			box-shadow: 0 5px 36px 4px rgba(99, 124, 152, 0.15);
+		}
+	}
+	
+	.mkdf-iwt-image {
+		@include mkdfRelativeHolderLayout();
+		
+		a, img {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	.mkdf-iwt-text-holder {
+		@include mkdfRelativeHolderLayout();
+		text-align: center;
+	}
+	
+	.mkdf-iwt-title {
+		margin: 35px 0 0;
+		font-weight: 400;
+	}
+	
+	.mkdf-iwt-text {
+		margin: 14px 0 0;
+	}
+	/***** Text on Image style - begin *****/
+
+	&.mkdf-text-on-image {
+		.mkdf-iwt-text-holder {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			box-sizing: border-box;
+			width: 100%;
+			padding: 0 6% 4%;
+			text-align: left;
+
+			.mkdf-iwt-title,
+			.mkdf-iwt-text {
+				margin: 0;
+			}
+
+			.mkdf-iwt-text {
+				font-size: 14px;
+				line-height: 2em;
+			}
+		}
+	}
+
+	/***** Text on Image style - end *****/
+	
+	/***** Custom Link Behavior Style - begin *****/
+	
+	&.mkdf-image-behavior-custom-link {
+		
+		.mkdf-iwt-image a{
+			@include mkdfTransition(box-shadow .3s ease-in-out);
+			&:hover {
+				box-shadow: 0px 5px 36px 4px rgba(99, 124, 152, 0.15);
+			}
+		}
+	}
+	
+	/***** Custom Link Behavior Style - end *****/
+	
+	/***** Lightbox Behavior Style - begin *****/
+	
+	&.mkdf-image-behavior-lightbox {
+		
+		.mkdf-iwt-image {
+			
+			a {
+				@include mkdfImageOverlayHoverStyle();
+			}
+		}
+	}
+	
+	/***** Lightbox Behavior Style - end *****/
+	
+	/***** Zoom Behavior Style - begin *****/
+	
+	&.mkdf-image-behavior-zoom {
+		
+		.mkdf-iwt-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					@include mkdfTransform(scale(1.04));
+				}
+			}
+			
+			img {
+				@include mkdfTransform(scale(1));
+				@include mkdfTransitionTransform(.3s ease-in-out);
+			}
+		}
+	}
+	
+	/***** Zoom Behavior Style - end *****/
+	
+	/***** Grayscale Behavior Style - begin *****/
+	
+	&.mkdf-image-behavior-grayscale {
+		
+		.mkdf-iwt-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					-webkit-filter: grayscale(0);
+					filter: none;
+				}
+			}
+			
+			img {
+				filter: url('img/desaturate.svg#grayscale');
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				filter: gray;
+				filter: grayscale(100%);
+				@include mkdfTransition(all .3s ease-in-out);
+			}
+		}
+	}
+	
+	/***** Grayscale Behavior Style - end *****/
+}
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */

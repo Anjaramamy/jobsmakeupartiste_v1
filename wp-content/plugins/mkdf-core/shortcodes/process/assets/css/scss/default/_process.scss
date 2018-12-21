@@ -1,0 +1,189 @@
+/* ==========================================================================
+   Process shortcode style - begin
+   ========================================================================== */
+
+.mkdf-process-holder {
+	@include mkdfRelativeHolderLayout();
+	
+	$columns: ('two', 'three', 'four');
+	@for $i from 0 to length($columns) {
+		&.mkdf-#{nth($columns, $i+1)}-columns {
+			$column_width: 100%/($i+2);
+			
+			.mkdf-mark-horizontal-holder {
+				
+				.mkdf-process-mark {
+					width: $column_width;
+				}
+			}
+			
+			.mkdf-mark-vertical-holder {
+				
+				.mkdf-process-mark {
+					height: $column_width;
+				}
+			}
+			
+			.mkdf-process-item {
+				width: $column_width;
+			}
+		}
+	}
+	
+	&.mkdf-process-appeared {
+		
+		.mkdf-process-circle {
+			opacity: 1;
+			@include mkdfTransform(scale(1));
+		}
+		
+		.mkdf-mark-horizontal-holder {
+			
+			.mkdf-process-line {
+				width: 100%;
+			}
+		}
+		
+		.mkdf-mark-vertical-holder {
+			
+			.mkdf-process-line {
+				height: 100%;
+			}
+		}
+		
+		.mkdf-process-item {
+			opacity: 1;
+		}
+	}
+	
+	.mkdf-mark-horizontal-holder {
+		@include mkdfRelativeHolderLayout();
+		clear: both;
+		
+		.mkdf-process-mark {
+			float: left;
+		}
+		
+		.mkdf-process-line {
+			top: 50%;
+			left: 50%;
+			width: 0;
+			height: 1px;
+			@include mkdfTransition(width .4s ease .1s);
+		}
+	}
+	
+	.mkdf-mark-vertical-holder {
+		position: absolute;
+		top: 26px;
+		left: 0;
+		display: none;
+		width: 46px;
+		height: 100%;
+		
+		.mkdf-process-line {
+			top: 23px;
+			left: 50%;
+			width: 1px;
+			height: 0;
+			@include mkdfTransition(height .4s ease .1s);
+		}
+	}
+	
+	.mkdf-process-mark {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		
+		&:last-child {
+			
+			.mkdf-process-line {
+				display: none;
+			}
+		}
+		
+		@for $i from 2 to 4 {
+			
+			&:nth-child(#{$i}) {
+				
+				.mkdf-process-circle {
+					-webkit-transition-delay: #{.5 * ($i - 1)}s;
+					-moz-transition-delay: #{.5 * ($i - 1)}s;
+					transition-delay: #{.5 * ($i - 1)}s;
+				}
+				
+				.mkdf-process-line {
+					-webkit-transition-delay: #{.6 * ($i - 1)}s;
+					-moz-transition-delay: #{.6 * ($i - 1)}s;
+					transition-delay: #{.6 * ($i - 1)}s;
+				}
+			}
+		}
+	}
+	
+	.mkdf-process-circle {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 46px;
+		height: 46px;
+		font-size: 18px;
+		line-height: 46px;
+		font-weight: 700;
+		color: #fff;
+		background-color: $first-main-color;
+		border-radius: 100%;
+		opacity: 0;
+		-webkit-transition: opacity .2s ease, -webkit-transform .3s ease;
+		-moz-transition: opacity .2s ease, -moz-transform .3s ease;
+		transition: opacity .2s ease, transform .3s ease;
+		@include mkdfTransform(scale(.6));
+	}
+	
+	.mkdf-process-line {
+		position: absolute;
+		background-color: $first-main-color;
+	}
+	
+	.mkdf-process-inner {
+		margin: 0 -15px;
+	}
+	
+	.mkdf-process-item {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		padding: 0 15px;
+		opacity: 0;
+		text-align: center;
+		box-sizing: border-box;
+		@include mkdfTransition(opacity .2s ease);
+		
+		@for $i from 2 to 4 {
+			
+			&:nth-child(#{$i}) {
+				-webkit-transition-delay: #{.5 * ($i - 1)}s;
+				-moz-transition-delay: #{.5 * ($i - 1)}s;
+				transition-delay: #{.5 * ($i - 1)}s;
+			}
+		}
+	}
+	
+	.mkdf-pi-content {
+		@include mkdfRelativeHolderLayout();
+		margin: 26px 0 10px;
+	}
+	
+	.mkdf-pi-title {
+		margin: 0;
+	}
+	
+	.mkdf-pi-text {
+		margin: 11px 0 0;
+	}
+}
+/* ==========================================================================
+   Process shortcode style - end
+   ========================================================================== */

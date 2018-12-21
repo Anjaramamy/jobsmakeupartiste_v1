@@ -1,0 +1,25 @@
+@include phone-portrait {
+  .mkdf-social-share-holder {
+
+      margin-top: 27px;
+
+      &.mkdf-list  {
+          li {
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              border: 1px solid $default-border-color;
+              border-right: none;
+
+              a{
+                  font-size: 16px;
+              }
+
+              &:last-child {
+                  margin: 0;
+                  border-right: 1px solid $default-border-color;
+              }
+          }
+      }
+  }
+}

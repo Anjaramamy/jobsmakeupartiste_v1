@@ -1,0 +1,106 @@
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+
+.mkdf-clients-carousel-holder {
+    @include mkdfRelativeHolderLayout();
+    
+	.mkdf-cc-inner {
+		@include mkdfRelativeHolderLayout();
+	}
+	
+	.mkdf-cc-item {
+		@include mkdfRelativeHolderLayout();
+		
+		.touch & {
+			cursor: pointer;
+		}
+		
+		.mkdf-cc-item {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	/***** Hover Types - begin *****/
+	
+	&.mkdf-cc-hover-switch-images {
+		
+		.mkdf-cc-item {
+			
+			&:hover {
+				
+				.mkdf-cc-image {
+					opacity: 0;
+				}
+				
+				.mkdf-cc-hover-image {
+					opacity: 1;
+				}
+			}
+			
+			.mkdf-cc-image {
+				position: relative;
+				display: block;
+				width: auto;
+				opacity: 1;
+				backface-visibility:hidden;
+				@include mkdfTransform(scale(1));
+				@include mkdfTransition(all .3s ease-out);
+			}
+			
+			.mkdf-cc-hover-image {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: auto;
+				opacity: 0;
+				backface-visibility:hidden;
+				@include mkdfTransform(scale(1));
+				@include mkdfTransition(all .3s ease-out);
+			}
+		}
+	}
+
+	
+	&.mkdf-cc-hover-roll-over {
+		
+		.mkdf-cc-item {
+			overflow: hidden;
+			
+			&:hover {
+				
+				.mkdf-cc-image {
+					@include mkdfTransform(translate3d(0,100%,0));
+				}
+				
+				.mkdf-cc-hover-image {
+					@include mkdfTransform(translate3d(0,0,0));
+				}
+			}
+			
+			.mkdf-cc-image {
+				position: relative;
+				display: block;
+				width: auto;
+				backface-visibility:hidden;
+				@include mkdfTransitionTransform(.4s ease);
+			}
+			
+			.mkdf-cc-hover-image {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: auto;
+				backface-visibility:hidden;
+				@include mkdfTransform(translate3d(0,-100%,0));
+				@include mkdfTransitionTransform(.4s ease);
+			}
+		}
+	}
+	
+	/***** Hover Types - end *****/
+}
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */

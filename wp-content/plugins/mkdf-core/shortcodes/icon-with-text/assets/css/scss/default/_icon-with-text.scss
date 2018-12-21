@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Icon With Text shortcode style - begin
+   ========================================================================== */
+
+.mkdf-iwt {
+	@include mkdfRelativeHolderLayout();
+	
+	.mkdf-iwt-icon {
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+
+			&:hover {
+				.mkdf-icon-shortcode {
+					color: $first-main-color;
+				}
+			}
+		}
+		
+		.mkdf-icon-shortcode {
+			line-height: 1;
+			color: #d0d1d2;
+
+			
+			&.mkdf-circle,
+			&.mkdf-square {
+				line-height: 2;
+			}
+
+		}
+	}
+	
+	.mkdf-iwt-title {
+		margin: 0;
+		line-height: 1.2em;
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+	
+	.mkdf-iwt-title-text {
+		display: block;
+	}
+	
+	.mkdf-iwt-text {
+		margin: 13px 0 0;
+	}
+	
+	&.mkdf-iwt-icon-left {
+		width: auto;
+		
+		.mkdf-iwt-icon,
+		.mkdf-iwt-content {
+			display: table-cell;
+			vertical-align: top;
+		}
+		
+		.mkdf-iwt-icon {
+			position: relative;
+			top: 1px;
+			
+			img {
+				max-width: none;
+			}
+
+			.mkdf-icon-shortcode {
+
+				.mkdf-icon-element {
+					margin-right: 6px;
+				}
+			}
+		}
+
+		
+		.mkdf-iwt-content {
+			padding: 0 0 0 13px;
+		}
+	}
+	
+	&.mkdf-iwt-icon-left-from-title {
+		
+		.mkdf-iwt-icon,
+		.mkdf-iwt-title-text {
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		
+		.mkdf-iwt-icon {
+			
+			.mkdf-icon-element {
+				@include mkdfTransition(none);
+			}
+			
+			img {
+				max-width: none;
+			}
+		}
+		
+		.mkdf-iwt-title-text {
+			padding: 0 0 0 17px;
+		}
+	}
+	
+	&.mkdf-iwt-icon-top {
+		text-align: center;
+		
+		.mkdf-iwt-content {
+			padding: 23px 0 0;
+		}
+	}
+}
+/* ==========================================================================
+   Icon With Text shortcode style - end
+   ========================================================================== */

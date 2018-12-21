@@ -1,0 +1,158 @@
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+
+.mkdf-pricing-tables {
+    @include mkdfRelativeHolderLayout();
+    clear: both;
+	
+	.mkdf-pt-wrapper {
+        position: relative;
+    }
+	
+	$pricing_table_columns: ('mkdf-two-columns', 'mkdf-three-columns', 'mkdf-four-columns', 'mkdf-five-columns');
+    @for $i from 0 to length($pricing_table_columns) {
+        &.#{nth($pricing_table_columns, $i+1)} {
+            $column_width: 100%/($i+2);
+	
+	        .mkdf-price-table {
+                width: $column_width;
+            }
+        }
+    }
+}
+
+.mkdf-price-table {
+    position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	float: left;
+    box-sizing: border-box;
+
+    .mkdf-pt-inner {
+        @include mkdfRelativeHolderLayout();
+        background-color: #fff;
+        border: 1px solid $default-border-color;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0;
+                padding: 17px 30px;
+                text-align: center;
+
+                &.mkdf-pt-title-holder {
+                    position: relative;
+                    padding-top: 41px;
+                    color: $default-heading-color;
+                    font-size: 30px;
+                    line-height: 1.2em;
+                    font-weight: 400;
+
+	                
+                    .mkdf-pt-title {
+                        display: block;
+	                    padding: 17px 0 12px;
+	                    box-sizing: border-box;
+                        letter-spacing: -1px;
+                    }
+                }
+
+                &.mkdf-pt-prices {
+                    position: relative;
+					padding: 0 15px 0;
+	                
+                    .mkdf-pt-value {
+                        position: relative;
+                        vertical-align: middle;
+                        font-size: 36px;
+                        line-height: 1em;
+                        font-weight: 400;
+                        color: $default-heading-color;
+                    }
+
+                    .mkdf-pt-price {
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 36px;
+                        line-height: 1em;
+                        font-weight: 400;
+                        color: $default-heading-color;
+                    }
+
+                    .mkdf-pt-mark {
+                        position: relative;
+                        display: block;
+	                    margin: 7px 0 0;
+                        color: #97a1a9;
+                        font-size: 16px;
+                        text-transform: uppercase;
+
+                    }
+                }
+
+                &.mkdf-pt-content {
+	                padding: 32px 76px 14px;
+                }
+
+                &.mkdf-pt-button {
+                    padding: 28px 15px 42px;
+
+                    a {
+                        &:hover {
+                            background-color: #fff!important;
+                            color: #323a45!important;
+                            border-color: #e9ebec!important;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    //Label Default Styles
+        .mkdf-pt-label-holder {
+            position: absolute;
+            top: -18px;
+            right: 48px;
+
+            .mkdf-pt-label-inner {
+                box-sizing: border-box;
+                background-color: $first-main-color;
+                color: #fff;
+                padding: 3px 13px 3px 18px;
+                font-size: 13px;
+                font-weight: 600;
+                text-transform: uppercase;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                @include mkdfTransformOrigin(100% 50%);
+                @include mkdfTransform(rotate(-90deg) perspective(1px));
+
+            }
+        }
+    }
+
+    &.mkdf-active {
+        .mkdf-pt-inner {
+            background-color: #00b489;
+            color: #fff;
+
+            ul li {
+                &.mkdf-pt-title-holder,
+                &.mkdf-pt-prices .mkdf-pt-value,
+                &.mkdf-pt-prices .mkdf-pt-price {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */

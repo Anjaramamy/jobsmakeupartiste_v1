@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+
+   .mkdf-image-marquee-holder {
+		display: inline-block;
+		vertical-align: middle;
+		overflow: hidden;
+
+      .mkdf-image-marquee {
+         position:relative;
+         width: 124%;
+         left: -12%;
+      }
+
+      .mkdf-image {
+         img {
+            display: block;
+         }
+         
+         &.mkdf-original {
+            position: relative;
+         }
+
+         &.mkdf-aux {
+            position: absolute;
+            top:0;
+         }
+      }      
+   }
+
+/* ==========================================================================
+	Image Gallery shortcode style - begin
+	========================================================================== */

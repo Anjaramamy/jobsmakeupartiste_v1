@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-testimonial-text {
+    padding: 0 9%;
+  }
+  .mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-owl-slider .owl-dots {
+    margin: -2.8% 0;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-owl-slider .owl-dots {
+    margin: -3.2% 0;
+  }
+  .mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-testimonial-has-image .mkdf-testimonial-text-holder {
+    height: 450px;
+    min-height: 450px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-testimonials-holder .mkdf-testimonial-content {
+    width: 100%;
+  }
+  .mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-owl-slider .owl-dots {
+    margin: -3.9% 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-testimonials-holder .mkdf-testimonial-content {
+    width: 100%;
+  }
+  .mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-owl-slider .owl-dots {
+    margin: -4.8% 0;
+  }
+  .mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-owl-slider .owl-dots .owl-dot .mkdf-testimonial-image {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-testimonial-text {
+    font-size: 25px;
+  }
+  .mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-testimonial-author {
+    margin-top: 36px;
+  }
+  .mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-owl-slider .owl-dots .owl-dot .mkdf-testimonial-image,
+  .mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-owl-slider .owl-dots .owl-dot .mkdf-testimonial-company-holder {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/mkdf-core/assets/css/custom-post-types-map-responsive.css.map */

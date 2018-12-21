@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Section Title shortcode responsive styles - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+	
+	.mkdf-section-title-holder {
+		
+		&.mkdf-st-two-columns {
+			padding: 0 !important; // it can be set inline in shortcode options
+		}
+	}
+}
+
+@include ipad-portrait {
+	
+	.mkdf-section-title-holder {
+		padding: 0 !important; // it can be set inline in shortcode options
+		
+		&.mkdf-st-two-columns {
+			
+			.mkdf-st-title,
+			.mkdf-st-text {
+				width: 100%;
+				float: none !important;
+				text-align: initial !important;
+			}
+			
+			.mkdf-st-text {
+				margin: 14px 0 0;
+			}
+		}
+		
+		&.mkdf-st-disable-title-break {
+			
+			.mkdf-st-title {
+				
+				br {
+					display: none;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Section Title shortcode responsive styles - end
+   ========================================================================== */
+
+

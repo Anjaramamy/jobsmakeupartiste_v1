@@ -1,0 +1,44 @@
+/* ==========================================================================
+   #Hiding Images Shortcode Responsive Styles - Start
+   ========================================================================== */
+@include ipad-portrait {
+	.mkdf-hiding-images {
+		.mkdf-hi-main-image {
+			width: 50%;
+		}
+	}
+}
+
+@include phone-landscape {
+	.mkdf-hiding-images {
+		.mkdf-hi-main-image {
+			width: 65%;
+		}
+
+		.mkdf-hi-other-image {
+			img {
+				box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15); 
+			}
+
+			> a {
+				&:hover {
+					img {
+						box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25); 
+					}
+				}
+			}
+
+			&:nth-child(odd) {
+				top: 15%;
+			}
+
+			&:nth-child(even) {
+				bottom: 30%;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   #Hiding Images Shortcode Responsive Styles - End
+   ========================================================================== */

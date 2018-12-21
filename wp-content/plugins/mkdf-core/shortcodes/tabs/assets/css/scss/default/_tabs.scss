@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.mkdf-tabs {
+	@include mkdfRelativeHolderLayout();
+	
+	.mkdf-tabs-nav {
+		@include mkdfRelativeHolderLayout();
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			
+			a {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				box-sizing: border-box;
+				@include mkdfTransition(color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out);
+			}
+		}
+	}
+	
+	.mkdf-tab-container {
+		position: relative;
+		display: inline-block;
+		max-width: 100%;
+		vertical-align: middle;
+
+		
+		p {
+			margin: 0;
+		}
+	}
+	
+	&.mkdf-tabs-standard {
+		
+		.mkdf-tabs-nav {
+			
+			li {
+				
+				a {
+					padding: 7px 26px;
+					font-size: 14px;
+					line-height: 25px;
+					font-weight: 600;
+					letter-spacing: -.02em;
+					color: $default-heading-color;
+					background-color: #fff;
+					border-left: 1px solid $default-border-color;
+					border-top: 1px solid $default-border-color;
+				}
+
+				&:last-child {
+					border-right: 1px solid $default-border-color;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: #fff;
+					background-color: $first-main-color;
+					border-color: $first-main-color;
+				}
+			}
+		}
+		
+		.mkdf-tab-container {
+			background-color: #fff;
+			border: 1px solid $default-border-color;
+			padding: 25px;
+		}
+	}
+	
+	&.mkdf-tabs-boxed {
+		
+		.mkdf-tabs-nav {
+			
+			li {
+				margin: 0 2px 0 0;
+				
+				a {
+					padding: 7px 26px;
+					font-size: 14px;
+					line-height: 25px;
+					font-weight: 600;
+					letter-spacing: -.02em;
+					color: #fff;
+					background-color: $default-heading-color;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: #fff;
+					background-color: $first-main-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.mkdf-tab-container {
+			margin: 25px 0 0;
+		}
+	}
+	
+	&.mkdf-tabs-simple {
+		
+		.mkdf-tabs-nav {
+			border-bottom: 1px solid $default-border-color;
+			
+			li {
+				margin: 0 31px 0 0;
+				
+				a {
+					padding: 13px 0;
+					font-size: 16px;
+					line-height: 1em;
+					font-weight: 400;
+					color: $default-text-color;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $first-main-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.mkdf-tab-container {
+			padding: 25px 0;
+			border-bottom: 1px solid $default-border-color;
+		}
+	}
+	
+	&.mkdf-tabs-vertical {
+		display: table;
+		
+		.mkdf-tabs-nav {
+			display: table-cell;
+			vertical-align: top;
+			width: 140px;
+			height: 100%;
+			border-right: 1px solid $default-border-color;
+			box-sizing: border-box;
+			
+			li {
+				display: block;
+				float: none;
+				margin: 0 0 24px;
+				
+				a {
+					font-size: 18px;
+					line-height: 26px;
+					font-weight: 400;
+					color: #999;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.mkdf-tab-container {
+			display: table-cell;
+			vertical-align: top;
+			width: calc(100% - 140px);
+			height: 100%;
+			padding: 0 0 0 45px;
+			box-sizing: border-box;
+		}
+	}
+}
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

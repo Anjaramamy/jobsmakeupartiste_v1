@@ -1,0 +1,144 @@
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+
+.mkdf-video-button-holder {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	
+	.mkdf-video-button-image {
+		@include mkdfRelativeHolderLayout();
+		
+		img {
+			display: block;
+		}
+	}
+	
+	.mkdf-video-button-play,
+	.mkdf-video-button-play-image {
+		@include mkdfAbsoluteHolderLayout();
+		z-index: 1;
+		
+		.mkdf-video-button-play-inner {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			padding: 23px;
+			border-radius: 50%;
+			background-color: #fff;
+			box-shadow:0 0 0 0 #fff;
+			@include mkdfTransition(all .15s ease-in-out);
+			@include mkdfTransform(translate3d(-50%,-50%,0));
+
+			> span {
+				margin-left: 5px;
+			}
+
+			&:before,
+			&:after {
+				position: absolute;
+				content: "";
+				left: 50%;
+				top: 50%;
+				@include mkdfTransform(translate3d(-50%, -50%, 0));
+				border-radius: 50%
+			}
+
+			&:before {
+				border: 2px solid rgba(255, 255, 255, .45);
+				padding: 48px;
+				@include mkdfTransition(all .15s ease-in-out);
+			}
+
+			&:after {
+				border: 2px solid rgba(255, 255, 255, .15);
+				padding: 57px;
+				@include mkdfTransition(all .15s ease-in-out);
+			}
+		}
+
+		&:hover {
+			.mkdf-video-button-play-inner { 
+				box-shadow:0 0 0 3px #fff;
+				@include mkdfTransition(all .15s ease-in-out);
+
+				&:before {  
+					border: 2px solid rgba(255, 255, 255, .65);
+					padding: 53px;
+					@include mkdfTransition(all .2s ease-in-out);
+				}
+
+				&:after { 
+					border: 2px solid rgba(255, 255, 255, .25);
+					padding: 64px;
+					@include mkdfTransition(all .25s ease-in-out);
+				}
+			}
+		}
+
+	}
+	
+	.mkdf-video-button-play {
+		color: $default-heading-color;
+		font-size: 30px;
+		line-height: 1;
+		
+		span {
+			display: block;
+			line-height: inherit;
+			
+			&:before {
+				display: block;
+				line-height: inherit;
+			}
+		}
+
+	}
+	
+	.mkdf-video-button-play-image {
+		
+		&.mkdf-vb-has-hover-image {
+			
+			&:hover {
+				
+				img {
+					
+					&:first-child {
+						opacity: 0;
+					}
+					
+					&:nth-child(2) {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		
+		img {
+			display: block;
+			margin: 0 auto;
+			@include mkdfTransition(opacity .2s ease-in-out);
+			
+			&:first-child {
+				position: relative;
+				opacity: 1;
+			}
+			
+			&:nth-child(2) {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				opacity: 0;
+				@include mkdfTransform(translateX(-50%) translateZ(0));
+				
+				.rev_slider_wrapper & {
+					@include mkdfTransform(translateZ(0));
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */

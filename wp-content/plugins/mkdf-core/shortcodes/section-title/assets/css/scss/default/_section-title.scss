@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.mkdf-section-title-holder {
+    @include mkdfRelativeHolderLayout();
+	box-sizing: border-box;
+	
+	&.mkdf-st-two-columns {
+		
+		$space_label: ('tiny', 'small', 'normal');
+		$space_width: (5, 10, 15);
+		
+		@for $i from 0 to length($space_label) {
+			&.mkdf-st-#{nth($space_label,$i+1)}-space {
+				$column_width: nth($space_width,$i+1);
+				
+				.mkdf-st-inner {
+					margin: 0 -#{$column_width}px;
+				}
+			
+				.mkdf-st-title,
+				.mkdf-st-text {
+					padding: 0 #{$column_width}px;
+				}
+			}
+		}
+		
+		.mkdf-st-title,
+		.mkdf-st-text {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			width: 50%;
+			float: left;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		
+		&.mkdf-st-title-left {
+			
+			.mkdf-st-title {
+				text-align: right;
+			}
+			
+			.mkdf-st-text {
+				text-align: left;
+			}
+		}
+		
+		&.mkdf-st-title-right {
+			
+			.mkdf-st-title {
+				float: right;
+				text-align: left;
+			}
+			
+			.mkdf-st-text {
+				text-align: right;
+			}
+		}
+	}
+	
+    .mkdf-st-title {
+	    display: block;
+        margin: 0;
+	    
+	    .mkdf-st-title-bold {
+		    font-weight: 700;
+	    }
+	    
+	    .mkdf-st-title-light {
+		    font-weight: 300;
+	    }
+    }
+    
+    .mkdf-st-text {
+	    display: block;
+        margin: 14px 0 0;
+    }
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

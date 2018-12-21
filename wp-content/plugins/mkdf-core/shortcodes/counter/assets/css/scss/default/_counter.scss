@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Counter shortcode style - begin
+   ========================================================================== */
+
+.mkdf-counter-holder {
+    @include mkdfRelativeHolderLayout();
+    opacity: 0;
+    @include mkdfTransition(opacity 0.2s ease-in);
+	
+	.mkdf-counter-inner {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+    .mkdf-counter {
+	    height: 1em;
+	    display: inline-block !important;
+	    vertical-align: middle;
+	    color: $default-heading-color;
+	    font-size: 48px;
+	    line-height: 1em;
+	    font-weight: 400;
+	    overflow: hidden;
+		letter-spacing: -2px;
+    }
+
+    .mkdf-counter-title {
+	    margin: 5px 0 0;
+    }
+
+    .mkdf-counter-text {
+	    margin: 14px 0 0;
+    }
+}
+/* ==========================================================================
+   Counter shortcode style - end
+   ========================================================================== */

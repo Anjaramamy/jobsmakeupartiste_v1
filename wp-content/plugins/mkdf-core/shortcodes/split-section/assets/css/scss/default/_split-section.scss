@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Split Section styles - begin
+   ========================================================================== */
+
+.mkdf-ss-holder {
+	@include mkdfRelativeHolderLayout();
+
+	&.mkdf-ss-image-right {
+		
+		.mkdf-ss-image {
+			left: 50%;
+		}
+
+		.mkdf-ss-content {
+			left: 0;
+		}
+	}
+	
+	.mkdf-ss-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		
+		img {
+			display: none
+		}
+	}
+
+	.mkdf-ss-content {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		left: 50%;
+		width: 50%;
+		padding: 30px;
+		box-sizing: border-box;
+	}
+	
+	.mkdf-ss-title {
+		margin: 0;
+	}
+	
+	.mkdf-ss-text {
+		margin: 14px 0 0;
+	}
+	
+	.mkdf-ss-link {
+		margin: 25px 0 0;
+	}
+}
+/* ==========================================================================
+   Split Section styles - end
+   ========================================================================== */

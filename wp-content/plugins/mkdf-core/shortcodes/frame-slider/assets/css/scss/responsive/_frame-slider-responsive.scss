@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Frame Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: $laptop-landscape-large) {
+	
+    .mkdf-frame-slider-holder {
+	    
+        .mkdf-fs-phone {
+            background-size: contain;
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+	
+	.mkdf-frame-slider-holder {
+		padding: 74px 0;
+		
+		.mkdf-fs-phone {
+			height: 100%;
+			width: 72%;
+			background-size: 100% auto;
+		}
+		
+		.mkdf-fs-slides {
+			
+			img {
+				width: 66%;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+@include phone-portrait {
+	
+	.mkdf-frame-slider-holder {
+		padding: 57px 0 66px;
+		
+		.mkdf-fs-phone {
+			width: 76%;
+		}
+	}
+}
+/* ==========================================================================
+   Frame Slider shortcode responsive style - end
+   ========================================================================== */

@@ -1,0 +1,72 @@
+@include laptop-landscape-medium {
+	.mkdf-comparision-pricing-tables-holder {
+		&.mkdf-two-columns {
+			.mkdf-cpt-table{
+				&:first-child {
+					width: 43%;
+				}
+				&:nth-child(2),
+				&:nth-child(3) {
+					width: 28%;
+				}
+			}
+		}
+	}
+}
+
+@include ipad-portrait {
+	.mkdf-comparision-pricing-tables-holder {
+		&.mkdf-four-columns {
+			.mkdf-cpt-table {
+				&:first-child {
+					display: none;
+				}
+
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4),
+				&:nth-child(5) {
+					width: 50%;
+				}
+
+				&:nth-child(3) {
+
+					&:not(.mkdf-featured-comparision-table) {
+						.mkdf-cpt-table-content,
+						.mkdf-cpt-table-footer {
+							border-right: 1px solid $default-border-color;
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
+
+@include phone-portrait {
+	.mkdf-comparision-pricing-tables-holder {
+		&.mkdf-two-columns,
+		&.mkdf-three-columns {
+			.mkdf-cpt-table {
+				&:first-child,
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4),
+				&:nth-child(5) {
+					width: 100%;
+
+					&:not(.mkdf-featured-comparision-table) {
+						.mkdf-cpt-table-content,
+						.mkdf-cpt-table-footer {
+							border-right: 1px solid $default-border-color;
+						}
+					}
+				}
+
+			}
+		}
+
+	}
+}
+

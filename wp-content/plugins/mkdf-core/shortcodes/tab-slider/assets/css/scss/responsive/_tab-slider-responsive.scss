@@ -1,0 +1,27 @@
+@include ipad-portrait {
+    .mkdf-tab-slider-holder {
+        .owl-dots {
+            .owl-dot {
+                padding: 0 30px;
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@include phone-portrait {
+    .mkdf-tab-slider-holder {
+        .owl-dots {
+            .owl-dot {
+                padding: 0 8px;
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,258 @@
+/* ==========================================================================
+   Social Share shortcode style - begin
+   ========================================================================== */
+
+.mkdf-social-share-holder {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+
+    ul {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* List type - begin
+========================================================================== */
+.mkdf-social-share-holder.mkdf-list {
+
+    .mkdf-social-title {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        color: $default-text-color;
+        font-weight: 600;
+    }
+
+    li {
+        position: relative;
+        display: block;
+        vertical-align: middle;
+        width: 65px;
+        height: 65px;
+        //padding: 0;
+        //margin: 0 13px 3px 0;
+        background-color: #fff;
+        border: 1px solid $default-border-color;
+        border-top: none;
+        text-align: center;
+
+        &:first-child {
+            border-top: 1px solid $default-border-color;
+        }
+
+        &:last-child {
+            margin: 0 0 3px;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 21px;
+            color: #73808b;
+
+            > span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include mkdfTransform(translate(-50%, -50%));
+                box-sizing: border-box;
+            }
+        }
+
+        &.mkdf-facebook-share {
+            a:hover {
+                color: #415a9a;
+            }
+        }
+
+        &.mkdf-twitter-share {
+            a:hover {
+                color: #40a2f5;
+            }
+        }
+
+        &.mkdf-google_plus-share {
+            a:hover {
+                color: #d64735;
+            }
+        }
+
+        &.mkdf-linkedin-share {
+            a:hover {
+                color: #20669b;
+            }
+        }
+
+        &.mkdf-tumblr-share {
+            a:hover {
+                color: #3e5977;
+            }
+        }
+
+        &.mkdf-pinterest-share {
+            a:hover {
+                color: #c21c21;
+            }
+        }
+
+        &.mkdf-vk-share {
+            a:hover {
+                color: #5275a5;
+            }
+        }
+    }
+}
+
+
+/* List type - end
+========================================================================== */
+
+/* Dropdown type - begin
+========================================================================== */
+
+$socialShareWidth: 42px;
+$socialShareHeight: 42px;
+
+.mkdf-social-share-holder.mkdf-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+
+    .mkdf-social-share-dropdown-opener {
+        display: block;
+        color: $default-text-color;
+
+        .mkdf-social-share-title {
+            display: none;
+            vertical-align: top;
+            margin-right: 5px;
+        }
+
+        .social_share {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        &:hover {
+            color: $first-main-color;
+
+            .social_share {
+                color: inherit;
+            }
+        }
+    }
+
+    .mkdf-social-share-dropdown {
+        position: relative;
+        visibility: hidden;
+        z-index: 950;
+        left: -10px;
+
+        ul {
+            position: relative;
+            display: block;
+            z-index: 990;
+            margin: 0;
+            padding: 0 !important;
+        }
+
+        ul li {
+            width: $socialShareWidth;
+            height: $socialShareHeight;
+            line-height: $socialShareHeight;
+            visibility: hidden;
+            //position: absolute;
+            text-align: center;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+            border: 1px solid $default-border-color;
+            background-color: #fff;
+            font-size: 13px;
+            color: $default-text-color;
+            box-sizing: border-box;
+            @include mkdfTransition( opacity .2s ease-out 0s, visibility .2s ease-out 0s, color .2s ease-out 0s);
+	
+	        &:not(:first-child) {
+		        border-top: none;
+	        }
+
+            &.mkdf-facebook-share:hover {
+                color: #3b5998;
+            }
+
+            &.mkdf-twitter-share:hover {
+                color: #00aced;
+            }
+
+            &.mkdf-google_plus-share:hover {
+                color: #dd4b39;
+            }
+
+            &.mkdf-linkedin-share:hover {
+                color: #007bb5;
+            }
+
+            &.mkdf-tumblr-share:hover {
+                color: #32506d;
+            }
+
+            &.mkdf-pinterest-share:hover {
+                color: #cb2027;
+            }
+
+            &.mkdf-vk-share:hover {
+                color: #45668e;
+            }
+            
+            * {
+                display: block;
+                line-height: inherit;
+            }
+
+            a {
+                color: inherit !important;
+            }
+
+            @for $i from 1 through 7 {
+                &:nth-child(#{$i}) {
+                    bottom: #{-$i*(($socialShareHeight))};
+                }
+            }
+        }
+    }
+}
+
+.mkdf-social-share-holder.mkdf-dropdown:hover {
+
+    .mkdf-social-share-dropdown ul li {
+        opacity: 1;
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .mkdf-social-share-dropdown ul li {
+
+        /* opacity and visibility need to be different, but not background-color */
+        @for $i from 2 through 7 {
+            &:nth-child(#{$i}) {
+                @include mkdfTransition( opacity .2s ease-out #{($i)/10+s}, visibility .2s ease-out #{($i)/10+s}, background-color .2s ease-out);
+            }
+        }
+    }
+}
+
+/* Dropdown type - end
+========================================================================== */
+
+/* ==========================================================================
+   Social Share shortcode style - end
+   ========================================================================== */

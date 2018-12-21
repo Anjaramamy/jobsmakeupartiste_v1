@@ -1,0 +1,76 @@
+/* ==========================================================================
+# Tab Slider styles - begin
+========================================================================== */
+.mkdf-tab-slider-holder {
+
+    @include mkdfRelativeHolderLayout;
+
+    .mkdf-tab-slider-container-inner {
+        overflow: hidden;
+    }
+
+    ul {
+        position: relative;
+        list-style-type: none;
+        margin: 0;
+        padding-top: 80px;
+    }
+
+    .owl-nav {
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 59%;
+        }
+
+        .owl-prev {
+            left: -50px;
+        }
+
+        .owl-next {
+            right: -50px;
+        }
+    }
+
+    .owl-dots {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        @include mkdfTransform(translateX(-50%));
+        z-index: 999;
+        margin: 0;
+        background-color: #fff;
+        border: 1px solid $default-border-color;
+        border-radius: 30px;
+        line-height: 1.6em;
+
+        .owl-dot {
+            padding: 0 40px;
+            text-transform: uppercase;
+            font-weight: 600;
+
+            &.active {
+                border-radius: 30px;
+                background-color: $default-border-color;
+            }
+        }
+    }
+
+    .mkdf-tab-slider-item {
+        overflow: hidden;
+    }
+
+    .mkdf-tab-slide-holder {
+        width: 100%;
+
+        .mkdf-tab-slide-content {
+            text-align: left;
+
+            box-sizing: border-box;
+        }
+    }
+
+}
+/* ==========================================================================
+# Tab Slider styles - end
+========================================================================== */
