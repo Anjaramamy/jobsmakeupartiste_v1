@@ -1,0 +1,17 @@
+.mkdf-listing-single-holder{
+	.mkdf-ls-single-map-holder{
+		position: relative;
+		box-sizing: border-box;
+		width: 100%;
+		background-color: $default-background-color;
+
+		.mkdf-ls-single-map-title-holder {
+			margin: 57px 0 19px;
+		}
+	}
+
+	#mkdf-ls-single-map-holder{
+		max-height: 218px;
+		max-width: 309px;
+	}
+}

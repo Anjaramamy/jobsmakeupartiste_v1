@@ -1,0 +1,98 @@
+/* ==========================================================================
+   Resume List responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+
+	.mkdf-rs-list-holder {
+		.mkdf-rs-list-items-holder{
+			$columns_number: ('four', 'five');
+
+			@for $i from 0 to length($columns_number) {
+				&.mkdf-rs-list-#{nth($columns_number,$i+1)}-columns {
+					$item_size: 100% / 3;
+
+					article {
+						width: $item_size;
+					}
+
+					@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(3n+1) {
+								clear: both;
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+	}
+}
+
+@include ipad-landscape {
+
+	.mkdf-rs-list-holder {
+		.mkdf-rs-list-items-holder{
+
+			$gallery_columns_number: ('three', 'four', 'five');
+
+			@for $i from 0 to length($gallery_columns_number) {
+				&.mkdf-rs-list-#{nth($gallery_columns_number,$i+1)}-columns {
+
+					article {
+						width: 50%;
+					}
+
+					@media only screen and (min-width: $phone-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(2n+1) {
+								clear: both;
+							}
+						}
+					}
+				}
+			}
+
+			&.mkdf-resume-list-simple {
+
+				.mkdf-rs-list-items-text-holder {
+					display: block;
+					width: 100%;
+					vertical-align: middle;
+				}
+
+				.mkdf-rs-list-items-holder-inner {
+					display: block;
+					width: 100%;
+					vertical-align: middle;
+					padding-top: 50px;
+				}
+			}
+		}
+	}
+}
+
+@include phone-landscape {
+
+	.mkdf-rs-list-holder {
+		.mkdf-rs-list-items-holder{
+
+			article {
+				width: 100% !important; // !important is set to override all other stronger selectors
+			}
+
+			&.mkdf-resume-list-simple {
+				padding: 15px;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Resume List responsive style - end
+   ========================================================================== */

@@ -1,0 +1,254 @@
+/* ==========================================================================
+   Resume Advanced Search responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+
+	.mkdf-rs-adv-search-holder {
+		.mkdf-rs-adv-search-items-holder{
+			article.mkdf-rs-item {
+				&.mkdf-rs-item-type-list {
+
+					.mkdf-rs-item-tax-date-holder {
+						width: 20%;
+					}
+
+					.mkdf-rs-item-image {
+						width: 15%;
+					}
+				}
+			}
+
+			$columns_number: ('four', 'five');
+
+			@for $i from 0 to length($columns_number) {
+				&.mkdf-rs-adr-#{nth($columns_number,$i+1)}-columns {
+					$item_size: 100% / 3;
+
+					article {
+						width: $item_size;
+					}
+
+					@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(3n+1) {
+								clear: both;
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+	}
+}
+
+@include laptop-landscape-medium {
+	.mkdf-rs-adv-search-holder {
+		.mkdf-rs-adv-search-content-holder {
+			.mkdf-rs-adv-search-items-holder .mkdf-rs-item.mkdf-rs-item-type-list .mkdf-rs-item-image {
+				width: 12%;
+			}
+		}
+
+		&.mkdf-rs-adv-with-sidebar {
+			.mkdf-rs-adv-search-content-holder {
+				.mkdf-rs-adv-search-items-holder .mkdf-rs-item.mkdf-rs-item-type-list .mkdf-rs-item-image {
+					width: 18%;
+				}
+			}
+		}
+	}
+}
+
+@include ipad-landscape {
+
+	.mkdf-rs-adv-search-holder {
+		&.mkdf-rs-adv-with-map {
+			.mkdf-rs-adv-search-map-holder{
+				.mkdf-rs-adv-search-keyword-holder{
+					.mkdf-rs-adv-search-keyword-holder-inner{
+						width: 70%;
+					}
+				}
+			}
+		}
+
+		&.mkdf-rs-adv-with-sidebar {
+
+			.mkdf-rs-adv-search-content-holder {
+				width: 100%;
+				margin-bottom: 50px;
+			}
+
+			.mkdf-rs-adv-search-sidebar-holder {
+				width: 100%;
+			}
+		}
+
+		.mkdf-rs-adv-search-items-holder{
+			article.mkdf-rs-item {
+				&.mkdf-rs-item-type-list {
+					.mkdf-rs-item-tax-date-holder {
+						width: 24%;
+					}
+
+					.mkdf-rs-item-image {
+						width: 20%;
+					}
+				}
+
+				&.mkdf-rs-item-type-standard {
+					width: 33.3333%;
+				}
+
+			}
+
+			$gallery_columns_number: ('three', 'four', 'five');
+
+			@for $i from 0 to length($gallery_columns_number) {
+				&.mkdf-rs-adr-#{nth($gallery_columns_number,$i+1)}-columns {
+
+					article {
+						width: 50%;
+					}
+
+					@media only screen and (min-width: $phone-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(2n+1) {
+								clear: both;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.mkdf-rs-adv-search-keyword-holder{
+			width: 100%;
+		}
+		.mkdf-rs-adv-search-fields-holder .mkdf-rs-adv-search-banner-holder .mkdf-rs-banner-text{
+			padding: 20px 10px;
+		}
+	}
+}
+
+@include ipad-portrait {
+
+	.mkdf-rs-adv-search-holder {
+		.mkdf-rs-adv-search-keyword-holder .mkdf-rs-adv-search-submit-button .mkdf-rs-adv-search-keyword-button{
+			padding: 10px 20px;
+		}
+
+		.mkdf-rs-adv-search-fields-holder{
+			width: 80%;
+			margin-bottom: 30px;
+		}
+
+		.mkdf-rs-adv-search-filters-holder {
+
+			.mkdf-rs-adv-search-filters {
+				float: left;
+				width: 100%;
+
+				.mkdf-rs-adv-search-filters-inner>div {
+					width: 100%;
+					margin: 0 0 10px;
+				}
+			}
+
+			.mkdf-rs-adv-search-submit-button {
+				float: left;
+			}
+
+		}
+
+		.mkdf-rs-adv-search-items-holder{
+			width: 100%;
+			padding: 0;
+
+			article.mkdf-rs-item {
+				&.mkdf-rs-item-type-list {
+
+					width: 100%;
+					display: block;
+					.mkdf-rs-item-tax-date-holder,
+					.mkdf-rs-item-inner,
+					.mkdf-rs-item-image {
+						width: 100%;
+						display: inline-block;
+						float: left;
+					}
+
+					.mkdf-rs-item-image {
+						img {
+							display: inline-block;
+						}
+					}
+				}
+
+				&.mkdf-rs-item-type-standard {
+					width: 50%;
+				}
+
+			}
+		}
+	}
+}
+
+
+
+@include phone-landscape {
+
+	.mkdf-rs-adv-search-holder {
+		.mkdf-rs-adv-search-items-holder{
+
+			.mkdf-rs-adv-search-keyword-holder-inner{
+				width: 70%;
+			}
+
+			article {
+				width: 100% !important; // !important is set to override all other stronger selectors
+			}
+		}
+		.mkdf-rs-adv-search-fields-holder{
+			margin-left: 15px;
+		}
+
+		.mkdf-rs-adv-search-keyword-holder{
+			width: 80%;
+		}
+	}
+
+	.vc_row{
+		background-repeat: no-repeat;
+	}
+}
+
+@include phone-portrait{
+
+	.mkdf-rs-adv-search-holder{
+		.mkdf-rs-adv-search-keyword-holder {
+			.mkdf-rs-adv-search-keyword-field,
+			.mkdf-rs-adv-search-submit-button {
+				width: 100%;
+				margin-bottom: 0;
+			}
+			.mkdf-rs-adv-search-submit-button{
+				margin-bottom: 20px;
+			}
+		}
+
+		.mkdf-rs-adv-search-items-holder.mkdf-rs-adr-normal-space article{
+			margin-bottom: 20px;
+		}
+	}
+}
+/* ==========================================================================
+   Resume Advanced Search responsive style - end
+   ========================================================================== */

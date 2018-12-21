@@ -1,0 +1,291 @@
+/* ==========================================================================
+   Listing Advanced Search responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+
+	.mkdf-ls-adv-search-holder {
+		.mkdf-ls-adv-search-items-holder{
+			article.mkdf-ls-item {
+				&.mkdf-ls-item-type-list {
+
+					.mkdf-ls-item-tax-date-holder {
+						width: 20%;
+					}
+
+					.mkdf-ls-item-image {
+						width: 12%;
+					}
+				}
+			}
+
+			$columns_number: ('four', 'five');
+
+			@for $i from 0 to length($columns_number) {
+				&.mkdf-ls-adr-#{nth($columns_number,$i+1)}-columns {
+					$item_size: 100% / 3;
+
+					article {
+						width: $item_size;
+					}
+
+					@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(3n+1) {
+								clear: both;
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+		&.mkdf-ls-adv-with-sidebar {
+
+			.mkdf-ls-adv-search-content-holder {
+
+				.mkdf-ls-adv-search-items-holder {
+
+					.mkdf-ls-item {
+
+						&.mkdf-ls-item-type-list {
+							.mkdf-ls-item-image {
+								width: 17%;
+							}
+
+							.mkdf-ls-item-tax-date-holder {
+								width: 23%;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
+
+@include laptop-landscape-medium {
+	.mkdf-ls-adv-search-holder {
+		&.mkdf-ls-adv-search-items-holder {
+			.mkdf-ls-item.mkdf-ls-item-type-standard .mkdf-ls-item-image {
+				height: 160px;
+			}
+		}
+
+		&.mkdf-ls-adv-with-sidebar {
+
+			.mkdf-ls-adv-search-content-holder {
+
+				.mkdf-ls-adv-search-items-holder {
+
+					.mkdf-ls-item {
+
+						&.mkdf-ls-item-type-list {
+							.mkdf-ls-item-image {
+								width: 22%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include ipad-landscape {
+
+	.mkdf-ls-adv-search-holder {
+		&.mkdf-ls-adv-with-map {
+			.mkdf-ls-adv-search-map-holder{
+				.mkdf-ls-adv-search-keyword-holder{
+					.mkdf-ls-adv-search-keyword-holder-inner{
+						width: 70%;
+					}
+				}
+			}
+		}
+
+		&.mkdf-ls-adv-with-sidebar {
+
+			.mkdf-ls-adv-search-content-holder {
+				width: 100%;
+				margin-bottom: 50px;
+			}
+
+			.mkdf-ls-adv-search-sidebar-holder {
+				width: 100%;
+			}
+		}
+
+		.mkdf-ls-adv-search-items-holder{
+			article.mkdf-ls-item {
+				&.mkdf-ls-item-type-list {
+					.mkdf-ls-item-tax-date-holder {
+						width: 24%;
+					}
+
+					.mkdf-ls-item-image {
+						width: 20%;
+					}
+				}
+
+				&.mkdf-ls-item-type-standard {
+					width: 33.3333%;
+				}
+
+			}
+
+			$gallery_columns_number: ('three', 'four', 'five');
+
+			@for $i from 0 to length($gallery_columns_number) {
+				&.mkdf-ls-adr-#{nth($gallery_columns_number,$i+1)}-columns {
+
+					article {
+						width: 50%;
+					}
+
+					@media only screen and (min-width: $phone-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(2n+1) {
+								clear: both;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.mkdf-ls-adv-search-keyword-holder{
+			width: 100%;
+		}
+		.mkdf-ls-adv-search-fields-holder .mkdf-ls-adv-search-banner-holder .mkdf-ls-banner-text{
+			padding: 20px 10px;
+		}
+	}
+}
+
+@include ipad-portrait {
+
+	.mkdf-ls-adv-search-holder {
+		.mkdf-ls-adv-search-keyword-holder .mkdf-ls-adv-search-submit-button .mkdf-ls-adv-search-keyword-button{
+			padding: 10px 20px;
+		}
+
+		.mkdf-ls-adv-search-fields-holder{
+			width: 80%;
+			margin-bottom: 30px;
+		}
+
+		.mkdf-ls-adv-search-filters-holder {
+
+			.mkdf-ls-adv-search-filters {
+				float: left;
+				width: 100%;
+
+				.mkdf-ls-adv-search-filters-inner>div {
+					width: 100%;
+					margin: 0 0 10px;
+				}
+			}
+
+			.mkdf-ls-adv-search-submit-button {
+				float: left;
+			}
+
+		}
+
+		.mkdf-ls-adv-search-items-holder{
+			width: 100%;
+			padding: 0;
+
+			article.mkdf-ls-item {
+				&.mkdf-ls-item-type-list {
+
+					width: 100%;
+					display: block;
+					.mkdf-ls-item-tax-date-holder,
+					.mkdf-ls-item-inner,
+					.mkdf-ls-item-image {
+						width: 100%;
+						display: inline-block;
+						float: left;
+					}
+
+					.mkdf-ls-item-inner,
+					.mkdf-ls-item-image {
+						text-align: left;
+					}
+
+					.mkdf-ls-item-image {
+						img {
+							display: inline-block;
+						}
+					}
+				}
+
+				&.mkdf-ls-item-type-standard {
+					width: 50%;
+				}
+
+			}
+		}
+	}
+}
+
+
+
+@include phone-landscape {
+
+	.mkdf-ls-adv-search-holder {
+		.mkdf-ls-adv-search-items-holder{
+
+			.mkdf-ls-adv-search-keyword-holder-inner{
+				width: 70%;
+			}
+
+			article {
+				width: 100% !important; // !important is set to override all other stronger selectors
+			}
+		}
+		.mkdf-ls-adv-search-fields-holder{
+			margin-left: 15px;
+		}
+
+		.mkdf-ls-adv-search-keyword-holder{
+			width: 80%;
+		}
+	}
+
+	.vc_row{
+		background-repeat: no-repeat;
+	}
+}
+
+@include phone-portrait{
+
+	.mkdf-ls-adv-search-holder{
+		.mkdf-ls-adv-search-keyword-holder {
+			.mkdf-ls-adv-search-keyword-field,
+			.mkdf-ls-adv-search-submit-button {
+				width: 100%;
+				margin-bottom: 0;
+			}
+			.mkdf-ls-adv-search-submit-button{
+				margin-bottom: 20px;
+			}
+		}
+
+		.mkdf-ls-adv-search-items-holder.mkdf-ls-adr-normal-space article{
+			margin-bottom: 20px;
+		}
+	}
+}
+/* ==========================================================================
+   Listing Advanced Search responsive style - end
+   ========================================================================== */

@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Resume Archive responsive style - start
+   ========================================================================== */
+@include laptop-landscape-medium {
+    .mkdf-resume-archive-filter-holder {
+        .mkdf-resume-archive-filter-holder-inner {
+            .mkdf-resume-archive-filter-item {
+                width: 50%;
+                display: inline-block;
+                float: left;
+                margin-bottom: 10px;
+
+                &.submit {
+                    width: 50%;
+                    display: inline-block;
+                    float: left;
+                }
+
+                &:nth-child(3) {
+                    padding-left: 0;
+
+                    .select2-selection--single .select2-selection__rendered {
+                        padding-left: 47px;
+                    }
+                }
+            }
+        }
+    }
+
+    .mkdf-rs-archive-holder .mkdf-rs-archive-items {
+        margin-top: 11px;
+    }
+}
+
+@include ipad-landscape {
+    .mkdf-rs-archive-holder{
+        .mkdf-rs-archive-items-wrapper,
+        .mkdf-rs-archive-map-holder {
+            width: 100%;
+            position: relative;
+            float: left;
+
+            #mkdf-rs-multiple-map-holder {
+                height: 500px;
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+    .mkdf-rs-archive-holder {
+
+        .mkdf-resume-archive-filter-holder {
+            .mkdf-resume-archive-filter-item {
+                width: 100%;
+                padding: 0;
+
+                &:nth-child(2) {
+
+                    .select2-selection--single .select2-selection__rendered {
+                        padding-left: 47px;
+                    }
+                }
+            }
+        }
+
+        .mkdf-rs-archive-items.mkdf-rs-archive-two-columns article {
+            width: 100%;
+        }
+    }
+}
+/* ==========================================================================
+   Resume Archive responsive style - end
+   ========================================================================== */

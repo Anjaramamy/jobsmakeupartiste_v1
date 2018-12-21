@@ -1,0 +1,72 @@
+.page-template-user-dashboard{
+    .mkdf-membership-dashboard-nav-holder{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        .mkdf-membership-dashboard-nav {
+            @include mkdfTableLayout();
+
+             li {
+                @include mkdfTableCellLayout();
+                background-color: #fafafa;
+                &:not(:last-child){
+                    margin-right: 2px;
+                }
+
+
+                &.mkdf-active-dash{
+                    background-color: $default-background-color;
+                    a {
+                        color: $first-main-color !important;
+                    }
+                    .mkdf-dash-icon{
+                        color: $first-main-color;
+                    }
+                }
+
+                a {
+                    position: relative;
+                    display: block;
+                    text-align: center;
+                    margin: 0;
+                    box-sizing: border-box;
+                    font-family: $default-text-font;
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 35px 0 25px;
+                    text-transform: capitalize;
+                    color: $additional-text-color;
+
+
+                    &:hover{
+                        &, h6 , span{
+                            color: $first-main-color;
+                            background-color: $default-background-color;
+                        }
+                    }
+
+                    h6{
+                        margin: 0;
+                    }
+
+                    .mkdf-dash-icon{
+                        display: block;
+                        font-size: 40px;
+                        padding-bottom: 15px;
+                        color: #cfcfcf;
+                        background-color: transparent;
+                    }
+
+                }
+            }
+        }
+    }
+    .mkd-membership-dashboard-content-holder {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        margin: 62px 0 0;
+    }
+}

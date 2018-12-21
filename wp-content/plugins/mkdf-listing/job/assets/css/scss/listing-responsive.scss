@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+@import '../../../../../../themes/staffscout/assets/css/scss/variables';
+@import '../../../../../../themes/staffscout/assets/css/scss/mixins';
+
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+@import '../../../modules/archive/assets/css/scss/responsive/*.scss';
+@import '../../../modules/dashboard/assets/css/scss/responsive/*.scss';
+@import '../../../modules/shortcodes/**/assets/css/scss/responsive/*.scss';
+@import '../../../modules/single/assets/css/scss/responsive/*.scss';
+@import '../../../modules/maps/assets/css/scss/responsive/*.scss';

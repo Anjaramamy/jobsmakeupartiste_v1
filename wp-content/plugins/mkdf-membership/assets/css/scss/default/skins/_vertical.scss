@@ -1,0 +1,88 @@
+.mkdf-membership-dashboard-nav-holder,
+.mkdf-membership-dashboard-content-holder {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    box-sizing: border-box;
+}
+.mkdf-membership-dashboard-nav-holder {
+    width: 22%;
+    margin: 0 0 35px;
+
+    ul {
+        padding: 0 15px 0 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            margin: 0 0 18px;
+            padding: 0;
+
+            a {
+                color: $additional-text-color;
+                &:hover{
+                    color: $first-main-color;
+                }
+
+                .mkdf-dash-icon {
+                    vertical-align: middle;
+                    position: relative;
+                    bottom: -2px;
+                    padding-right: 7px;
+                }
+            }
+            &:last-child {
+                margin: 0;
+
+            }
+
+            &.mkdf-active-dash {
+                a {
+                    color: $default-heading-color;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.mkdf-membership-dashboard-content-holder {
+    width: 68%;
+    padding: 0 0 0 45px;
+    margin: 0 0 60px;
+    border-left: 1px solid $default-border-color;
+
+    .mkdf-membership-dashboard-page {
+        .mkdf-btn {
+            margin-top: 20px;
+        }
+    }
+
+    .mkdf-profile-image{
+        border-radius: 100%;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+
+        img{
+            display: block;
+            position: relative;
+        }
+    }
+
+    .mkdf-membership-dashboard-page-title {
+        margin: 0 0 23px;
+    }
+
+    #job-manager-bookmarks table ul.job-manager-bookmark-actions li {
+        margin: 0;
+
+        &:last-child {
+            &:after {
+                padding: 0;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,126 @@
+/* ==========================================================================
+   Single Resume  responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+    .mkdf-resume-single-holder {
+        article {
+            .mkdf-rs-single-candidate-details-holder {
+                .mkdf-rs-single-candidate-details-button-holder {
+                    .mkdf-rs-single-contact-resume {
+                        padding: 13px 35px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include laptop-landscape-medium {
+    .mkdf-resume-single-holder {
+        article {
+            .mkdf-rs-single-candidate-details-holder {
+                padding: 49px 35px 45px;
+
+                .mkdf-rs-adr-city,
+                .mkdf-rs-price-rate-amount,
+                .mkdf-resume-cat-wrapper a,
+                .mkdf-rs-website-info a,
+                .mkdf-rs-email-info a {
+                    font-size: 14px;
+                }
+
+                .mkdf-rs-single-candidate-details-button-holder {
+                    .mkdf-rs-single-contact-resume {
+                        padding: 13px 46px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+    .mkdf-resume-single-holder{
+        article{
+            .mkdf-rs-single-section-inner{
+                &.left,
+                &.right{
+                    width: 100%;
+                    padding: 0;
+                }
+                &.right{
+                    padding-top: 20px;
+                }
+
+                &.left {
+                    padding-top: 40px;
+                }
+
+            }
+
+            &.mkdf-rs-single-item.featured-image {
+
+                .mkdf-rs-single-details-map-holder {
+                    top: auto;
+                }
+            }
+
+            .mkdf-rs-single-details-map-holder {
+
+                .mkdf-rs-single-candidate-details-holder {
+                    text-align: center;
+                }
+            }
+
+            #mkdf-rs-single-map-holder{
+                max-width:100%;
+            }
+
+            .mkdf-rs-single-social-network-holder {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+
+    .mkdf-resume-single-holder {
+        article {
+            .mkdf-rs-single-section-inner.left {
+
+                .mkdf-rs-single-content-holder,
+                .mkdf-rs-single-share-holder {
+                    width: 100%;
+                }
+
+                .mkdf-social-share-holder.mkdf-list {
+                    margin: 20px 0;
+
+                    li {
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e9ebec;
+                        border-right: none;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                            border-right: 1px solid #e9ebec;
+                        }
+                    }
+                }
+            }
+
+            .mkdf-rs-single-social-network-holder {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Single Resume responsive style - end
+   ========================================================================== */

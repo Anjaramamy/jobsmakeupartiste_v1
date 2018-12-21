@@ -1,0 +1,511 @@
+/* Login/Register widget - start
+   ========================================================================== */
+
+/* User not logged in */
+.mkdf-login-register-widget {
+    &.mkdf-user-not-logged-in {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+
+        .mkdf-menu-area & {
+            height: 100%;
+        }
+
+        .mkdf-sidebar & {
+            width: 100%;
+        }
+
+        .mkdf-login-opener {
+
+            /* Top bar */
+            .mkdf-top-bar & {
+                color: #fff;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+
+            /* Menu area */
+            .mkdf-menu-area &,
+            .mkdf-sticky-header & {
+                position: relative;
+                display: inline-block;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 10px 37px;
+                border: 1px solid $default-border-color;
+                border-radius: 30px;
+                color: $additional-text-color;
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 1.35em;
+                letter-spacing: .05em;
+                text-transform: uppercase;
+                @include mkdfTransition(all .3s ease-in-out);
+
+                &:hover {
+                    color: #fff;
+                    background-color: $first-main-color;
+                    border-color: $first-main-color;
+                }
+            }
+
+            .mkdf-sticky-header & {
+                color: $additional-text-color;
+                border-color: $default-border-color;
+                top: auto;
+                @include mkdfTransform(none);
+            }
+
+            .mkdf-fixed-wrapper.fixed & {
+                color: $default-heading-color;
+                border-color: $default-border-color;
+                &:hover {
+                    color: #fff;
+                    border-color: $first-main-color;
+                }
+            }
+
+            .mkdf-dark-header .mkdf-menu-area:not(.fixed):not(.mkdf-sticky-header) & {
+                color: $additional-text-color !important;
+                &:hover {
+                    color: #fff !important;
+                }
+            }
+
+            .mkdf-light-header .mkdf-fixed-wrapper:not(.fixed) .mkdf-menu-area:not(.mkdf-sticky-header) &,
+            .mkdf-light-header .mkdf-menu-area:not(.mkdf-sticky-header) & {
+                color: #fff;
+                &:hover {
+                    color: #fff;
+                }
+            }
+
+            .mkdf-light-header .mkdf-fixed-wrapper.fixed .mkdf-menu-area:not(.mkdf-sticky-header) & {
+                color: #fff;
+                &:hover {
+                    color: #fff;
+                    border-color: $first-main-color;
+                }
+            }
+
+            /* Sidebar */
+            .mkdf-sidebar & {
+                color: #000;
+                font-size: 13px;
+                font-weight: 500;
+                text-transform: uppercase;
+                &:hover {
+                    color: #ffec13;
+                }
+            }
+
+            /* Footer */
+            footer & {
+                color: #000;
+                font-size: 13px;
+                font-weight: 500;
+                text-transform: uppercase;
+                &:hover {
+                    color: #ffec13;
+                }
+            }
+
+            /* Side area */
+            .mkdf-side-menu & {
+                color: #000;
+                font-size: 13px;
+                font-weight: 500;
+                text-transform: uppercase;
+                &:hover {
+                    color: #ffec13;
+                }
+            }
+        }
+    }
+}
+
+/* User logged in */
+
+.mkdf-login-register-widget {
+    &.mkdf-user-logged-in {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+
+        .mkdf-logged-in-user {
+            .mkdf-logged-in-user-inner{
+                & > span {
+                    img {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 28px;
+                        height: 28px;
+                        margin: 0 5px 0 0;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+
+        /* Top bar and menu area dropdown position */
+        .mkdf-menu-area &,
+        .mkdf-top-bar &,
+        .mkdf-sticky-header & {
+            .mkdf-login-dropdown {
+                position: absolute;
+                top: 100%;
+                margin: 0;
+                right: 0;
+                opacity: 0;
+                list-style-type: none;
+                text-align: left;
+                padding: 0;
+                width: 193px;
+                box-sizing: border-box;
+                visibility: hidden;
+                z-index: 100;
+                box-shadow: 0px 1px 23.83px 0.173px rgba(255, 51, 102, 0.07);;
+                @include mkdfTransition(opacity 0.3s ease);
+
+                li {
+                    padding: 0;
+                    margin: 0;
+                    line-height: 1em;
+
+                    a {
+                        display: block;
+                        position: relative;
+                        @include mkdfTransition(color 0.3s ease);
+                    }
+                }
+            }
+
+            &:hover .mkdf-login-dropdown {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        /* Menu area style */
+        .mkdf-menu-area &,
+        .mkdf-sticky-header & {
+            cursor: pointer;
+            /* User part */
+            .mkdf-logged-in-user {
+                height: 100%;
+                display: table;
+                vertical-align: middle;
+
+                .mkdf-logged-in-user-inner {
+                    display: table-cell;
+                    vertical-align: middle;
+                    height: 100%;
+                    padding-top: 6px;
+
+                    & > span {
+                        color: #9c9c9c;
+                        font-size: 13px;
+                        line-height: 23px;
+                        margin: 0;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            &:hover {
+                .mkdf-logged-in-user {
+                    .mkdf-logged-in-user-inner {
+                        & > span {
+                            color: $default-heading-color;
+                        }
+                    }
+                }
+            }
+
+            /* Dropdown part */
+            .mkdf-login-dropdown {
+                background-color: #fff;
+                padding: 16px 0;
+
+
+                li {
+
+                    a {
+                        font-size: 16px;
+                        line-height: 1.6em;
+                        font-weight: 400;
+                        color: $additional-text-color;
+                        padding: 3px 24px;
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+
+                    &:first-child,
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4),
+                    &:nth-child(5),
+                    &:nth-child(6),
+                    &:nth-child(7),
+                    &:last-child {
+                        a:before{
+                            font-family: "dripicons-v2" !important;
+                            vertical-align: top;
+                            padding-right: 6px;
+                        }
+                    }
+
+                    &:first-child {
+                        a:before {
+                            content: "\e056";
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        a:before{
+                            content: "\2a";
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        a:before{
+                            content: "\e004";
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        a:before{
+                            content: "\e035";
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        a:before{
+                            content: "\28";
+                        }
+                    }
+
+                    &:nth-child(6) {
+                        a:before{
+                            content: "\e035";
+                        }
+                    }
+
+                    &:nth-child(7) {
+                        a:before{
+                            content: "\e058";
+                        }
+                    }
+
+                    &:last-child {
+                        a:before{
+                            content: "\3d";
+                        }
+                    }
+                }
+            }
+
+            &:hover .mkdf-login-dropdown {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .mkdf-sticky-header & {
+            .mkdf-logged-in-user {
+                .mkdf-logged-in-user-inner {
+                    & > span {
+                        color: $default-heading-color;
+                    }
+                }
+            }
+
+            &:hover {
+                .mkdf-logged-in-user {
+                    .mkdf-logged-in-user-inner {
+                        & > span {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mkdf-fixed-wrapper.fixed & {
+            .mkdf-logged-in-user {
+                .mkdf-logged-in-user-inner {
+                    & > span {
+                        color: $header-light-color;
+                    }
+                }
+            }
+
+            &:hover {
+                .mkdf-logged-in-user {
+                    .mkdf-logged-in-user-inner {
+                        & > span {
+                            color: $header-light-hover-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mkdf-dark-header .mkdf-menu-area:not(.fixed):not(.mkdf-sticky-header) & {
+            .mkdf-logged-in-user {
+                .mkdf-logged-in-user-inner {
+                    & > span span,
+                    & > span i {
+                        color: #000 !important;
+                        &:hover {
+                            color: rgba(0, 0, 0, .8);
+                        }
+                    }
+                }
+            }
+        }
+
+        .mkdf-light-header .mkdf-fixed-wrapper:not(.fixed) .mkdf-menu-area:not(.mkdf-sticky-header) &,
+        .mkdf-light-header .mkdf-menu-area:not(.mkdf-sticky-header) & {
+            .mkdf-logged-in-user {
+                .mkdf-logged-in-user-inner {
+                    & > span span,
+                    & > span i {
+                        color: #fff !important;
+                        &:hover {
+                            color: rgba(#fff, .8) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mkdf-light-header .mkdf-fixed-wrapper.fixed .mkdf-menu-area:not(.mkdf-sticky-header) & {
+            .mkdf-logged-in-user {
+                .mkdf-logged-in-user-inner {
+                    & > span span,
+                    & > span i {
+                        color: $header-light-color !important;
+                        &:hover {
+                            color: $header-light-hover-color !important;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .mkdf-logged-in-user {
+                    .mkdf-logged-in-user-inner {
+                        & > span span,
+                        & > span i {
+                            color: $header-light-hover-color !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Top bar style */
+        .mkdf-top-bar & {
+            cursor: pointer;
+            /* User part */
+            .mkdf-logged-in-user {
+                .mkdf-logged-in-user-inner {
+                    & > span {
+                        color: #fff;
+                        font-weight: 500;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            /* Dropdown part */
+            .mkdf-login-dropdown {
+                background-color: #212121;
+                padding: 15px 0;
+                li {
+                    a {
+                        color: #fff;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        padding: 8px 20px;
+                        &:hover {
+                            color: rgba(255, 255, 255, .8);
+                        }
+                    }
+                }
+            }
+
+            &:hover .mkdf-login-dropdown {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        /* Sidebar style */
+        .mkdf-sidebar & {
+            .mkdf-logged-in-user {
+                .mkdf-logged-in-user-inner {
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid $default-border-color;
+                    & > span {
+                        color: #000;
+                        font-size: 13px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Footer style */
+        footer & {
+            height: auto;
+            .mkdf-logged-in-user {
+                .mkdf-logged-in-user-inner {
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid $default-border-color;
+                    & > span {
+                        color: #000;
+                        font-size: 13px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Sidearea style */
+        .mkdf-side-menu & {
+            height: auto;
+            .mkdf-logged-in-user {
+                .mkdf-logged-in-user-inner {
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid $default-border-color;
+                    & > span {
+                        color: #666;
+                        font-size: 13px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Login/Register widget - end
+   ========================================================================== */

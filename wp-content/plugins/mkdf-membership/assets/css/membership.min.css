@@ -1,0 +1,928 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+/* ==========================================================================
+   Mikadof Membership Plugin Style - begin
+   ========================================================================== */
+.mkdf-social-login-holder input[type="text"],
+.mkdf-social-login-holder input[type="email"],
+.mkdf-social-login-holder input[type="password"],
+.mkdf-social-register-holder input[type="text"],
+.mkdf-social-register-holder input[type="email"],
+.mkdf-social-register-holder input[type="password"],
+.mkdf-social-reset-password-holder input[type="text"],
+.mkdf-social-reset-password-holder input[type="email"],
+.mkdf-social-reset-password-holder input[type="password"],
+.mkdf-membership-input-holder .mkdf-membership-input {
+  position: relative;
+  width: 100%;
+  margin: 0 0 14px;
+  padding: 17px 20px;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: inherit;
+  color: #7e8890;
+  background-color: transparent;
+  border: 1px solid #e9ebec;
+  outline: 0;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  cursor: auto;
+}
+
+.mkdf-social-login-holder input[type="text"]:focus,
+.mkdf-social-login-holder input[type="email"]:focus,
+.mkdf-social-login-holder input[type="password"]:focus,
+.mkdf-social-register-holder input[type="text"]:focus,
+.mkdf-social-register-holder input[type="email"]:focus,
+.mkdf-social-register-holder input[type="password"]:focus,
+.mkdf-social-reset-password-holder input[type="text"]:focus,
+.mkdf-social-reset-password-holder input[type="email"]:focus,
+.mkdf-social-reset-password-holder input[type="password"]:focus,
+.mkdf-membership-input-holder .mkdf-membership-input:focus {
+  border-color: #ff3366;
+}
+
+.mkdf-social-login-holder input[type="text"]::-webkit-input-placeholder,
+.mkdf-social-login-holder input[type="email"]::-webkit-input-placeholder,
+.mkdf-social-login-holder input[type="password"]::-webkit-input-placeholder,
+.mkdf-social-register-holder input[type="text"]::-webkit-input-placeholder,
+.mkdf-social-register-holder input[type="email"]::-webkit-input-placeholder,
+.mkdf-social-register-holder input[type="password"]::-webkit-input-placeholder,
+.mkdf-social-reset-password-holder input[type="text"]::-webkit-input-placeholder,
+.mkdf-social-reset-password-holder input[type="email"]::-webkit-input-placeholder,
+.mkdf-social-reset-password-holder input[type="password"]::-webkit-input-placeholder,
+.mkdf-membership-input-holder .mkdf-membership-input::-webkit-input-placeholder {
+  color: #8a959e;
+}
+
+.mkdf-social-login-holder input[type="text"]:-moz-placeholder,
+.mkdf-social-login-holder input[type="email"]:-moz-placeholder,
+.mkdf-social-login-holder input[type="password"]:-moz-placeholder,
+.mkdf-social-register-holder input[type="text"]:-moz-placeholder,
+.mkdf-social-register-holder input[type="email"]:-moz-placeholder,
+.mkdf-social-register-holder input[type="password"]:-moz-placeholder,
+.mkdf-social-reset-password-holder input[type="text"]:-moz-placeholder,
+.mkdf-social-reset-password-holder input[type="email"]:-moz-placeholder,
+.mkdf-social-reset-password-holder input[type="password"]:-moz-placeholder,
+.mkdf-membership-input-holder .mkdf-membership-input:-moz-placeholder {
+  color: #8a959e;
+}
+
+.mkdf-social-login-holder input[type="text"]::-moz-placeholder,
+.mkdf-social-login-holder input[type="email"]::-moz-placeholder,
+.mkdf-social-login-holder input[type="password"]::-moz-placeholder,
+.mkdf-social-register-holder input[type="text"]::-moz-placeholder,
+.mkdf-social-register-holder input[type="email"]::-moz-placeholder,
+.mkdf-social-register-holder input[type="password"]::-moz-placeholder,
+.mkdf-social-reset-password-holder input[type="text"]::-moz-placeholder,
+.mkdf-social-reset-password-holder input[type="email"]::-moz-placeholder,
+.mkdf-social-reset-password-holder input[type="password"]::-moz-placeholder,
+.mkdf-membership-input-holder .mkdf-membership-input::-moz-placeholder {
+  color: #8a959e;
+}
+
+.mkdf-social-login-holder input[type="text"]:-ms-input-placeholder,
+.mkdf-social-login-holder input[type="email"]:-ms-input-placeholder,
+.mkdf-social-login-holder input[type="password"]:-ms-input-placeholder,
+.mkdf-social-register-holder input[type="text"]:-ms-input-placeholder,
+.mkdf-social-register-holder input[type="email"]:-ms-input-placeholder,
+.mkdf-social-register-holder input[type="password"]:-ms-input-placeholder,
+.mkdf-social-reset-password-holder input[type="text"]:-ms-input-placeholder,
+.mkdf-social-reset-password-holder input[type="email"]:-ms-input-placeholder,
+.mkdf-social-reset-password-holder input[type="password"]:-ms-input-placeholder,
+.mkdf-membership-input-holder .mkdf-membership-input:-ms-input-placeholder {
+  color: #8a959e;
+}
+
+.mkdf-membership-input-holder label {
+  display: block;
+  margin: 0 0 5px;
+}
+
+.mkdf-membership-response-holder .mkdf-membership-response {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 13px;
+  margin: 30px 0 0px 0;
+}
+
+.mkdf-membership-response-holder .mkdf-membership-response.mkdf-membership-message-succes {
+  color: #7e8890;
+}
+
+.mkdf-membership-response-holder .mkdf-membership-response.mkdf-membership-message-error {
+  color: #ff3d27;
+}
+
+.mkdf-wp-register-holder .mkdf-register-notice h5 {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Mikadof Membership Plugin Style - end
+   ========================================================================== */
+/* Dashboard page - start
+   ========================================================================== */
+.mkdf-membership-main-wrapper {
+  padding-bottom: 90px;
+}
+
+.mkdf-membership-dashboard-nav-holder,
+.mkdf-membership-dashboard-content-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  box-sizing: border-box;
+}
+
+.mkdf-membership-dashboard-nav-holder {
+  width: 22%;
+  margin: 0 0 35px;
+}
+
+.mkdf-membership-dashboard-nav-holder ul {
+  padding: 0 15px 0 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mkdf-membership-dashboard-nav-holder ul li {
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+.mkdf-membership-dashboard-nav-holder ul li a {
+  color: #8a959e;
+}
+
+.mkdf-membership-dashboard-nav-holder ul li a:hover {
+  color: #ff3366;
+}
+
+.mkdf-membership-dashboard-nav-holder ul li a .mkdf-dash-icon {
+  vertical-align: middle;
+  position: relative;
+  bottom: -2px;
+  padding-right: 7px;
+}
+
+.mkdf-membership-dashboard-nav-holder ul li:last-child {
+  margin: 0;
+}
+
+.mkdf-membership-dashboard-nav-holder ul li.mkdf-active-dash a {
+  color: #323a45;
+  font-weight: 500;
+}
+
+.mkdf-membership-dashboard-content-holder {
+  width: 68%;
+  padding: 0 0 0 45px;
+  margin: 0 0 60px;
+  border-left: 1px solid #e9ebec;
+}
+
+.mkdf-membership-dashboard-content-holder .mkdf-membership-dashboard-page .mkdf-btn {
+  margin-top: 20px;
+}
+
+.mkdf-membership-dashboard-content-holder .mkdf-profile-image {
+  border-radius: 100%;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.mkdf-membership-dashboard-content-holder .mkdf-profile-image img {
+  display: block;
+  position: relative;
+}
+
+.mkdf-membership-dashboard-content-holder .mkdf-membership-dashboard-page-title {
+  margin: 0 0 23px;
+}
+
+.mkdf-membership-dashboard-content-holder #job-manager-bookmarks table ul.job-manager-bookmark-actions li {
+  margin: 0;
+}
+
+.mkdf-membership-dashboard-content-holder #job-manager-bookmarks table ul.job-manager-bookmark-actions li:last-child:after {
+  padding: 0;
+}
+
+/* Dashboard page - end
+   ========================================================================== */
+/* Login/Register form - start
+   ========================================================================== */
+.mkdf-login-register-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1002;
+}
+
+.mkdf-login-register-holder .mkdf-login-register-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index:1;
+}
+
+.mkdf-login-register-holder .mkdf-login-register-content .mkdf-login-action-btn {
+  float: left;
+}
+
+.mkdf-login-register-content {
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.mkdf-login-register-content.mkdf-user-not-logged-in {
+  width: 638px;
+  margin-top: 5.5%;
+}
+
+.mkdf-login-register-content.mkdf-user-not-logged-in ul li {
+  width: 33.33%;
+}
+
+.mkdf-login-register-content.mkdf-user-not-logged-in .mkdf-login-content-inner,
+.mkdf-login-register-content.mkdf-user-not-logged-in .mkdf-register-content-inner,
+.mkdf-login-register-content.mkdf-user-not-logged-in .mkdf-reset-pass-content-inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.mkdf-login-register-content ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  border: 1px solid #f8edf0;
+  box-sizing: border-box;
+}
+
+.mkdf-login-register-content ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fdfdfd;
+  border-right: 1px solid #f8edf0;
+  box-sizing: border-box;
+}
+
+.mkdf-login-register-content ul li.ui-state-active {
+  background-color: #fff;
+}
+
+.mkdf-login-register-content ul li.ui-state-active a {
+  color: #ff3366;
+}
+
+.mkdf-login-register-content ul li:last-child {
+  border-right: 0;
+}
+
+.mkdf-login-register-content ul li a {
+  display: block;
+  color: #323a45;
+  font-size: 14px;
+  line-height: inherit;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.mkdf-login-register-content .mkdf-login-content-inner,
+.mkdf-login-register-content .mkdf-register-content-inner,
+.mkdf-login-register-content .mkdf-reset-pass-content-inner {
+  padding: 30px;
+}
+
+.mkdf-login-register-content .mkdf-register-content-inner .mkdf-login-action-btn {
+  margin: 5px 0 30px;
+}
+
+.mkdf-login-register-content .mkdf-lost-pass-remember-holder {
+  display: block;
+}
+
+.mkdf-login-register-content .mkdf-lost-pass-remember-holder .mkdf-login-remember {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  margin-top: 5px;
+}
+
+.mkdf-login-register-content .mkdf-lost-pass-remember-holder .mkdf-login-remember > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkdf-login-register-content .mkdf-lost-pass-remember-holder label {
+  font-size: 14px;
+  line-height: 13px;
+}
+
+.mkdf-login-register-content .mkdf-lost-pass-remember-holder input {
+  margin: 1px 10px 0 0;
+}
+
+.mkdf-login-register-content .mkdf-lost-pass-remember-holder .mkdf-btn {
+  margin: 10px 0 0;
+  width: 100%;
+}
+
+.mkdf-login-register-content .mkdf-login-action-btn {
+  position: relative;
+  display: inline-block;
+  margin: 5px 0 0;
+  float: right;
+  color: #ff3366;
+  font-size: 14px;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.mkdf-login-register-content .mkdf-login-action-btn:hover {
+  color: #000;
+}
+
+.mkdf-login-register-content input[type="text"],
+.mkdf-login-register-content input[type="email"] {
+  margin-bottom: 23px;
+}
+
+.mkdf-login-register-content input[type="password"] {
+  margin-bottom: 21px;
+}
+
+.mkdf-login-register-content .mkdf-login-button-holder,
+.mkdf-login-register-content .mkdf-register-button-holder,
+.mkdf-login-register-content .mkdf-reset-password-button-holder {
+  margin-top: 13px;
+}
+
+.mkdf-login-register-content .mkdf-login-button-holder .mkdf-btn,
+.mkdf-login-register-content .mkdf-register-button-holder .mkdf-btn,
+.mkdf-login-register-content .mkdf-reset-password-button-holder .mkdf-btn {
+  margin: 10px 0 0;
+  width: 100%;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  padding: 9px 23px;
+}
+
+.mkdf-login-register-content .mkdf-login-form-social-login {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ebebeb;
+  padding: 23px 0 34px;
+  margin: 12px 0 0;
+  text-align: center;
+}
+
+.mkdf-login-register-content .mkdf-login-form-social-login .mkdf-login-social-title {
+  margin-bottom: 15px;
+}
+
+.mkdf-login-register-content .mkdf-login-form-social-login form {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.mkdf-login-register-content .mkdf-login-form-social-login .mkdf-google-login .mkdf-btn-text,
+.mkdf-login-register-content .mkdf-login-form-social-login .mkdf-facebook-login .mkdf-btn-text {
+  margin: 0;
+}
+
+.mkdf-login-register-content .mkdf-login-form-social-login .mkdf-facebook-login,
+.mkdf-login-register-content .mkdf-login-form-social-login .mkdf-google-login {
+  padding: 0;
+}
+
+.mkdf-login-register-content .mkdf-login-form-social-login .mkdf-facebook-login .mkdf-btn-text,
+.mkdf-login-register-content .mkdf-login-form-social-login .mkdf-google-login .mkdf-btn-text {
+  line-height: 30px;
+  padding: 0 12px 0 10px;
+}
+
+.mkdf-login-register-content .mkdf-login-form-social-login .mkdf-facebook-login .mkdf-btn-icon-holder,
+.mkdf-login-register-content .mkdf-login-form-social-login .mkdf-google-login .mkdf-btn-icon-holder {
+  float: left;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mkdf-login-register-content .mkdf-login-form-social-login .mkdf-facebook-login .mkdf-btn-icon-holder .mkdf-btn-icon-elem,
+.mkdf-login-register-content .mkdf-login-form-social-login .mkdf-google-login .mkdf-btn-icon-holder .mkdf-btn-icon-elem {
+  vertical-align: baseline;
+}
+
+/* Login/Register form - end
+   ========================================================================== */
+/* Login/Register widget - start
+   ========================================================================== */
+/* User not logged in */
+.mkdf-login-register-widget.mkdf-user-not-logged-in {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-not-logged-in {
+  height: 100%;
+}
+
+.mkdf-sidebar .mkdf-login-register-widget.mkdf-user-not-logged-in {
+  width: 100%;
+}
+
+.mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener {
+  /* Top bar */
+  /* Menu area */
+  /* Sidebar */
+  /* Footer */
+  /* Side area */
+}
+
+.mkdf-top-bar .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 37px;
+  border: 1px solid #e9ebec;
+  border-radius: 30px;
+  color: #8a959e;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35em;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener:hover,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener:hover {
+  color: #fff;
+  background-color: #ff3366;
+  border-color: #ff3366;
+}
+
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener {
+  color: #8a959e;
+  border-color: #e9ebec;
+  top: auto;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+}
+
+.mkdf-fixed-wrapper.fixed .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener {
+  color: #323a45;
+  border-color: #e9ebec;
+}
+
+.mkdf-fixed-wrapper.fixed .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener:hover {
+  color: #fff;
+  border-color: #ff3366;
+}
+
+.mkdf-dark-header .mkdf-menu-area:not(.fixed):not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener {
+  color: #8a959e !important;
+}
+
+.mkdf-dark-header .mkdf-menu-area:not(.fixed):not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener:hover {
+  color: #fff !important;
+}
+
+.mkdf-light-header .mkdf-fixed-wrapper:not(.fixed) .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener,
+.mkdf-light-header .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener {
+  color: #fff;
+}
+
+.mkdf-light-header .mkdf-fixed-wrapper:not(.fixed) .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener:hover,
+.mkdf-light-header .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener:hover {
+  color: #fff;
+}
+
+.mkdf-light-header .mkdf-fixed-wrapper.fixed .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener {
+  color: #fff;
+}
+
+.mkdf-light-header .mkdf-fixed-wrapper.fixed .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener:hover {
+  color: #fff;
+  border-color: #ff3366;
+}
+
+.mkdf-sidebar .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mkdf-sidebar .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener:hover {
+  color: #ffec13;
+}
+
+footer .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+footer .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener:hover {
+  color: #ffec13;
+}
+
+.mkdf-side-menu .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mkdf-side-menu .mkdf-login-register-widget.mkdf-user-not-logged-in .mkdf-login-opener:hover {
+  color: #ffec13;
+}
+
+/* User logged in */
+.mkdf-login-register-widget.mkdf-user-logged-in {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  /* Top bar and menu area dropdown position */
+  /* Menu area style */
+  /* Top bar style */
+  /* Sidebar style */
+  /* Footer style */
+  /* Sidearea style */
+}
+
+.mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 28px;
+  height: 28px;
+  margin: 0 5px 0 0;
+  border-radius: 100%;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown,
+.mkdf-top-bar .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown {
+  position: absolute;
+  top: 100%;
+  margin: 0;
+  right: 0;
+  opacity: 0;
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  width: 193px;
+  box-sizing: border-box;
+  visibility: hidden;
+  z-index: 100;
+  box-shadow: 0px 1px 23.83px 0.173px rgba(255, 51, 102, 0.07);
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li,
+.mkdf-top-bar .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li {
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li a,
+.mkdf-top-bar .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li a,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li a {
+  display: block;
+  position: relative;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in:hover .mkdf-login-dropdown,
+.mkdf-top-bar .mkdf-login-register-widget.mkdf-user-logged-in:hover .mkdf-login-dropdown,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in:hover .mkdf-login-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in {
+  cursor: pointer;
+  /* User part */
+  /* Dropdown part */
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user {
+  height: 100%;
+  display: table;
+  vertical-align: middle;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  padding-top: 6px;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span {
+  color: #9c9c9c;
+  font-size: 13px;
+  line-height: 23px;
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in:hover .mkdf-logged-in-user .mkdf-logged-in-user-inner > span,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in:hover .mkdf-logged-in-user .mkdf-logged-in-user-inner > span {
+  color: #323a45;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown {
+  background-color: #fff;
+  padding: 16px 0;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li a,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li a {
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: #8a959e;
+  padding: 3px 24px;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li a:hover,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li a:hover {
+  color: #ff3366;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:first-child a:before, .mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(2) a:before, .mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(3) a:before, .mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(4) a:before, .mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(5) a:before, .mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(6) a:before, .mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(7) a:before, .mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:last-child a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:first-child a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(2) a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(3) a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(4) a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(5) a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(6) a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(7) a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:last-child a:before {
+  font-family: "dripicons-v2" !important;
+  vertical-align: top;
+  padding-right: 6px;
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:first-child a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:first-child a:before {
+  content: "\e056";
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(2) a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(2) a:before {
+  content: "\2a";
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(3) a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(3) a:before {
+  content: "\e004";
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(4) a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(4) a:before {
+  content: "\e035";
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(5) a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(5) a:before {
+  content: "\28";
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(6) a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(6) a:before {
+  content: "\e035";
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(7) a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:nth-child(7) a:before {
+  content: "\e058";
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:last-child a:before,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li:last-child a:before {
+  content: "\3d";
+}
+
+.mkdf-menu-area .mkdf-login-register-widget.mkdf-user-logged-in:hover .mkdf-login-dropdown,
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in:hover .mkdf-login-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span {
+  color: #323a45;
+}
+
+.mkdf-sticky-header .mkdf-login-register-widget.mkdf-user-logged-in:hover .mkdf-logged-in-user .mkdf-logged-in-user-inner > span {
+  color: #ff3366;
+}
+
+.mkdf-fixed-wrapper.fixed .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span {
+  color: #fff;
+}
+
+.mkdf-fixed-wrapper.fixed .mkdf-login-register-widget.mkdf-user-logged-in:hover .mkdf-logged-in-user .mkdf-logged-in-user-inner > span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mkdf-dark-header .mkdf-menu-area:not(.fixed):not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span span,
+.mkdf-dark-header .mkdf-menu-area:not(.fixed):not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span i {
+  color: #000 !important;
+}
+
+.mkdf-dark-header .mkdf-menu-area:not(.fixed):not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span span:hover,
+.mkdf-dark-header .mkdf-menu-area:not(.fixed):not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span i:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.mkdf-light-header .mkdf-fixed-wrapper:not(.fixed) .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span span,
+.mkdf-light-header .mkdf-fixed-wrapper:not(.fixed) .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span i,
+.mkdf-light-header .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span span,
+.mkdf-light-header .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span i {
+  color: #fff !important;
+}
+
+.mkdf-light-header .mkdf-fixed-wrapper:not(.fixed) .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span span:hover,
+.mkdf-light-header .mkdf-fixed-wrapper:not(.fixed) .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span i:hover,
+.mkdf-light-header .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span span:hover,
+.mkdf-light-header .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span i:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.mkdf-light-header .mkdf-fixed-wrapper.fixed .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span span,
+.mkdf-light-header .mkdf-fixed-wrapper.fixed .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span i {
+  color: #fff !important;
+}
+
+.mkdf-light-header .mkdf-fixed-wrapper.fixed .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span span:hover,
+.mkdf-light-header .mkdf-fixed-wrapper.fixed .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span i:hover {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.mkdf-light-header .mkdf-fixed-wrapper.fixed .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in:hover .mkdf-logged-in-user .mkdf-logged-in-user-inner > span span,
+.mkdf-light-header .mkdf-fixed-wrapper.fixed .mkdf-menu-area:not(.mkdf-sticky-header) .mkdf-login-register-widget.mkdf-user-logged-in:hover .mkdf-logged-in-user .mkdf-logged-in-user-inner > span i {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.mkdf-top-bar .mkdf-login-register-widget.mkdf-user-logged-in {
+  cursor: pointer;
+  /* User part */
+  /* Dropdown part */
+}
+
+.mkdf-top-bar .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span {
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.mkdf-top-bar .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown {
+  background-color: #212121;
+  padding: 15px 0;
+}
+
+.mkdf-top-bar .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li a {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 8px 20px;
+}
+
+.mkdf-top-bar .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-login-dropdown li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.mkdf-top-bar .mkdf-login-register-widget.mkdf-user-logged-in:hover .mkdf-login-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mkdf-sidebar .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #e9ebec;
+}
+
+.mkdf-sidebar .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mkdf-sidebar .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span i {
+  display: none;
+}
+
+footer .mkdf-login-register-widget.mkdf-user-logged-in {
+  height: auto;
+}
+
+footer .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #e9ebec;
+}
+
+footer .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+footer .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span i {
+  display: none;
+}
+
+.mkdf-side-menu .mkdf-login-register-widget.mkdf-user-logged-in {
+  height: auto;
+}
+
+.mkdf-side-menu .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #e9ebec;
+}
+
+.mkdf-side-menu .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span {
+  color: #666;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mkdf-side-menu .mkdf-login-register-widget.mkdf-user-logged-in .mkdf-logged-in-user .mkdf-logged-in-user-inner > span i {
+  display: none;
+}
+
+/* Login/Register widget - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/mkdf-membership/assets/css/membership.css.map */

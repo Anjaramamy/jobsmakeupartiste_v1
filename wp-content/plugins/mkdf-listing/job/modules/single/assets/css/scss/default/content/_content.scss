@@ -1,0 +1,56 @@
+.mkdf-listing-single-holder {
+	article {
+
+		.mkdf-ls-single-section-inner.left {
+
+			.mkdf-ls-single-share-holder {
+				float: left;
+				width: 110px;
+				padding-top: 3px;
+			}
+
+			.mkdf-ls-single-content-holder {
+				box-sizing: border-box;
+				float: right;
+				width: calc(100% - 110px);
+
+				.mkdf-ls-item-title {
+					h2 {
+						margin: 6px 0 0;
+					}
+				}
+
+				.mkdf-ls-content-part-holder{
+					margin: 21px 0 25px;
+				}
+
+				.mkdf-ls-content-part{
+
+					&.right{
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.mkdf-listing-type-wrapper {
+			a {
+				color: #fff;
+				font-size: 13px;
+				text-transform: uppercase;
+				font-weight: 600;
+				background: #00b489;
+				padding: 5px 17px;
+				border-radius: 3em;
+			}
+		}
+
+		p {
+			color: $default-text-color;
+		}
+
+		h4 {
+			margin: 0 0 18px;
+		}
+	}
+}

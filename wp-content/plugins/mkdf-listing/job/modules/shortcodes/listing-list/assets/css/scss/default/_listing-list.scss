@@ -1,0 +1,208 @@
+.mkdf-ls-list-holder{
+
+	.mkdf-ls-list-items-holder{
+
+		.mkdf-ls-item{
+            @extend %single-item-style;
+            visibility: hidden;
+
+			.mkdf-sidebar & {
+				width: 100%;
+			}
+
+			.mkdf-ls-item-holder {
+				&:hover {
+					box-shadow: 0px 1px 23.28px 0.72px rgba(255, 51, 102, 0.07);
+				}
+			}
+		}
+
+        .no-touch & {
+
+            .mkdf-ls-item {
+                visibility: visible;
+                opacity: 1;
+
+                &.mkdf-appear{
+                    opacity: 1;
+                    @include mkdfTransition(opacity .25s ease-in-out);
+                }
+            }
+        }
+
+        .touch & .mkdf-ls-item {
+            visibility: visible;
+            opacity: 1;
+        }
+
+		/***** Listing List Columns Width - begin *****/
+
+		$columns_number: ('two', 'three', 'four', 'five','six');
+
+		@for $i from 0 to length($columns_number) {
+			&.mkdf-ls-list-#{nth($columns_number,$i+1)}-columns {
+
+				article {
+					width: 100% / ($i+2);
+				}
+
+				@if ($i > 1) { // set different break point for four and five columns
+					@media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(#{$i+2}n+1) {
+								clear: both;
+							}
+						}
+					}
+				} @else {
+					@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(#{$i+2}n+1) {
+								clear: both;
+							}
+						}
+					}
+				}
+			}
+		}
+		/***** Listing list Columns Width - end *****/
+
+		/***** Listing list Simple style - begin *****/
+
+
+		&.mkdf-ls-list-simple {
+
+			article {
+
+				.mkdf-ls-inner {
+					.mkdf-ls-item-author-image {
+						display: table-cell;
+						vertical-align: middle;
+
+					}
+					img {
+						display: block;
+						width: 55px;
+						height: auto;
+					}
+				}
+
+				.mkdf-ls-content {
+					display: table-cell;
+					padding-left: 17px;
+					vertical-align: middle;
+
+					.mkdf-listing-title {
+						margin: 3px 0 4px;
+					}
+
+					.mkdf-ls-adr-pin {
+						display: inline-block;
+						float: left;
+						padding-right: 10px;
+						i {
+							color: $default-text-color;
+						}
+
+					}
+
+					.mkdf-ls-adr-city {
+						.mkdf-city {
+							position: relative;
+							top: -3px;
+						}
+					}
+				}
+			}
+		}
+
+		/***** Listing list Simple style - end *****/
+
+		/***** Listing list Tiles style - begin *****/
+
+		&.mkdf-ls-list-tiles {
+			.mkdf-ls-item-holder {
+				border: none;
+				cursor: pointer;
+
+				&:hover {
+					border: none;
+					box-shadow: none;
+				}
+			}
+          	.mkdf-ls-item-image {
+				height: auto;
+              	> .mkdf-ls-item-featured-image  {
+					  > img {
+						  border-radius: 10px;
+					  }
+                }
+
+				&:after {
+					border-radius: 10px;
+
+				}
+			}
+		}
+
+		/***** Listing list Tiles style - end *****/
+
+		&.mkdf-ls-list-grid {
+			display: inline-block;
+
+			.mkdf-ls-list-items-holder-inner {
+				display: block;
+			}
+
+			div.mkdf-ls-item {
+				width: auto;
+
+				.mkdf-ls-inner {
+					display: block;
+				}
+			}
+		}
+
+		&.mkdf-has-border {
+			article {
+				.mkdf-ls-item-holder {
+					border: 1px solid $default-border-color;
+				}
+			}
+		}
+
+		&.mkdf-ls-list-four-columns {
+			.mkdf-ls-item .mkdf-ls-item-inner {
+				padding: 21px 26px;
+
+				.mkdf-ls-item-location {
+					margin-bottom: 15px;
+
+					.mkdf-ls-adr-city a,
+					.mkdf-ls-adr-pin a {
+						font-size: 14px;
+					}
+				}
+
+				.mkdf-ls-item-excerpt {
+					margin: 20px 0 15px 0;
+					font-size: 14px;
+					line-height: 1.5em;
+				}
+
+				.mkdf-ls-item-type {
+					margin: 28px 0 0 !important;
+				}
+			}
+		}
+	}
+
+    .mkdf-ls-list-load-more-holder {
+        text-align: center;
+    }
+
+}

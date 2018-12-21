@@ -1,0 +1,177 @@
+/* ==========================================================================
+   Single Listing  responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+    .mkdf-listing-single-holder {
+        article {
+            .mkdf-ls-single-company-details-holder {
+                .mkdf-ls-single-company-details-button-holder {
+                    .mkdf-ls-single-contact-listing {
+                        padding: 13px 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include laptop-landscape-medium {
+    .mkdf-listing-single-holder {
+        article {
+            .mkdf-ls-single-company-details-holder {
+                padding: 49px 35px 45px;
+
+                .mkdf-ls-adr-city,
+                .mkdf-ls-price-rate-amount,
+                .mkdf-listing-cat-wrapper a,
+                .mkdf-ls-website-info a,
+                .mkdf-ls-email-info a {
+                    font-size: 14px;
+                }
+
+                .mkdf-ls-single-company-details-button-holder {
+                    .mkdf-ls-single-contact-listing {
+                        padding: 13px 37px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape{
+    .mkdf-listing-single-holder{
+        article{
+            .mkdf-ls-single-section-inner{
+                &.left,
+                &.right{
+                    width: 100%;
+                    padding: 0;
+                }
+                &.right{
+                    padding-top: 20px;
+                }
+
+                &.left {
+                    padding-top: 40px;
+                }
+
+            }
+
+            .mkdf-ls-single-company-details-holder {
+                .mkdf-ls-single-company-details-button-holder {
+                    .mkdf-ls-single-contact-listing {
+                        padding: 13px 23px;
+                    }
+                }
+            }
+
+            &.mkdf-ls-single-item.featured-image {
+
+                .mkdf-ls-single-details-map-holder {
+                    top: auto;
+                }
+            }
+
+            .mkdf-ls-single-details-map-holder {
+
+                .mkdf-ls-single-company-details-holder {
+                    text-align: center;
+                }
+            }
+
+            #mkdf-ls-single-map-holder{
+                max-width:100%;
+            }
+
+            .mkdf-ls-single-social-network-holder {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+    .mkdf-listing-single-holder{
+        article{
+            .mkdf-ls-single-section-inner{
+                &.left,
+                &.right{
+                    width: 100%;
+                    padding: 0;
+                }
+                &.right{
+                    padding-top: 20px;
+                }
+
+                &.left {
+                    padding-top: 40px;
+                }
+
+            }
+
+            &.mkdf-ls-single-item.featured-image {
+
+                .mkdf-ls-single-details-map-holder {
+                    top: auto;
+                }
+            }
+
+            .mkdf-ls-single-details-map-holder {
+
+                .mkdf-ls-single-company-details-holder {
+                    text-align: center;
+                }
+            }
+
+            #mkdf-ls-single-map-holder{
+                max-width:100%;
+            }
+
+            .mkdf-ls-single-social-network-holder {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+
+    .mkdf-listing-single-holder {
+        article {
+            .mkdf-ls-single-section-inner.left {
+
+                .mkdf-ls-single-content-holder,
+                .mkdf-ls-single-share-holder {
+                    width: 100%;
+                }
+
+                .mkdf-social-share-holder.mkdf-list {
+                    margin: 20px 0;
+
+                    li {
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e9ebec;
+                        border-right: none;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                            border-right: 1px solid #e9ebec;
+                        }
+                    }
+                }
+            }
+
+            .mkdf-ls-single-social-network-holder {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Single Listing responsive style - end
+   ========================================================================== */

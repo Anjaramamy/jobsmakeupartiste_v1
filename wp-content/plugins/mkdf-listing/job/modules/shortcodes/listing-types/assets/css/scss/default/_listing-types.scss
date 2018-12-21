@@ -1,0 +1,70 @@
+.mkdf-ls-types-holder{
+
+    &.mkdf-ls-types-slider {
+        .mkdf-ls-types-inner {
+            margin: 0 !important;
+        }
+        article {
+            width: auto !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            float: none !important;
+            clear: none !important;
+        }
+        .owl-nav {
+            .owl-prev{
+                left: -28px;
+            }
+            .owl-next{
+                right: -28px;
+            }
+
+            .mkdf-prev-icon,
+            .mkdf-next-icon{
+                background-color: transparent;
+            }
+        }
+
+        .owl-dots .owl-dot span {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+
+	/***** Listing Type Columns Width - begin *****/
+
+	$columns_number: ('two', 'three', 'four', 'five', 'six');
+
+	@for $i from 0 to length($columns_number) {
+		&.mkdf-ls-types-#{nth($columns_number,$i+1)}-columns {
+
+            article {
+                width: 100% / ($i+2);
+            }
+
+            @if ($i > 1) { // set different break point for four and five columns
+                @media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+                    article {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    article {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+		}
+	}
+	/***** Listing Type Columns Width - end *****/
+}

@@ -1,0 +1,455 @@
+.mkdf-ls-adv-search-holder {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 40px;
+
+    .mkdf-ls-adv-search-map-holder {
+        position: relative;
+        margin-bottom: 88px;
+    }
+
+    //Filters Style
+    .mkdf-ls-adv-search-filters-holder {
+        color: $additional-text-color;
+
+        .mkdf-ls-adv-search-filters {
+            float: left;
+            width: calc(100% - 184px);
+
+            .mkdf-ls-adv-search-filters-inner {
+                margin: 0 -9px;
+
+                > div {
+                    position: relative;
+                    float: left;
+                    width: 33.3333%;
+                    padding: 0 9px;
+                    box-sizing: border-box;
+
+                    i {
+                        font-size: 14px;
+                        position: absolute;
+                        top: 8px;
+                        left: 32px;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+
+        //keywords style START
+
+        .mkdf-ls-adv-search-keyword {
+            margin: 0;
+            color: $additional-text-color;
+            border: 1px solid $additional-border-color;
+            border-radius: 2em;
+            background-color: #fff;
+            font-size: 14px;
+            padding: 3px 20px 4px 51px;
+            height: 46px;
+        }
+
+        //keywords style END
+
+        //location, category style START
+
+        .select2-container--default {
+            width: 100% !important;
+        }
+
+        .select2-selection--single {
+            font-size: 14px;
+            height: 46px;
+            line-height: 43px;
+            border: 1px solid $additional-border-color;
+            border-radius: 2em;
+            background-color: #fff;
+
+            .select2-selection__rendered {
+                padding-left: 52px;
+            }
+        }
+
+        //location, category style END
+
+        //submit button style START
+
+        .mkdf-ls-adv-search-submit-button {
+            float: right;
+
+            .mkdf-btn {
+                padding: 5px 49px 6px;
+                font-size: 15px;
+                font-weight: 500;
+                background-color: $default-heading-color;
+                height: 43px;
+
+                &:hover {
+                    background-color: darken($default-heading-color,10%) !important;
+                    border-color: darken($default-heading-color,10%) !important;
+                }
+            }
+        }
+
+        //submit button style END
+    }
+
+    //Type checkboxes style
+
+    .mkdf-ls-adv-search-type-checkboxes {
+        margin-top: 30px;
+
+        .mkdf-ls-adv-search-field {
+            float: left;
+            margin-right: 20px;
+
+            input[type="checkbox"] {
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                visibility: hidden;
+                width: 16px;
+                height: 16px;
+                margin: 0;
+
+                &:after, &:before {
+                    content: '';
+                    visibility: visible;
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    border: 1px solid $additional-border-color;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+
+                    @include mkdfTransform(translate(-50%, -50%));
+                }
+
+                &:checked:before {
+                    content: '\4e';
+                    color: #00b489;
+                    font-family: 'ElegantIcons';
+                    font-size: 10px;
+                    text-align: center;
+                    line-height: 16px;
+                }
+            }
+
+            label {
+                display: inline-block;
+                vertical-align: middle;
+                font-weight: 500;
+                color: $default-heading-color;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .mkdf-ls-adv-search-items-holder {
+        margin-top: 31px;
+
+        .mkdf-ls-item {
+
+            &.mkdf-ls-item-appear {
+                opacity:0;
+                @include mkdfTransition(all .25s ease);
+                @include mkdfTransform(translate3d(0,10%,0));
+
+                &.mkdf-ls-item-appeared {
+                    opacity:1;
+                    @include mkdfTransition(all .25s ease);
+                    @include mkdfTransform(translate3d(0,0,0));
+                }
+            }
+
+            &.mkdf-ls-item-type-list {
+
+                margin-bottom: 18px;
+                @include mkdfTableLayout();
+                border: 1px solid $default-border-color;
+                padding: 20px 18px;
+                box-sizing: border-box;
+                @include mkdfTransition(all 0.9s ease-out);
+
+                &:hover {
+                    border: 1px solid #f8edf0;
+                    box-shadow: 2px 2px 25px 0 rgba(255, 51, 102, 0.07);
+                    @include mkdfTransition(all 0.15s ease-out);
+                }
+
+                .mkdf-ls-item-image,
+                .mkdf-ls-item-inner,
+                .mkdf-ls-item-tax-date-holder {
+                    position: relative;
+                    display: table-cell;
+                    height: 100%;
+                    vertical-align: middle;
+                }
+
+                .mkdf-ls-item-image {
+                    width: 11%;
+
+                    img {
+                        display: block;
+                        width: 88px;
+                    }
+                }
+
+                .mkdf-ls-item-inner {
+                    width: 100%;
+
+                    > div:not(.mkdf-ls-item-title) {
+                        display: inline-block;
+
+                        &:not(.mkdf-ls-adr-pin) {
+                            padding-right: 13px;
+                        }
+                    }
+
+                    .mkdf-listing-title {
+                        margin: 7px 0;
+                    }
+
+                    .mkdf-ls-adr-pin a,
+                    .mkdf-ls-item-author,
+                    .mkdf-ls-adr-city a {
+                        color: $additional-text-color;
+                    }
+
+                    .mkdf-ls-adr-city a {
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+
+                    .mkdf-ls-adr-pin a {
+
+                        i:before {
+                            display: inline-block;
+                            vertical-align: top;
+                            line-height: inherit;
+                            padding-right: 5px;
+                        }
+
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+
+                    .mkdf-ls-item-author {
+                        font-size: 18px;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                    }
+
+                    .mkdf-ls-price-amount {
+                        &:before {
+                            content: "\e062";
+                            font-family: "dripicons-v2" !important;
+                            vertical-align: middle;
+                            display: inline-block;
+                            position: relative;
+                            bottom: 2px;
+                            padding-right: 5px;
+                        }
+                    }
+
+                    .mkdf-ls-price-rate-amount {
+                        &:before {
+                            content: "\e0ed";
+                            font-family: 'ElegantIcons';
+                            vertical-align: middle;
+                            display: inline-block;
+                            position: relative;
+                            bottom: 2px;
+                            padding-right: 5px;
+                        }
+                    }
+                }
+
+                .mkdf-ls-item-tax-date-holder {
+                    width: 14%;
+                    text-align: center;
+
+                    .mkdf-tax-wrapper {
+                        padding-top: 8px;
+
+                        a {
+                            font-weight: 600;
+                            font-size: 12px;
+                            color: #fff;
+                            border-radius: 2em;
+                            padding: 5px 25px;
+                            background-color: $first-main-color;
+                            display: inline-block;
+                            height: 20px;
+                            line-height: 20px;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .mkdf-ls-expire-date-holder {
+                        padding-top: 9px;
+                        .mkdf-ls-expire-date-inner {
+                            font-size: 14px;
+                            color: $additional-text-color;
+                        }
+                    }
+
+                }
+            }
+
+            &.mkdf-ls-item-type-standard {
+                @extend %single-item-style;
+
+                .mkdf-ls-item-image {
+                    background-size: cover;
+                    height: 200px;
+                }
+
+            }
+        }
+
+        /***** Listing Advanced Search Columns Width - begin *****/
+
+        $columns_number: ('two', 'three', 'four', 'five');
+
+        @for $i from 0 to length($columns_number) {
+            &.mkdf-adv-search-#{nth($columns_number,$i+1)}-columns {
+
+                article.mkdf-ls-item-type-standard {
+                    width: 100% / ($i+2);
+                }
+
+                @if ($i > 1) { // set different break point for four and five columns
+                    @media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+                        article {
+
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                } @else {
+                    @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                        article {
+
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /***** Listing Advanced Search Columns Width - end *****/
+
+        .mkdf-ls-adv-load-more-holder {
+            text-align: center;
+
+            .mkdf-btn.mkdf-btn-small {
+                margin: 39px 0 0;
+                padding: 5px 33px;
+            }
+        }
+
+        &.mkdf-adv-search-four-columns {
+            .mkdf-ls-item {
+                &.mkdf-ls-item-type-standard .mkdf-ls-item-inner {
+                    padding: 21px 26px;
+
+                    .mkdf-ls-item-location {
+                        margin-bottom: 15px;
+
+                        .mkdf-ls-adr-city a,
+                        .mkdf-ls-adr-pin a {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .mkdf-ls-item-excerpt {
+                        margin: 20px 0 15px 0;
+                        font-size: 14px;
+                        line-height: 1.5em;
+                    }
+                }
+
+                .mkdf-ls-item-type {
+                    margin: 28px 0 0 !important;
+                }
+            }
+        }
+    }
+
+    &.mkdf-ls-adv-with-sidebar {
+
+        .mkdf-ls-adv-search-content-holder,
+        .mkdf-ls-adv-search-sidebar-holder {
+            float: left;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .mkdf-ls-adv-search-content-holder {
+            width: 75%;
+
+            .mkdf-ls-adv-title {
+                margin: 0 0 20px;
+            }
+
+            .mkdf-ls-adv-search-items-holder {
+
+                .mkdf-ls-item {
+
+                    &.mkdf-ls-item-type-list {
+                        .mkdf-ls-item-image {
+                            width: 17%;
+                        }
+
+                        .mkdf-ls-item-tax-date-holder {
+                            width: 22%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mkdf-ls-adv-search-sidebar-holder {
+            width: 25%;
+        }
+    }
+
+    .mkdf-map-marker-holder .mkdf-info-window {
+        padding: 10px 12px 9px;
+
+        .mkdf-info-window-company {
+            margin: 0;
+        }
+
+        .mkdf-info-window-title {
+            font-family: $default-text-font;
+            font-weight: 500;
+            font-size: 13px;
+            margin: 6px 0 10px;
+        }
+    }
+
+    &.mkdf-has-border {
+        article {
+            .mkdf-ls-item-holder {
+                border: 1px solid $default-border-color;
+            }
+        }
+    }
+}

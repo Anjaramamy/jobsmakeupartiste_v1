@@ -1,0 +1,180 @@
+.mkdf-ls-main-search-holder {
+	@include mkdfTableLayout();
+	background-color: #fff;
+
+	select {
+		display: none;
+	}
+
+	div.mkdf-ls-main-search-holder-part {
+		@include mkdfTableCellLayout();
+		box-sizing: border-box;
+		border: 1px solid #f8edf0;
+		border-right: none;
+
+
+		&.keyword {
+			border-top-left-radius: 2px;
+			border-bottom-left-radius: 2px;
+		}
+
+		&.price {
+			border-right: 0;
+			min-width: 300px;
+		}
+		&.submit {
+			width: 65%;
+			text-align: right;
+			border: 1px solid rgb(255, 51, 102);
+			border-right: none;
+
+			button {
+				height: 66px;
+				border-radius: 0;
+				padding: 12px 22px;
+				width: 100%;
+			}
+
+			&.price {
+				border-right: 0;
+			}
+		}
+		input {
+			margin: 0;
+			padding: 0 0 0 60px;
+			border-radius: 0;
+			border: 0;
+			font-size: 18px;
+			line-height: 66px;
+
+			@include mkdfPlaceholder {
+				color: $additional-text-color;
+			}
+		}
+
+		.mkdf-ls-slider-wrapper {
+			height: 65px;
+			background: $default-background-color;
+
+			> span {
+				display: inline-block;
+				margin: 0 0 0 50px;
+				vertical-align: top;
+				min-width: 60px;
+				line-height: 65px;
+			}
+
+			.mkdf-price-slider-text {
+				color: $default-heading-color;
+			}
+
+			.mkdf-price-slider-holder {
+				display: inline-block;
+				position: relative;
+				width: 140px;
+				height: 100%;
+				left: 10px;
+			}
+
+			.mkdf-price-slider-response {
+				position: absolute;
+				background-color: $first-main-color;
+				border-radius: 2px;
+				bottom: 55px;
+				margin-left: -36px;
+				text-align: center;
+				color: $default-background-color;
+				width: 99px;
+				height: 37px;
+				line-height: 37px;
+				z-index: 5;
+				top: -30px;
+				font-size: 14px;
+
+				&:after {
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					border-top: 12px solid $first-main-color;
+					left: 40px;
+					bottom: -7px;
+					position: absolute;
+					z-index: 10;
+					content: '';
+				}
+			}
+
+			.rangeslider--horizontal {
+				width: 170px;
+				position: absolute;
+				height: 5px;
+				top: 50%;
+				transform: translateY(-50%);
+				box-shadow: none;
+
+				.rangeslider__fill {
+					background-color: $first-main-color;
+					box-shadow: none;
+				}
+			}
+
+			.rangeslider__handle {
+				background-color: $first-main-color;
+				border-color: $first-main-color;
+				width: 29px;
+				height: 29px;
+				box-shadow: none;
+				top: -14px;
+				cursor: move; /* fallback if grab cursor is unsupported */
+				cursor: grab;
+				cursor: -moz-grab;
+				cursor: -webkit-grab;
+
+				&:before {
+					color: $default-background-color;
+					content: ",";
+					font-family: "ElegantIcons";
+					left: 6px;
+					position: relative;
+					top: 2px;
+				}
+				&:after {
+					background-image: none;
+				}
+			}
+
+		}
+
+		.mkdf-ls-search-icon {
+			position: absolute;
+			left: 20px;
+			top: 50%;
+			@include mkdfTransform(translateY(-50%));
+			font-size: 20px;
+			color: $additional-text-color;
+			z-index: 2;
+			margin-top: 2px;
+		}
+
+		.select2-container {
+			width: 100% !important;
+
+			.select2-selection--single {
+				height: 66px;
+				line-height: 67px;
+				padding: 0 0 0 39px;
+				font-size: 18px;
+				color: $additional-text-color;
+				border-radius: 0;
+				border: 0;
+
+				.select2-arrow {
+					right: 22px;
+				}
+				.select2-selection__clear {
+					display: none;
+				}
+
+			}
+		}
+	}
+}

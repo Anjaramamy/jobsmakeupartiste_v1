@@ -1,0 +1,45 @@
+.mkdf-ls-slider-holder{
+	.mkdf-ls-list-items-holder {
+
+		article {
+            width: auto !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            float: none !important;
+        }
+
+        .mkdf-ls-list-inner {
+            margin: 0 !important;
+        }
+
+		.owl-nav {
+			.owl-prev{
+				left: 0;
+			}
+			.owl-next{
+				right: 0;
+			}
+
+			.mkdf-prev-icon,
+			.mkdf-next-icon {
+				background-color: #fff;
+				font-size: 24px;
+			}
+
+			.mkdf-prev-icon {
+				padding: 8px 2px 8px 0;
+			}
+
+			.mkdf-next-icon {
+				padding: 8px 0 8px 2px;
+			}
+		}
+
+		.owl-dots .owl-dot span {
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+	}
+
+}

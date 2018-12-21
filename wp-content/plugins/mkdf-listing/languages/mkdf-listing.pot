@@ -1,0 +1,1762 @@
+# Copyright (C) 2017 Mikado Listing
+# This file is distributed under the same license as the Mikado Listing package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Mikado Listing 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mkdf-listing\n"
+"POT-Creation-Date: 2017-12-06 13:17:33+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: job/admin/meta-box/map.php:20
+msgid "Price"
+msgstr ""
+
+#: job/admin/meta-box/map.php:22
+msgid "e.q 7000"
+msgstr ""
+
+#: job/admin/meta-box/map.php:31 resume/admin/meta-box/map.php:20
+msgid "Rate (per Hour)"
+msgstr ""
+
+#: job/admin/meta-box/map.php:33 resume/admin/meta-box/map.php:22
+msgid "e.q 45"
+msgstr ""
+
+#: job/admin/meta-box/map.php:42
+msgid "Type Background Color"
+msgstr ""
+
+#: job/admin/meta-box/map.php:44
+msgid "e.q #4286f4"
+msgstr ""
+
+#: job/admin/meta-box/map.php:45
+msgid "Enter the Background Color for Listing Type. You can use any CSS, HEX or rgb(a) color. For Example: \"red\", \"#4286f4\", \"rgb(66, 134, 244)\" "
+msgstr ""
+
+#: job/admin/meta-box/map.php:55
+msgid "Featured Image"
+msgstr ""
+
+#: job/admin/meta-box/map.php:57 job/admin/meta-box/map.php:70
+#: resume/admin/meta-box/map.php:35
+msgid "Image"
+msgstr ""
+
+#: job/admin/meta-box/map.php:68
+msgid "Lists Company Logo"
+msgstr ""
+
+#: job/admin/meta-box/map.php:79 resume/admin/meta-box/map.php:46
+msgid "E-mail"
+msgstr ""
+
+#: job/admin/meta-box/map.php:81 resume/admin/meta-box/map.php:48
+msgid "Enter e-mail"
+msgstr ""
+
+#: job/admin/options-map/map.php:9 job/helpers/helper-functions.php:273
+#: job/lib/listing-global-settings.php:239
+msgid "Listing"
+msgstr ""
+
+#: job/admin/options-map/map.php:14 resume/admin/options-map/map.php:14
+msgid "Archive"
+msgstr ""
+
+#: job/admin/options-map/map.php:25
+msgid "Number of listings per page"
+msgstr ""
+
+#: job/admin/options-map/map.php:37 resume/admin/options-map/map.php:37
+msgid "Load More on Archive Pages"
+msgstr ""
+
+#: job/admin/options-map/map.php:54 resume/admin/options-map/map.php:54
+msgid "Maps Style"
+msgstr ""
+
+#: job/admin/options-map/map.php:55 resume/admin/options-map/map.php:55
+msgid "Insert map style json"
+msgstr ""
+
+#: job/admin/options-map/map.php:65 resume/admin/options-map/map.php:65
+msgid "Scrollable Maps"
+msgstr ""
+
+#: job/admin/options-map/map.php:76 resume/admin/options-map/map.php:76
+msgid "Draggable Maps"
+msgstr ""
+
+#: job/admin/options-map/map.php:87 resume/admin/options-map/map.php:87
+msgid "Maps Street View Controls"
+msgstr ""
+
+#: job/admin/options-map/map.php:98 resume/admin/options-map/map.php:98
+msgid "Maps Zoom Control"
+msgstr ""
+
+#: job/admin/options-map/map.php:109 resume/admin/options-map/map.php:109
+msgid "Maps Type Control"
+msgstr ""
+
+#: job/admin/options-map/map.php:126 resume/admin/options-map/map.php:126
+msgid "Terms And Conditions Page URL"
+msgstr ""
+
+#: job/admin/options-map/map.php:127 resume/admin/options-map/map.php:127
+msgid "Enter the page URL with terms and conditions."
+msgstr ""
+
+#: job/helpers/helper-functions.php:220 job/helpers/helper-functions.php:248
+#: job/modules/shortcodes/listing-list/listing-list.php:128
+#: job/modules/shortcodes/listing-list/listing-list.php:197
+#: job/modules/shortcodes/listing-slider/listing-slider.php:127
+#: job/modules/shortcodes/listing-slider/listing-slider.php:167
+#: job/modules/widgets/listing_slider.php:73
+#: job/modules/widgets/listing_widget.php:34
+#: resume/helpers/helper-functions.php:220
+#: resume/helpers/helper-functions.php:248
+#: resume/modules/shortcodes/resume-list/resume-list.php:118
+#: resume/modules/shortcodes/resume-list/resume-list.php:179
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:149
+#: resume/modules/widgets/resume_widget.php:34
+msgid "Default"
+msgstr ""
+
+#: job/helpers/helper-functions.php:224 job/helpers/helper-functions.php:228
+#: resume/helpers/helper-functions.php:224
+#: resume/helpers/helper-functions.php:228
+msgid "Yes"
+msgstr ""
+
+#: job/helpers/helper-functions.php:225 job/helpers/helper-functions.php:227
+#: resume/helpers/helper-functions.php:225
+#: resume/helpers/helper-functions.php:227
+msgid "No"
+msgstr ""
+
+#: job/helpers/helper-functions.php:274
+msgid "Show Social Share for Listing Items"
+msgstr ""
+
+#: job/helpers/listing-ajax-helper-functions.php:213
+#: resume/helpers/resume-ajax-helper-functions.php:213
+msgid "Please insert valid name"
+msgstr ""
+
+#: job/helpers/listing-ajax-helper-functions.php:220
+#: resume/helpers/resume-ajax-helper-functions.php:220
+msgid "Please insert valid email"
+msgstr ""
+
+#: job/helpers/listing-ajax-helper-functions.php:227
+#: resume/helpers/resume-ajax-helper-functions.php:227
+msgid "Please insert valid phone"
+msgstr ""
+
+#: job/helpers/listing-ajax-helper-functions.php:253
+#: resume/helpers/resume-ajax-helper-functions.php:253
+msgid "From"
+msgstr ""
+
+#: job/helpers/listing-ajax-helper-functions.php:254
+#: resume/helpers/resume-ajax-helper-functions.php:254
+msgid "Message"
+msgstr ""
+
+#: job/helpers/listing-ajax-helper-functions.php:255
+#: resume/helpers/resume-ajax-helper-functions.php:255
+msgid "Message sent via enquiry form on"
+msgstr ""
+
+#: job/helpers/listing-ajax-helper-functions.php:259
+#: resume/helpers/resume-ajax-helper-functions.php:259
+msgid "New Enquiry form blog name"
+msgstr ""
+
+#: job/helpers/listing-ajax-helper-functions.php:264
+#: resume/helpers/resume-ajax-helper-functions.php:269
+msgid "Enquiry sent successfully"
+msgstr ""
+
+#: job/helpers/listing-ajax-helper-functions.php:272
+#: resume/helpers/resume-ajax-helper-functions.php:277
+msgid "Please review your enquiry and send again"
+msgstr ""
+
+#: job/helpers/listing-helper-functions.php:758
+#: resume/helpers/resume-helper-functions.php:755
+msgid "Category Custom Icon"
+msgstr ""
+
+#: job/helpers/listing-helper-functions.php:908
+#: resume/helpers/resume-helper-functions.php:905
+msgid "Facebook"
+msgstr ""
+
+#: job/helpers/listing-helper-functions.php:909
+#: resume/helpers/resume-helper-functions.php:906
+msgid "Twitter"
+msgstr ""
+
+#: job/helpers/listing-helper-functions.php:910
+#: resume/helpers/resume-helper-functions.php:907
+msgid "Instagram"
+msgstr ""
+
+#: job/helpers/listing-helper-functions.php:911
+#: resume/helpers/resume-helper-functions.php:908
+msgid "Pinterest"
+msgstr ""
+
+#: job/helpers/listing-helper-functions.php:912
+#: resume/helpers/resume-helper-functions.php:909
+msgid "Sound Cloud"
+msgstr ""
+
+#: job/helpers/listing-helper-functions.php:913
+#: resume/helpers/resume-helper-functions.php:910
+msgid "Vimeo"
+msgstr ""
+
+#: job/helpers/listing-helper-functions.php:914
+#: resume/helpers/resume-helper-functions.php:911
+msgid "Youtube"
+msgstr ""
+
+#: job/helpers/listing-helper-functions.php:915
+#: resume/helpers/resume-helper-functions.php:912
+msgid "Skype"
+msgstr ""
+
+#: job/helpers/listing-helper-functions.php:916
+#: resume/helpers/resume-helper-functions.php:913
+msgid "LinkedIn"
+msgstr ""
+
+#: job/helpers/listing-helper-functions.php:923
+#: resume/helpers/resume-helper-functions.php:920
+msgid "Enter "
+msgstr ""
+
+#: job/helpers/listing-helper-functions.php:923
+#: resume/helpers/resume-helper-functions.php:920
+msgid " Profile Url"
+msgstr ""
+
+#: job/helpers/listing-helper-functions.php:937
+#: resume/helpers/resume-helper-functions.php:934
+msgid " ago"
+msgstr ""
+
+#: job/helpers/listing-review-functions.php:10
+#: resume/helpers/resume-review-functions.php:10
+msgid "Write a Review"
+msgstr ""
+
+#: job/helpers/listing-review-functions.php:13
+#: resume/helpers/resume-review-functions.php:13
+msgid "Rate Here"
+msgstr ""
+
+#: job/helpers/listing-review-functions.php:23
+#: resume/helpers/resume-review-functions.php:23
+msgid "Title of your Review"
+msgstr ""
+
+#: job/helpers/listing-review-functions.php:69
+#: resume/helpers/resume-review-functions.php:69
+msgid "Comment - Reviews"
+msgstr ""
+
+#: job/helpers/listing-review-functions.php:86
+#: resume/helpers/resume-review-functions.php:86
+msgid "Comment Title"
+msgstr ""
+
+#: job/helpers/listing-review-functions.php:90
+#: resume/helpers/resume-review-functions.php:90
+msgid "Rating"
+msgstr ""
+
+#: job/helpers/listing-review-functions.php:139
+#: resume/helpers/resume-review-functions.php:139
+msgid "Error: You did not add a rating. Hit the Back button on your Web browser and resubmit your comment with a rating."
+msgstr ""
+
+#: job/lib/custom-field-creator.php:9 resume/lib/custom-field-creator.php:9
+msgid "Custom Field Creator"
+msgstr ""
+
+#: job/lib/custom-field-creator.php:15 resume/lib/custom-field-creator.php:15
+msgid "Text"
+msgstr ""
+
+#: job/lib/custom-field-creator.php:18 resume/lib/custom-field-creator.php:18
+msgid "Textarea"
+msgstr ""
+
+#: job/lib/custom-field-creator.php:21 resume/lib/custom-field-creator.php:21
+msgid "Select"
+msgstr ""
+
+#: job/lib/custom-field-creator.php:24 resume/lib/custom-field-creator.php:24
+msgid "Checkbox"
+msgstr ""
+
+#: job/lib/custom-field-creator.php:50 job/lib/custom-field-creator.php:56
+#: resume/lib/custom-field-creator.php:50
+#: resume/lib/custom-field-creator.php:56
+msgid "Text field"
+msgstr ""
+
+#: job/lib/custom-field-creator.php:60 job/lib/custom-field-creator.php:124
+#: job/lib/custom-field-creator.php:222 job/lib/custom-field-creator.php:277
+#: job/modules/shortcodes/listing-list/listing-list.php:176
+#: job/modules/widgets/listing_widget.php:46
+#: resume/lib/custom-field-creator.php:60
+#: resume/lib/custom-field-creator.php:124
+#: resume/lib/custom-field-creator.php:222
+#: resume/lib/custom-field-creator.php:277
+#: resume/modules/shortcodes/resume-item/resume-item.php:138
+#: resume/modules/shortcodes/resume-item/resume-item.php:166
+#: resume/modules/shortcodes/resume-list/resume-list.php:158
+#: resume/modules/widgets/resume_widget.php:44
+msgid "Title"
+msgstr ""
+
+#: job/lib/custom-field-creator.php:70 job/lib/custom-field-creator.php:232
+#: resume/lib/custom-field-creator.php:70
+#: resume/lib/custom-field-creator.php:232
+msgid "Default value"
+msgstr ""
+
+#: job/lib/custom-field-creator.php:112 resume/lib/custom-field-creator.php:112
+msgid "Select field"
+msgstr ""
+
+#: job/lib/custom-field-creator.php:131 resume/lib/custom-field-creator.php:131
+msgid "Options"
+msgstr ""
+
+#: job/lib/custom-field-creator.php:179 resume/lib/custom-field-creator.php:179
+msgid "Label(*)"
+msgstr ""
+
+#: job/lib/custom-field-creator.php:211 resume/lib/custom-field-creator.php:211
+msgid "Textarea field"
+msgstr ""
+
+#: job/lib/custom-field-creator.php:268 resume/lib/custom-field-creator.php:268
+msgid "Checkbox field"
+msgstr ""
+
+#: job/lib/front-end-field-creator.php:35
+#: job/lib/listing-global-settings.php:57
+#: job/modules/shortcodes/listing-list/listing-list.php:138
+#: job/modules/shortcodes/listing-slider/listing-slider.php:136
+#: job/modules/shortcodes/listing-types/listing-types.php:140
+msgid "Listing Type"
+msgstr ""
+
+#: job/lib/front-end-field-creator.php:98
+#: resume/lib/front-end-field-creator.php:98
+msgid "Categories"
+msgstr ""
+
+#: job/lib/front-end-field-creator.php:115
+#: resume/lib/front-end-field-creator.php:115
+msgid "Custom Fields"
+msgstr ""
+
+#: job/lib/front-end-field-creator.php:152
+#: resume/lib/front-end-field-creator.php:152
+msgid "Filter Results"
+msgstr ""
+
+#: job/lib/front-end-field-creator.php:324
+#: job/lib/front-end-field-creator.php:422
+#: job/lib/front-end-field-creator.php:505
+#: resume/lib/front-end-field-creator.php:324
+#: resume/lib/front-end-field-creator.php:422
+#: resume/lib/front-end-field-creator.php:505
+msgid "(optional)"
+msgstr ""
+
+#: job/lib/listing-core-classes.php:625 job/modules/maps/map-functions.php:236
+#: resume/lib/resume-core-classes.php:609
+#: resume/modules/maps/map-functions.php:235
+msgid "In "
+msgstr ""
+
+#: job/lib/listing-global-settings.php:54
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:122
+msgid "Listing Title"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:60
+#: job/lib/listing-global-settings.php:402
+#: job/lib/listing-global-settings.php:419
+msgid "Listing Region"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:63
+#: job/lib/listing-global-settings.php:352
+#: job/lib/listing-global-settings.php:369
+msgid "Listing Tags"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:100
+msgid "Submit Listing"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:144
+#: job/lib/listing-global-settings.php:167
+#: job/lib/listing-global-settings.php:189
+#: resume/lib/resume-global-settings.php:166
+#: resume/lib/resume-global-settings.php:189
+#: resume/lib/resume-global-settings.php:211
+msgid "Hi "
+msgstr ""
+
+#: job/lib/listing-global-settings.php:144
+#: job/lib/listing-global-settings.php:167
+msgid "Your listing "
+msgstr ""
+
+#: job/lib/listing-global-settings.php:144
+#: job/lib/listing-global-settings.php:189
+#: resume/lib/resume-global-settings.php:166
+#: resume/lib/resume-global-settings.php:211
+msgid "has just been approved at "
+msgstr ""
+
+#: job/lib/listing-global-settings.php:146
+msgid "Your listing is online"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:167
+#: resume/lib/resume-global-settings.php:189
+msgid "has now expired: "
+msgstr ""
+
+#: job/lib/listing-global-settings.php:170
+#: job/lib/listing-global-settings.php:192
+msgid "Your listing has expired"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:189
+#: resume/lib/resume-global-settings.php:166
+#: resume/lib/resume-global-settings.php:189
+#: resume/lib/resume-global-settings.php:211
+msgid "Your resume "
+msgstr ""
+
+#: job/lib/listing-global-settings.php:240
+#: job/lib/listing-global-settings.php:245
+msgid "Listings"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:246
+#: job/lib/listing-global-settings.php:297
+#: job/lib/listing-global-settings.php:326
+#: resume/lib/resume-global-settings.php:268
+#: resume/lib/resume-global-settings.php:319
+#: resume/lib/resume-global-settings.php:348
+msgid "All %s"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:247
+#: resume/lib/resume-global-settings.php:269
+msgid "Add New"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:248
+#: resume/lib/resume-global-settings.php:270
+msgid "Add %s"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:249
+#: resume/lib/resume-global-settings.php:271
+msgid "Edit"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:250
+#: job/lib/listing-global-settings.php:300
+#: job/lib/listing-global-settings.php:329
+#: resume/lib/resume-global-settings.php:272
+#: resume/lib/resume-global-settings.php:322
+#: resume/lib/resume-global-settings.php:351
+msgid "Edit %s"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:251
+#: resume/lib/resume-global-settings.php:273
+msgid "New %s"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:252
+#: job/lib/listing-global-settings.php:253
+#: resume/lib/resume-global-settings.php:274
+#: resume/lib/resume-global-settings.php:275
+msgid "View %s"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:254
+#: job/lib/listing-global-settings.php:296
+#: job/lib/listing-global-settings.php:325
+#: resume/lib/resume-global-settings.php:276
+#: resume/lib/resume-global-settings.php:318
+#: resume/lib/resume-global-settings.php:347
+msgid "Search %s"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:255
+#: resume/lib/resume-global-settings.php:277
+msgid "No %s found"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:256
+#: resume/lib/resume-global-settings.php:278
+msgid "No %s found in trash"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:257
+#: job/lib/listing-global-settings.php:298
+#: job/lib/listing-global-settings.php:327
+#: resume/lib/resume-global-settings.php:279
+#: resume/lib/resume-global-settings.php:320
+#: resume/lib/resume-global-settings.php:349
+msgid "Parent %s"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:258
+#: resume/lib/resume-global-settings.php:280
+msgid "Featured image"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:259
+#: resume/lib/resume-global-settings.php:281
+msgid "Set featured image"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:260
+#: resume/lib/resume-global-settings.php:282
+msgid "Remove featured image"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:261
+#: resume/lib/resume-global-settings.php:283
+msgid "Use as featured image"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:288
+msgid "Listing type"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:289
+msgid "Listing types"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:299
+#: job/lib/listing-global-settings.php:328
+#: resume/lib/resume-global-settings.php:321
+#: resume/lib/resume-global-settings.php:350
+msgid "Parent %s:"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:301
+#: job/lib/listing-global-settings.php:330
+#: resume/lib/resume-global-settings.php:323
+#: resume/lib/resume-global-settings.php:352
+msgid "Update %s"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:302
+#: job/lib/listing-global-settings.php:331
+#: resume/lib/resume-global-settings.php:324
+#: resume/lib/resume-global-settings.php:353
+msgid "Add New %s"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:303
+#: job/lib/listing-global-settings.php:332
+#: resume/lib/resume-global-settings.php:325
+#: resume/lib/resume-global-settings.php:354
+msgid "New %s Name"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:317
+msgid "Listing category"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:318
+msgid "Listing categories"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:353
+#: job/lib/listing-global-settings.php:370
+msgid "Listing Tag"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:354
+msgid "Search Listing Tags"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:355
+#: resume/lib/resume-global-settings.php:377
+msgid "Popular Tags"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:356
+msgid "All Listing Tags"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:357
+msgid "Parent Listing Tag"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:358
+msgid "Parent Listing Tag:"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:359
+msgid "Edit Listing Tag"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:360
+#: resume/lib/resume-global-settings.php:382
+msgid "View Tag"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:361
+msgid "Update Listing Tag"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:362
+msgid "Add New Listing Tag"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:363
+msgid "New Listing Tag Name"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:364
+#: resume/lib/resume-global-settings.php:386
+msgid "Separate tags with commas"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:365
+#: resume/lib/resume-global-settings.php:387
+msgid "Add or remove tags"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:366
+#: resume/lib/resume-global-settings.php:388
+msgid "Choose from the most used tags"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:367
+#: resume/lib/resume-global-settings.php:389
+msgid "No tags found."
+msgstr ""
+
+#: job/lib/listing-global-settings.php:368
+#: resume/lib/resume-global-settings.php:390
+msgid "No tags"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:373
+msgctxt "permalink"
+msgid "listing-tag"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:401
+#: job/lib/listing-global-settings.php:418
+#: job/lib/listing-global-settings.php:420
+msgid "Listing Regions"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:403
+msgid "Search Listing Regions"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:404
+msgid "Popular Listing Regions"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:405
+msgid "All Listing Regions"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:406
+msgid "Parent Listing Region"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:407
+msgid "Parent Listing Region:"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:408
+msgid "Edit Listing Region"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:409
+msgid "View Listing Region"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:410
+msgid "Update Listing Region"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:411
+msgid "Add New Listing Region"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:412
+msgid "New Listing Region Name"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:413
+#: resume/lib/resume-global-settings.php:435
+msgid "Separate regions with commas"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:414
+#: resume/lib/resume-global-settings.php:436
+msgid "Add or remove regions"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:415
+#: resume/lib/resume-global-settings.php:437
+msgid "Choose from the most used regions"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:416
+#: resume/lib/resume-global-settings.php:438
+msgid "No regions found."
+msgstr ""
+
+#: job/lib/listing-global-settings.php:417
+#: resume/lib/resume-global-settings.php:439
+msgid "No regions"
+msgstr ""
+
+#: job/lib/listing-global-settings.php:423
+msgctxt "permalink"
+msgid "listing-region"
+msgstr ""
+
+#: job/lib/listing-repeater-field-functions.php:72
+#: resume/lib/resume-repeater-field-functions.php:72
+msgid "Add new"
+msgstr ""
+
+#: job/lib/listing-repeater-field-functions.php:87
+#: resume/lib/resume-repeater-field-functions.php:87
+msgid "Remove"
+msgstr ""
+
+#: job/modules/archive/templates/categories.php:12
+#: job/modules/shortcodes/listing-advanced-search/templates/categories.php:11
+#: job/modules/shortcodes/listing-search/listing-search.php:198
+#: job/modules/shortcodes/listing-search/templates/holder.php:104
+#: resume/modules/archive/templates/categories.php:12
+#: resume/modules/shortcodes/resume-advanced-search/templates/categories.php:11
+msgid "All Categories"
+msgstr ""
+
+#: job/modules/archive/templates/filter.php:10
+#: job/modules/shortcodes/listing-search/listing-search.php:195
+#: job/modules/shortcodes/listing-search-simple/listing-search-simple.php:124
+#: resume/modules/archive/templates/filter.php:10
+msgid "SEARCH"
+msgstr ""
+
+#: job/modules/archive/templates/holder.php:15
+msgid "Find Your Dream Job"
+msgstr ""
+
+#: job/modules/archive/templates/load-more-template.php:8
+#: job/modules/shortcodes/listing-list/templates/load-more-template.php:7
+#: resume/modules/archive/templates/load-more-template.php:8
+#: resume/modules/shortcodes/resume-list/templates/load-more-template.php:7
+msgid "Load More"
+msgstr ""
+
+#: job/modules/archive/templates/locations.php:11
+#: job/modules/shortcodes/listing-advanced-search/templates/locations.php:11
+#: job/modules/shortcodes/listing-search/templates/holder.php:72
+#: job/modules/shortcodes/listing-search/templates/holder.php:76
+#: resume/modules/archive/templates/locations.php:11
+#: resume/modules/shortcodes/resume-advanced-search/templates/locations.php:11
+msgid "Location"
+msgstr ""
+
+#: job/modules/archive/templates/post-not-found.php:2
+#: job/modules/shortcodes/listing-advanced-search/templates/post-not-found.php:2
+#: job/modules/shortcodes/listing-list/templates/post-not-found.php:2
+#: job/modules/shortcodes/listing-types/templates/post-not-found.php:2
+#: resume/modules/archive/templates/post-not-found.php:2
+#: resume/modules/shortcodes/resume-advanced-search/templates/post-not-found.php:2
+#: resume/modules/shortcodes/resume-list/templates/post-not-found.php:2
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: job/modules/archive/templates/single.php:6
+#: job/modules/shortcodes/listing-advanced-search/templates/item-type-standard.php:10
+#: job/modules/shortcodes/listing-list/templates/item-tiles.php:6
+#: job/modules/shortcodes/listing-list/templates/item.php:6
+msgid "Company Logo"
+msgstr ""
+
+#: job/modules/dashboard/dashboard-functions.php:19
+msgid "My Bookmarks"
+msgstr ""
+
+#: job/modules/dashboard/dashboard-functions.php:26
+msgid "Add Listing"
+msgstr ""
+
+#: job/modules/dashboard/dashboard-functions.php:33
+msgid "My Listings"
+msgstr ""
+
+#: job/modules/dashboard/templates/my-listings.php:5
+msgid "My listings"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:107
+msgid "Mikado Listing Advanced Search"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:109
+#: job/modules/shortcodes/listing-list/listing-list.php:119
+#: job/modules/shortcodes/listing-search/listing-search.php:129
+#: job/modules/shortcodes/listing-search-simple/listing-search-simple.php:99
+#: job/modules/shortcodes/listing-slider/listing-slider.php:118
+#: job/modules/shortcodes/listing-types/listing-types.php:112
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:109
+#: resume/modules/shortcodes/resume-item/resume-item.php:79
+#: resume/modules/shortcodes/resume-list/resume-list.php:109
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:118
+msgid "by MIKADO"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:116
+#: job/modules/shortcodes/listing-list/listing-list.php:160
+#: job/modules/shortcodes/listing-slider/listing-slider.php:158
+#: job/modules/widgets/listing_slider.php:100
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:116
+#: resume/modules/shortcodes/resume-list/resume-list.php:150
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:140
+#: resume/modules/widgets/resume_slider.php:83
+msgid "Number of items"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:128
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:128
+msgid "Enable load more"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:135
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:135
+msgid "Content in Grid"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:142
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:142
+msgid "Enable Map"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:149
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:149
+msgid "Map in Grid"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:160
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:160
+msgid "Enable Sidebar"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:161
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:161
+msgid "Enable a Custom Sidebar which can be set from Mikado Sidebar Options"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:168
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:168
+msgid "Enable Keyword Search"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:175
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:175
+msgid "Enable Location Search"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:182
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:182
+msgid "Enable Category Search"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:189
+msgid "Listing Item Type"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:191
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:191
+msgid "Standard"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:192
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:192
+msgid "List"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:199
+msgid "Enable Item Appear Animation"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:206
+#: job/modules/shortcodes/listing-list/listing-list.php:167
+#: job/modules/widgets/listing_slider.php:81
+msgid "Image Size"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:207
+#: job/modules/shortcodes/listing-list/listing-list.php:168
+#: job/modules/widgets/listing_slider.php:82
+msgid "Enter image size. Example: thumbnail, medium, large, full or other sizes defined by current theme. Alternatively enter image size in pixels: 200x100 (Width x Height). Leave empty to use \"full\" size"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:216
+#: job/modules/shortcodes/listing-list/listing-list.php:210
+#: job/modules/shortcodes/listing-slider/listing-slider.php:195
+#: job/modules/shortcodes/listing-types/listing-types.php:200
+msgid "Title Tag"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/listing-advanced-search.php:223
+#: job/modules/shortcodes/listing-list/listing-list.php:231
+#: job/modules/shortcodes/listing-slider/listing-slider.php:187
+msgid "Enable Border"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/templates/keyword.php:4
+#: job/modules/shortcodes/listing-search/listing-search.php:196
+#: job/modules/shortcodes/listing-search-simple/listing-search-simple.php:125
+msgid "Keywords"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/templates/load-more-template.php:7
+msgid "Load More Listings"
+msgstr ""
+
+#: job/modules/shortcodes/listing-advanced-search/templates/submit.php:3
+#: resume/modules/shortcodes/resume-advanced-search/templates/submit.php:3
+msgid "Search"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:117
+msgid "Mikado Listing List"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:126
+#: job/modules/shortcodes/listing-slider/listing-slider.php:125
+#: job/modules/widgets/listing_slider.php:71
+#: job/modules/widgets/listing_widget.php:32
+#: resume/modules/widgets/resume_widget.php:32
+msgid "List Type"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:129
+#: job/modules/shortcodes/listing-slider/listing-slider.php:128
+#: job/modules/shortcodes/listing-types/listing-types.php:158
+#: job/modules/widgets/listing_slider.php:74
+#: job/modules/widgets/listing_widget.php:35
+#: resume/modules/shortcodes/resume-list/resume-list.php:119
+#: resume/modules/widgets/resume_widget.php:35
+msgid "Simple"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:130
+#: job/modules/shortcodes/listing-slider/listing-slider.php:129
+#: job/modules/widgets/listing_slider.php:75
+#: job/modules/widgets/listing_widget.php:36
+msgid "Tiles"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:131
+#: job/modules/widgets/listing_widget.php:37
+msgid "Grid"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:145
+#: job/modules/shortcodes/listing-slider/listing-slider.php:143
+#: job/modules/widgets/listing_slider.php:87
+msgid "Listing Category"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:152
+#: job/modules/shortcodes/listing-slider/listing-slider.php:150
+#: job/modules/widgets/listing_slider.php:93
+msgid "IDs of listing items"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:153
+#: job/modules/shortcodes/listing-slider/listing-slider.php:151
+#: job/modules/widgets/listing_slider.php:94
+msgid "Enter IDs of listing items separated with comma (for example 23,24,35)"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:173
+#: job/modules/widgets/listing_widget.php:43
+#: resume/modules/shortcodes/resume-list/resume-list.php:155
+#: resume/modules/widgets/resume_widget.php:41
+msgid "Order By"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:175
+#: job/modules/widgets/listing_widget.php:45
+#: resume/modules/shortcodes/resume-list/resume-list.php:157
+#: resume/modules/widgets/resume_widget.php:43
+msgid "Date"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:177
+#: job/modules/widgets/listing_widget.php:47
+#: resume/modules/shortcodes/resume-list/resume-list.php:159
+#: resume/modules/widgets/resume_widget.php:45
+msgid "Menu Order"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:178
+#: job/modules/widgets/listing_widget.php:48
+#: resume/modules/shortcodes/resume-list/resume-list.php:160
+#: resume/modules/widgets/resume_widget.php:46
+msgid "Featured"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:185
+#: job/modules/widgets/listing_widget.php:54
+#: resume/modules/shortcodes/resume-list/resume-list.php:167
+#: resume/modules/widgets/resume_widget.php:52
+msgid "Order"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:187
+#: job/modules/widgets/listing_widget.php:56
+#: resume/modules/shortcodes/resume-list/resume-list.php:169
+#: resume/modules/widgets/resume_widget.php:54
+msgid "ASC"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:188
+#: job/modules/widgets/listing_widget.php:57
+#: resume/modules/shortcodes/resume-list/resume-list.php:170
+#: resume/modules/widgets/resume_widget.php:55
+msgid "DESC"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:195
+#: job/modules/shortcodes/listing-slider/listing-slider.php:165
+#: resume/modules/shortcodes/resume-list/resume-list.php:177
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:147
+msgid "Number of columns"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:198
+#: job/modules/shortcodes/listing-slider/listing-slider.php:168
+#: resume/modules/shortcodes/resume-list/resume-list.php:180
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:150
+msgid "One Column"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:199
+#: job/modules/shortcodes/listing-slider/listing-slider.php:169
+#: resume/modules/shortcodes/resume-list/resume-list.php:181
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:151
+msgid "Two Columns"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:200
+#: job/modules/shortcodes/listing-slider/listing-slider.php:170
+#: resume/modules/shortcodes/resume-list/resume-list.php:182
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:152
+msgid "Three Columns"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:201
+#: job/modules/shortcodes/listing-slider/listing-slider.php:171
+#: resume/modules/shortcodes/resume-list/resume-list.php:183
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:153
+msgid "Four Columns"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:202
+#: job/modules/shortcodes/listing-slider/listing-slider.php:172
+#: resume/modules/shortcodes/resume-list/resume-list.php:184
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:154
+msgid "Five Columns"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:203
+#: job/modules/shortcodes/listing-slider/listing-slider.php:173
+#: resume/modules/shortcodes/resume-list/resume-list.php:185
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:155
+msgid "Six Columns"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:217
+#: job/modules/shortcodes/listing-slider/listing-slider.php:180
+msgid "Space Between Listings"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/listing-list.php:224
+#: resume/modules/shortcodes/resume-list/resume-list.php:199
+msgid "Enable Load More"
+msgstr ""
+
+#: job/modules/shortcodes/listing-list/templates/load-more-template.php:13
+#: resume/modules/shortcodes/resume-list/templates/load-more-template.php:13
+msgid "Loading..."
+msgstr ""
+
+#: job/modules/shortcodes/listing-search/listing-search.php:127
+msgid "Mikado Listing Search"
+msgstr ""
+
+#: job/modules/shortcodes/listing-search/listing-search.php:136
+msgid "Enable search by Keyword"
+msgstr ""
+
+#: job/modules/shortcodes/listing-search/listing-search.php:142
+#: job/modules/shortcodes/listing-search-simple/listing-search-simple.php:106
+msgid "Enter keyword text"
+msgstr ""
+
+#: job/modules/shortcodes/listing-search/listing-search.php:149
+msgid "Enable search by type"
+msgstr ""
+
+#: job/modules/shortcodes/listing-search/listing-search.php:155
+msgid "Enter type text"
+msgstr ""
+
+#: job/modules/shortcodes/listing-search/listing-search.php:162
+msgid "Enable search by category"
+msgstr ""
+
+#: job/modules/shortcodes/listing-search/listing-search.php:168
+msgid "Enter category text"
+msgstr ""
+
+#: job/modules/shortcodes/listing-search/listing-search.php:175
+msgid "Enable search by region"
+msgstr ""
+
+#: job/modules/shortcodes/listing-search/listing-search.php:181
+#: job/modules/shortcodes/listing-search-simple/listing-search-simple.php:114
+msgid "Enter button text"
+msgstr ""
+
+#: job/modules/shortcodes/listing-search/listing-search.php:197
+#: job/modules/shortcodes/listing-types/listing-types.php:121
+#: job/modules/shortcodes/listing-types/listing-types.php:414
+#: job/modules/shortcodes/listing-types/listing-types.php:442
+#: resume/modules/shortcodes/resume-list/resume-list.php:116
+msgid "Type"
+msgstr ""
+
+#: job/modules/shortcodes/listing-search/templates/holder.php:42
+msgid "All Types"
+msgstr ""
+
+#: job/modules/shortcodes/listing-search-simple/listing-search-simple.php:97
+msgid "Mikado Listing Search Simple"
+msgstr ""
+
+#: job/modules/shortcodes/listing-slider/listing-slider.php:116
+msgid "Mikado Listing Slider"
+msgstr ""
+
+#: job/modules/shortcodes/listing-slider/listing-slider.php:202
+#: job/modules/widgets/listing_slider.php:106
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:169
+#: resume/modules/widgets/resume_slider.php:95
+msgid "Enable Slider Loop"
+msgstr ""
+
+#: job/modules/shortcodes/listing-slider/listing-slider.php:205
+#: job/modules/shortcodes/listing-slider/listing-slider.php:213
+#: job/modules/shortcodes/listing-slider/listing-slider.php:220
+#: job/modules/shortcodes/listing-slider/listing-slider.php:227
+#: job/modules/shortcodes/listing-slider/listing-slider.php:235
+#: job/modules/shortcodes/listing-slider/listing-slider.php:243
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:172
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:180
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:187
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:194
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:202
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:210
+msgid "Slider Settings"
+msgstr ""
+
+#: job/modules/shortcodes/listing-slider/listing-slider.php:210
+#: job/modules/widgets/listing_slider.php:112
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:177
+#: resume/modules/widgets/resume_slider.php:101
+msgid "Enable Slider Autoplay"
+msgstr ""
+
+#: job/modules/shortcodes/listing-slider/listing-slider.php:218
+#: job/modules/widgets/listing_slider.php:118
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:185
+#: resume/modules/widgets/resume_slider.php:107
+msgid "Slide Duration"
+msgstr ""
+
+#: job/modules/shortcodes/listing-slider/listing-slider.php:219
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:186
+msgid "Default value is 5000 (ms)"
+msgstr ""
+
+#: job/modules/shortcodes/listing-slider/listing-slider.php:225
+#: job/modules/widgets/listing_slider.php:124
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:192
+#: resume/modules/widgets/resume_slider.php:113
+msgid "Slide Animation Duration"
+msgstr ""
+
+#: job/modules/shortcodes/listing-slider/listing-slider.php:226
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:193
+msgid "Speed of slide animation in milliseconds. Default value is 600."
+msgstr ""
+
+#: job/modules/shortcodes/listing-slider/listing-slider.php:232
+#: job/modules/widgets/listing_slider.php:130
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:199
+#: resume/modules/widgets/resume_slider.php:119
+msgid "Enable Slider Navigation Arrows"
+msgstr ""
+
+#: job/modules/shortcodes/listing-slider/listing-slider.php:240
+#: job/modules/widgets/listing_slider.php:136
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:207
+#: resume/modules/widgets/resume_slider.php:125
+msgid "Enable Slider Pagination"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:110
+msgid "Mikado Listing Types"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:119
+msgid "Taxonomy to Display"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:122
+#: job/modules/shortcodes/listing-types/listing-types.php:477
+#: job/modules/shortcodes/listing-types/listing-types.php:505
+msgid "Category"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:129
+msgid "Show Only Listed Types"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:148
+msgid "Number of types"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:155
+msgid "List Layout"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:157
+msgid "Advanced"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:165
+msgid "Number of Columns"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:167
+msgid "One"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:168
+msgid "Two"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:169
+msgid "Three"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:170
+msgid "Four"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:171
+msgid "Five"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:172
+msgid "Six"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:178
+msgid "Space Between Columns"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:184
+msgid "Show Type Number"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:186
+#: job/modules/shortcodes/listing-types/listing-types.php:194
+#: job/modules/shortcodes/listing-types/listing-types.php:203
+#: job/modules/shortcodes/listing-types/listing-types.php:210
+msgid "Layout Options"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:192
+msgid "Show Type Title"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/listing-types.php:208
+msgid "Show Type Description"
+msgstr ""
+
+#: job/modules/shortcodes/listing-types/templates/item-advanced.php:25
+msgid "%s open position"
+msgid_plural "%s open positions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: job/modules/single/templates/parts/company-details/details.php:15
+msgid "Company Details"
+msgstr ""
+
+#: job/modules/single/templates/parts/company-details/details.php:27
+msgid "/ hour"
+msgstr ""
+
+#: job/modules/single/templates/parts/company-details/holder.php:22
+msgid "APPLY FOR JOB"
+msgstr ""
+
+#: job/modules/single/templates/parts/enquiry.php:13
+#: resume/modules/single/templates/parts/enquiry.php:13
+msgid "Your Full Name"
+msgstr ""
+
+#: job/modules/single/templates/parts/enquiry.php:15
+#: resume/modules/single/templates/parts/enquiry.php:15
+msgid "Your E-mail Address"
+msgstr ""
+
+#: job/modules/single/templates/parts/enquiry.php:17
+#: resume/modules/single/templates/parts/enquiry.php:17
+msgid "Your Message"
+msgstr ""
+
+#: job/modules/single/templates/parts/enquiry.php:20
+#: resume/modules/single/templates/parts/enquiry.php:20
+msgid "Send Your Message"
+msgstr ""
+
+#: job/modules/single/templates/parts/map.php:11
+#: resume/modules/single/templates/parts/map.php:11
+msgid "How to Find Us"
+msgstr ""
+
+#: job/modules/single/templates/parts/social-networks.php:21
+msgid "Follow us"
+msgstr ""
+
+#: job/modules/widgets/listing_slider.php:12
+msgid "Mikado Listing Slider Widget"
+msgstr ""
+
+#: job/modules/widgets/listing_slider.php:13
+msgid "Add listing slider to widget areas"
+msgstr ""
+
+#: job/modules/widgets/listing_slider.php:66
+#: job/modules/widgets/listing_widget.php:22
+#: resume/modules/widgets/resume_slider.php:65
+#: resume/modules/widgets/resume_widget.php:22
+msgid "Widget Title"
+msgstr ""
+
+#: job/modules/widgets/listing_slider.php:119
+#: resume/modules/widgets/resume_slider.php:108
+msgid "Default options is 5000 (ms)"
+msgstr ""
+
+#: job/modules/widgets/listing_slider.php:125
+#: resume/modules/widgets/resume_slider.php:114
+msgid "Speed of slide animation in milliseconds. Default options is 600."
+msgstr ""
+
+#: job/modules/widgets/listing_widget.php:7
+msgid "Mikado Listing Widget"
+msgstr ""
+
+#: job/modules/widgets/listing_widget.php:8
+msgid "Add listing element to widget areas"
+msgstr ""
+
+#: job/modules/widgets/listing_widget.php:27
+#: resume/modules/widgets/resume_widget.php:27
+msgid "Number of Items"
+msgstr ""
+
+#: resume/admin/meta-box/map.php:33
+msgid "Profile Image"
+msgstr ""
+
+#: resume/admin/meta-box/map.php:58
+msgid "Website"
+msgstr ""
+
+#: resume/admin/meta-box/map.php:60
+msgid "Enter website"
+msgstr ""
+
+#: resume/admin/options-map/map.php:9 resume/helpers/helper-functions.php:273
+#: resume/lib/resume-global-settings.php:261
+msgid "Resume"
+msgstr ""
+
+#: resume/admin/options-map/map.php:25
+msgid "Number of resumes per page"
+msgstr ""
+
+#: resume/helpers/helper-functions.php:274
+msgid "Show Social Share for Resume Items"
+msgstr ""
+
+#: resume/lib/front-end-field-creator.php:35
+#: resume/lib/resume-global-settings.php:59
+msgid "Resume Type"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:56
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:122
+msgid "Resume Title"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:62
+#: resume/lib/resume-global-settings.php:424
+#: resume/lib/resume-global-settings.php:441
+msgid "Resume Region"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:65
+#: resume/lib/resume-global-settings.php:374
+#: resume/lib/resume-global-settings.php:391
+msgid "Resume Tags"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:122
+msgid "Submit Resume"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:168
+msgid "Your resume is online"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:192
+#: resume/lib/resume-global-settings.php:214
+msgid "Your resume has expired"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:262
+#: resume/lib/resume-global-settings.php:267
+msgid "Resumes"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:310
+msgid "Resume type"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:311
+msgid "Resume types"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:339
+msgid "Resume category"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:340
+msgid "Resume categories"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:375
+#: resume/lib/resume-global-settings.php:392
+msgid "Resume Tag"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:376
+msgid "Search Resume Tags"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:378
+msgid "All Resume Tags"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:379
+msgid "Parent Resume Tag"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:380
+msgid "Parent Resume Tag:"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:381
+msgid "Edit Resume Tag"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:383
+msgid "Update Resume Tag"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:384
+msgid "Add New Resume Tag"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:385
+msgid "New Resume Tag Name"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:395
+msgctxt "permalink"
+msgid "resume-tag"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:423
+#: resume/lib/resume-global-settings.php:440
+#: resume/lib/resume-global-settings.php:442
+msgid "Resume Regions"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:425
+msgid "Search Resume Regions"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:426
+msgid "Popular Resume Regions"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:427
+msgid "All Resume Regions"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:428
+msgid "Parent Resume Region"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:429
+msgid "Parent Resume Region:"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:430
+msgid "Edit Resume Region"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:431
+msgid "View Resume Region"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:432
+msgid "Update Resume Region"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:433
+msgid "Add New Resume Region"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:434
+msgid "New Resume Region Name"
+msgstr ""
+
+#: resume/lib/resume-global-settings.php:445
+msgctxt "permalink"
+msgid "resume-region"
+msgstr ""
+
+#: resume/modules/archive/templates/holder.php:15
+msgid "Find Your Staff Today!"
+msgstr ""
+
+#: resume/modules/dashboard/dashboard-functions.php:19
+msgid "Add Resume"
+msgstr ""
+
+#: resume/modules/dashboard/dashboard-functions.php:26
+msgid "My Resumes"
+msgstr ""
+
+#: resume/modules/dashboard/templates/my-resumes.php:5
+msgid "My resumes"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:107
+msgid "Mikado Resume Advanced Search"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-advanced-search/resume-advanced-search.php:189
+msgid "Resume Item Type"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-advanced-search/templates/keyword.php:4
+msgid "All Resumes"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-advanced-search/templates/load-more-template.php:7
+msgid "Load More Resumes"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-item/resume-item.php:76
+msgid "Mikado Resume Item"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-item/resume-item.php:85
+msgid "Custom CSS Class"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-item/resume-item.php:86
+msgid "Style particular content element differently - add a class name and refer to it in custom CSS"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-item/resume-item.php:91
+msgid "Show Only Projects with Listed IDs"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-item/resume-item.php:97
+msgid "Delimit ID numbers by comma (leave empty for all)"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-item/resume-item.php:138
+#: resume/modules/shortcodes/resume-item/resume-item.php:169
+msgid "Id"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-item/templates/resume-item-template.php:9
+#: resume/modules/shortcodes/resume-list/templates/item-simple.php:8
+#: resume/modules/shortcodes/resume-list/templates/item.php:8
+msgid "Resume Profile Image"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-list/resume-list.php:107
+msgid "Mikado Resume List"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-list/resume-list.php:126
+msgid "List Title Info"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-list/resume-list.php:132
+msgid "List Text Info"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-list/resume-list.php:138
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:125
+#: resume/modules/widgets/resume_slider.php:70
+msgid "Resume Category"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-list/resume-list.php:144
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:132
+#: resume/modules/widgets/resume_slider.php:76
+msgid "IDs of resume items"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-list/resume-list.php:145
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:133
+#: resume/modules/widgets/resume_slider.php:77
+msgid "Enter IDs of resume items separated with comma (for example 23,24,35)"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-list/resume-list.php:192
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:162
+#: resume/modules/widgets/resume_slider.php:89
+msgid "Space Between Resumes"
+msgstr ""
+
+#: resume/modules/shortcodes/resume-slider/resume-slider.php:116
+msgid "Mikado Resume Slider"
+msgstr ""
+
+#: resume/modules/single/templates/parts/candidate-details/author.php:14
+#: resume/modules/single/templates/parts/candidate-details/author.php:16
+msgid "Item Author"
+msgstr ""
+
+#: resume/modules/single/templates/parts/candidate-details/details.php:15
+msgid "Candidate Details"
+msgstr ""
+
+#: resume/modules/single/templates/parts/candidate-details/holder.php:22
+msgid "CONTACT ME"
+msgstr ""
+
+#: resume/modules/single/templates/parts/content.php:11
+msgid "Education"
+msgstr ""
+
+#: resume/modules/single/templates/parts/content.php:19
+msgid "%s at %s"
+msgstr ""
+
+#: resume/modules/single/templates/parts/content.php:34
+msgid "Experience"
+msgstr ""
+
+#: resume/modules/single/templates/parts/content.php:41
+msgid "%s (%s)"
+msgstr ""
+
+#: resume/modules/single/templates/parts/image.php:10
+msgid "Item Image"
+msgstr ""
+
+#: resume/modules/single/templates/parts/social-networks.php:20
+msgid "Follow me"
+msgstr ""
+
+#: resume/modules/widgets/resume_slider.php:11
+msgid "Mikado Resume Slider Widget"
+msgstr ""
+
+#: resume/modules/widgets/resume_slider.php:12
+msgid "Add resume slider to widget areas"
+msgstr ""
+
+#: resume/modules/widgets/resume_widget.php:7
+msgid "Mikado Resume Widget"
+msgstr ""
+
+#: resume/modules/widgets/resume_widget.php:8
+msgid "Add resume element to widget areas"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Mikado Listing"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Plugin that extends wp_job_manager functionality"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mikado Themes"
+msgstr ""

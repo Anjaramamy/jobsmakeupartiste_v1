@@ -1,0 +1,222 @@
+.mkdf-rs-list-holder{
+
+    .mkdf-rs-list-load-more-holder {
+        text-align: center;
+    }
+}
+
+.mkdf-rs-list-items-holder{
+
+	.mkdf-rs-item{
+		@extend %single-item-style;
+		visibility: hidden;
+
+		.mkdf-sidebar & {
+			width: 100%;
+		}
+
+	}
+
+	.no-touch & {
+		.mkdf-rs-item {
+			visibility: visible;
+			opacity: 0;
+
+			&.mkdf-appear{
+				opacity: 1;
+				@include mkdfTransition(opacity .25s ease-in-out);
+			}
+		}
+	}
+
+	.touch & .mkdf-rs-item {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	/***** Resume List Columns Width - begin *****/
+
+	$columns_number: ('two', 'three', 'four', 'five','six');
+
+	@for $i from 0 to length($columns_number) {
+		&.mkdf-rs-list-#{nth($columns_number,$i+1)}-columns {
+
+			article {
+				width: 100% / ($i+2);
+			}
+
+			@if ($i > 1) { // set different break point for four and five columns
+				@media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+					article {
+
+						&:nth-child(#{$i+2}n+1) {
+							clear: both;
+						}
+					}
+				}
+			} @else {
+				@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+					article {
+
+						&:nth-child(#{$i+2}n+1) {
+							clear: both;
+						}
+					}
+				}
+			}
+		}
+	}
+	/***** Resume list Columns Width - end *****/
+
+	/***** Resume List Simple - begin *****/
+
+	&.mkdf-resume-list-default {
+
+		.mkdf-rs-item-holder {
+			@include mkdfRelativeHolderLayout;
+			@include mkdfTransition(opacity .3s ease-in-out);
+			overflow:hidden;
+			border: 0;
+
+			&:hover {
+				border: none;
+				box-shadow:none;
+
+				.mkdf-resume-item-img-holder {
+					&:after {
+						opacity: 0;
+						@include mkdfTransition(opacity .3s ease-in-out);
+					}
+				}
+
+				.mkdf-rs-item-inner {
+					opacity: 0;
+					@include mkdfTransform(translate3d(-20%,0,0));
+					@include mkdfTransition(all .3s ease-in-out);
+				}
+			}
+
+			a, img {
+				display: block;
+				border-radius: 10px;
+			}
+
+			a {
+				padding: 0 !important;
+				img {
+					@include mkdfTransition(box-shadow .3s ease-in-out);
+				}
+
+				&:hover {
+					img {
+						box-shadow: 0px 1px 23.28px 0.72px rgba(255, 51, 102, 0.07);
+					}
+				}
+			}
+
+			.mkdf-resume-item-img-holder {
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 100%;
+					width: 100%;
+					background-color: #25282b;
+					opacity: .3;
+					border-radius: 10px;
+					@include mkdfTransition(opacity .3s ease-in-out);
+				}
+			}
+
+			.mkdf-rs-item-inner {
+				@include mkdfTransition(opacity .3s ease-in-out);
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				box-sizing: border-box;
+				padding: 16px 25px;
+				background-color: transparent;
+
+
+				.mkdf-resume-title,
+				p,
+				a {
+					margin: 0;
+					color: #fff;
+				}
+
+				.mkdf-resume-title {
+					line-height: 1em;
+				}
+
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	&.mkdf-resume-list-simple {
+
+		background-color: #fff;
+		border: 1px solid $default-border-color;
+		border-radius: 10px;
+		padding: 25px 37px 13px;
+
+		.mkdf-rs-list-items-text-holder {
+			display: table-cell;
+			width: 22%;
+			vertical-align: top;
+			padding: 19px 22px 0 0;
+
+			.mkdf-rs-list-items-title {
+				margin: 0 0 17px;
+			}
+
+			.mkdf-rs-list-items-text {
+				margin: 0;
+			}
+		}
+
+		.mkdf-rs-list-items-holder-inner {
+			display: table-cell;
+			width: 78%;
+			vertical-align: middle;
+			padding-top: 20px;
+		}
+		article {
+			.mkdf-rsi-inner {
+				@include mkdfRelativeHolderLayout;
+
+				img {
+					display: inline-block;
+					float: left;
+					width: 55px;
+					height: auto;
+					border-radius: 100%;
+				}
+
+				.mkdf-rsi-content {
+					display: inline-block;
+					padding-left: 17px;
+					margin-top: 4px;
+
+					.mkdf-resume-title {
+						margin: 0;
+					}
+
+					p {
+						margin: 0;
+						line-height: 1.3em;
+					}
+				}
+
+			}
+		}
+	}
+
+	/***** Resume List Simple - end *****/
+}

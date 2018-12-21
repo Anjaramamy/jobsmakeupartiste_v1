@@ -1,0 +1,117 @@
+.mkdf-ls-archive-holder{
+
+	.mkdf-ls-archive-map-holder{
+		width: 50%;
+		position: fixed;
+		top:0;
+		right: 0;
+		z-index: 100;
+		height: 100%;
+		#mkdf-ls-multiple-map-holder{
+			height: 100%;
+		}
+	}
+
+	.select2-container{
+
+		width: 100% !important;
+		.select2-selection--single{
+			height: 46px;
+			line-height: 46px;
+
+			.select2-arrow{
+				right: 22px;
+			}
+			.select2-selection__clear{
+				display: none;
+			}
+
+		}
+	}
+
+	.mkdf-ls-archive-items-wrapper{
+		float: left;
+		width: 50%;
+		padding: 14px 44px 57px;
+		box-sizing: border-box;
+        background-color: #fff;
+
+		.mkdf-ls-archive-items-title {
+			font-weight: 600;
+			margin-top: 31px;
+		}
+
+		.mkdf-ls-archive-items-number{
+			text-align: center;
+		}
+	}
+
+    .mkdf-ls-archive-items-inner{
+        article {
+            @extend %single-item-style;
+
+			.mkdf-ls-item-holder {
+				border: 1px solid $default-border-color;
+			}
+        }
+    }
+
+	.mkdf-ls-archive-items{
+		margin-top: 31px;
+
+		/***** Listing Advanced Search Columns Width - begin *****/
+
+		$columns_number: ('two', 'three', 'four', 'five');
+
+		@for $i from 0 to length($columns_number) {
+			&.mkdf-ls-archive-#{nth($columns_number,$i+1)}-columns {
+
+				article {
+					width: 100% / ($i+2);
+				}
+
+				@if ($i > 1) { // set different break point for four and five columns
+					@media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(#{$i+2}n+1) {
+								clear: both;
+							}
+						}
+					}
+				} @else {
+					@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(#{$i+2}n+1) {
+								clear: both;
+							}
+						}
+					}
+				}
+			}
+		}
+		/***** Listing Advanced Search Columns Width - end *****/
+	}
+
+	.mkdf-listing-archive-load-more-holder {
+		text-align: center;
+	}
+
+}
+
+.post-type-archive-job_listing {
+	.select2-container--default {
+		.select2-dropdown {
+			border: 1px solid #d4d7da;
+		}
+	}
+}
+
+.archive[class*="tax-job_listing_"] {
+	#mkdf-back-to-top {
+		display: none !important;
+	}
+}

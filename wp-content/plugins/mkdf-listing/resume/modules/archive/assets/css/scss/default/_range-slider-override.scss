@@ -1,0 +1,56 @@
+.mkdf-resume-places-dist-holder{
+
+	.rangeslider--horizontal{
+		height: 5px;
+		border: 1px solid $default-border-color;
+		background-color: $default-background-color;
+		border-radius: 2px;
+		box-shadow: none;
+	}
+	.rangeslider__fill{
+		background-color: #d7d7d7;
+	}
+	.rangeslider__handle{
+		border-color: $first-main-color;
+		background-color: $first-main-color;
+		width: 21px;
+		height: 21px;
+		background-image: none;
+		box-shadow: none;
+		color: $default-background-color;
+		font-size: 15px;
+		text-align: center;
+		&:after{
+			display: none;
+		}
+		&:before{
+			content: ',';
+			font-family: 'ElegantIcons';
+			position: relative;
+			top: -2px;
+		}
+	}
+
+	.mkdf-rangle-slider-response-holder{
+		margin: 0 0 8px;
+		span{
+			font-family: $default-text-font;
+			font-weight: 600;
+			font-size: 13px;
+			text-transform: uppercase;
+			color: $default-heading-color;
+		}
+	}
+	.mkdf-resume-places-range{
+		float: left;
+		width: 50%;
+		text-align: left;
+		font-size: 14px;
+		color: $default-heading-color;
+		margin-top: 5px;
+		&.mkdf-resume-places-max{
+			text-align: right;
+		}
+	}
+
+}

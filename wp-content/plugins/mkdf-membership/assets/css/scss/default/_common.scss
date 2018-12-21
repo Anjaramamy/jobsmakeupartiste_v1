@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Mikadof Membership Plugin Style - begin
+   ========================================================================== */
+
+.mkdf-social-login-holder input[type="text"],
+.mkdf-social-login-holder input[type="email"],
+.mkdf-social-login-holder input[type="password"],
+.mkdf-social-register-holder input[type="text"],
+.mkdf-social-register-holder input[type="email"],
+.mkdf-social-register-holder input[type="password"],
+.mkdf-social-reset-password-holder input[type="text"],
+.mkdf-social-reset-password-holder input[type="email"],
+.mkdf-social-reset-password-holder input[type="password"],
+.mkdf-membership-input-holder .mkdf-membership-input {
+    position: relative;
+    width: 100%;
+    margin: 0 0 14px;
+    padding: 17px 20px;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: inherit;
+    color: $default-text-color;
+    background-color: transparent;
+    border: 1px solid $default-border-color;
+    outline: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    cursor: auto;
+
+    &:focus {
+        border-color: $first-main-color;
+    }
+
+    @include mkdfPlaceholder {
+        color: $additional-text-color;
+    }
+}
+
+.mkdf-membership-input-holder {
+    label {
+      display: block;
+      margin: 0 0 5px;
+    }
+}
+
+.mkdf-membership-response-holder{
+	.mkdf-membership-response {
+		display: block;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 13px;
+		margin: 30px 0 0px 0;
+
+
+		&.mkdf-membership-message-succes {
+			color: #7e8890;
+		}
+
+		&.mkdf-membership-message-error {
+			color: #ff3d27;
+		}
+	}
+}
+
+.mkdf-wp-register-holder{
+	.mkdf-register-notice h5 {
+		margin: 0;
+	}
+}
+
+
+/* ==========================================================================
+   Mikadof Membership Plugin Style - end
+   ========================================================================== */

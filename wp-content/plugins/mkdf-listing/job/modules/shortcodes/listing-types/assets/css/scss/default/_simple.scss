@@ -1,0 +1,41 @@
+.mkdf-ls-types-holder {
+    &.mkdf-ls-type-simple {
+        .mkdf-ls-type-item {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: border-box;
+            text-align: center;
+            float: left;
+            margin-bottom: 73px;
+
+            .mkdf-ls-content-holder {
+                @include mkdfTableLayout();
+            }
+
+            .mkdf-ls-content-left {
+                @include mkdfTableCellLayout();
+                width: 80px;
+                vertical-align: top;
+                .mkdf-ls-icon-holder {
+                    font-size: 60px;
+                }
+                .mkdf-ls-custom-icon-holder {
+                    height: 80px;
+                    background-size: contain;
+                }
+            }
+            .mkdf-ls-content-right {
+                @include mkdfTableCellLayout();
+                padding-left: 25px;
+                text-align: left;
+                .mkdf-ls-type-title {
+                    margin: 0;
+                }
+                .mkdf-ls-count-holder {
+                    @include mkdfListingCategory();
+                }
+            }
+        }
+    }
+}

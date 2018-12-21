@@ -1,0 +1,124 @@
+.mkdf-resume-single-holder {
+	article {
+
+		.mkdf-rs-single-section-inner.left {
+
+			.mkdf-rs-single-share-holder {
+				float: left;
+				width: 110px;
+				padding-top: 3px;
+			}
+
+			.mkdf-rs-single-content-holder {
+				box-sizing: border-box;
+				float: right;
+				width: calc(100% - 110px);
+
+				.mkdf-rs-item-title {
+					h2 {
+						margin: 6px 0 0;
+					}
+				}
+
+				.mkdf-rs-content-part-holder{
+					margin: 0px 0 10px;
+				}
+
+				.mkdf-rs-content-part{
+
+					&.right{
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.mkdf-rs-content-part.right {
+
+			h4 {
+				margin: 0 0 40px;
+			}
+
+			.resume-manager-education,
+			.resume-manager-experience {
+				border: none;
+				padding: 0 0 0 7px;
+				margin: 0 0 4px;
+
+				dt,
+				dd {
+					padding: 0 0 0 25px;
+					border-left: 2px solid $first-main-color;
+
+					&:last-of-type {
+						border-left: none;
+					}
+				}
+
+				dt {
+					&:before {
+						position: absolute;
+						content: "";
+						top: 0;
+						left: -7px;
+						width: 12px;
+						height: 12px;
+						border-radius: 50%;
+						background-color: $first-main-color;
+					}
+
+					&:last-of-type {
+						&:before {
+							left: -5px;
+						}
+					}
+				}
+
+
+				.mkdf-resume-education-inner,
+				.mkdf-resume-experience-inner {
+					position: relative;
+					top: -7px;
+				}
+
+				h5 {
+					margin: 0;
+				}
+
+				p {
+					margin: 9px 0 35px;
+					color: $default-text-color;
+				}
+
+				.date {
+					font-size: 14px;
+					text-transform: none;
+				}
+			}
+
+			.resume-manager-experience {
+				.mkdf-resume-experience-inner {
+					>small {
+						font-size: 14px;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+
+
+		.mkdf-resume-type-wrapper {
+			a {
+				color: #fff;
+				font-size: 13px;
+				text-transform: uppercase;
+				font-weight: 600;
+				background: #00b489;
+				padding: 5px 17px;
+				border-radius: 3em;
+			}
+		}
+
+
+	}
+}

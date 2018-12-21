@@ -1,0 +1,17 @@
+.mkdf-resume-single-holder{
+	.mkdf-rs-single-map-holder{
+		position: relative;
+		box-sizing: border-box;
+		width: 100%;
+		background-color: $default-background-color;
+
+		.mkdf-rs-single-map-title-holder {
+			margin: 57px 0 19px;
+		}
+	}
+
+	#mkdf-rs-single-map-holder{
+		max-height: 323px;
+		max-width: 323px;
+	}
+}

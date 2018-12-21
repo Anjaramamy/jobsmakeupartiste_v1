@@ -1,0 +1,63 @@
+.page-template-user-dashboard{
+    .mkdf-user-package-holder{
+        list-style: none outside none;
+        margin: 0;
+
+        .mkdf-user-package{
+
+            padding: 15px 25px;
+            box-sizing: border-box;
+            background-color: #fafafa;
+            margin-bottom: 30px;
+            @include mkdfTableLayout();
+
+            &:nth-child(even){
+                background-color: #fff;
+            }
+
+
+            .mkdf-ls-package-part{
+                @include mkdfTableCellLayout();
+            }
+
+            .mkdf-ls-package-text{
+                padding-bottom: 10px;
+                border-bottom: 1px solid $default-border-color;
+            }
+            .mkdf-ls-package-value {
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .job_listing_packages_title{
+        background-color: transparent;
+
+        .button{
+            @include mkdfButtonMediumParams();
+            @include mkdfButtonSolidColor();
+            font-family: $default-text-font;
+
+            &:hover{
+                @include mkdfButtonSolidHoverColor();
+            }
+        }
+    }
+
+    .job_listing_packages{
+        border: none;
+
+        ul.job_packages{
+            .package-section{
+                font-weight: 400;
+                color: #000;
+            }
+
+            li{
+                label{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

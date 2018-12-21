@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Listing Search  responsive style - begin
+   ========================================================================== */
+@include laptop-landscape-large {
+    .mkdf-ls-main-search-holder {
+        div.mkdf-ls-main-search-holder-part {
+            .mkdf-ls-slider-wrapper {
+                .mkdf-price-slider-holder {
+                    left: 3px;
+                }
+            }
+        }
+    }
+}
+@include laptop-landscape-medium{
+    .mkdf-ls-main-search-holder{
+        div.mkdf-ls-main-search-holder-part{
+            .mkdf-ls-slider-wrapper{
+                .mkdf-price-slider-holder{
+                    left: 3px;
+                    width: 120px;
+                }
+                .rangeslider--horizontal{
+                    width: 150px;
+                }
+                >span{
+                    margin-left: 55px;
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+    .mkdf-ls-main-search-holder{
+        width: 100%;
+        display: block;
+
+        div.mkdf-ls-main-search-holder-part{
+            width: 50%;
+            display: inline-block;
+            float: left;
+
+
+            &:nth-child(2) {
+                border-right: 0;
+            }
+
+            div.mkdf-ls-slider-wrapper{
+                .mkdf-price-slider-response{
+                    padding: 5px 15px;
+                    top: -20px;
+                    width: 70px;
+                    height: 17px;
+                    line-height: 17px;
+                }
+                > span{
+                    margin-left: 75px;
+                }
+            }
+
+        }
+
+        &.mkdf-columns-3 {
+            div.mkdf-ls-main-search-holder-part{
+                &.submit {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        &.mkdf-columns-4 {
+            div.mkdf-ls-main-search-holder-part {
+                &.submit {
+                    width: 50%;
+
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+
+        div.mkdf-ls-main-search-holder-part {
+            &.submit {
+                width: 50%;
+            }
+        }
+
+
+        .select2-dropdown-open{
+            z-index: 99;
+        }
+    }
+}
+
+@include ipad-portrait {
+    .mkdf-ls-main-search-holder{
+
+        div.mkdf-ls-main-search-holder-part {
+
+            &:first-child {
+                border-right: 0;
+            }
+
+            &:nth-child(3) {
+                border-right: 0;
+            }
+
+        }
+
+    }
+}
+
+@include phone-landscape{
+    .mkdf-ls-main-search-holder {
+        div.mkdf-ls-main-search-holder-part {
+            width: 100% !important;
+            &:nth-child(2) {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Listing Search responsive style - end
+   ========================================================================== */

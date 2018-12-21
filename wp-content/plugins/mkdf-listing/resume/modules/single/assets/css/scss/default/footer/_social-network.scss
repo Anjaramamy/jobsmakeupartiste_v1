@@ -1,0 +1,50 @@
+.mkdf-resume-single-holder{
+	article{
+		.mkdf-rs-single-social-network-holder{
+			margin: 0 0 140px;
+			border-top: 1px dotted #edeff0;
+			border-bottom: 1px dotted #edeff0;
+			.mkdf-rs-single-social-net-title{
+				text-transform: none;
+				display: inline-block;
+				font-weight: 500;
+				float: left;
+				height: 48px;
+				line-height: 48px;
+				vertical-align: middle;
+				margin: 0;
+				padding-right: 7px;
+			}
+			.mkdf-rs-social-icon{
+				width: 31px;
+				height: 48px;
+				line-height: 48px;
+				float: left;
+				text-align: center;
+				color: $first-main-color;
+				background-color: transparent;
+				border-radius: 2px;
+
+				&:not(:last-child){
+					margin-right: 3px;
+				}
+
+				&.twitter{
+					color: #19b5ee;
+				}
+				&.facebook{
+					 color: #3b5a9a;
+				}
+				&.instagram{
+					color: #504235;
+				}
+				&.pinterest{
+					color: #d1202a;
+				}
+				&.linkedin{
+					color: #007bb5;
+				}
+			}
+		}
+	}
+}

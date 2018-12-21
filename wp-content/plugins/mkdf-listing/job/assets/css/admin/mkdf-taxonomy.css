@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Admin Listing Taxonomies Styles
+   ========================================================================== */
+.clearfix:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.clear:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+.mkdf-taxonomy-add-custom-field{
+	width: 25%;
+	float: left;
+}
+.mkdf-add-custom-field{
+	cursor: pointer;
+}
+.mkdf-custom-field-wrapper{
+	clear: both;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 30px;
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.mkdf-custom-field-inner{
+	clear: both;
+	overflow: hidden;
+}
+
+.mkdf-custom-field-default-value{
+	margin-top: 20px;
+}
+
+.mkdf-option-repeater-field-row{
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	padding: 15px 0;
+	border-bottom: 1px solid #e1e1e1;
+}
+.mkdf-option-repeater-field-row-inner{
+	overflow: hidden;
+	/*float: left;*/
+	/*width: 50%;*/
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.mkdf-option-repeater-field-row-inner input{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.mkdf-option-repeater-field-row-inner:last-child{
+	margin-right: 0;
+}
+.mkdf-option-repeater-close-button{
+	float: left;
+}
+.mkdf-option-repeater-button {
+	clear: both;
+	float: left;
+}
+
+.mkdf-custom-row-close-button{
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 600;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.mkdf-custom-row-expand-button{
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 600;
+	position: absolute;
+	top: 10px;
+	right: 50px;
+}
+.mkdf-custom-row-expand-button span{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.form-field:nth-child(n+11) {
+    background-color: white;
+    padding: 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+a:focus {
+    box-shadow: none;
+}
+.form-field input[type="text"]{
+    width:90%;
+}

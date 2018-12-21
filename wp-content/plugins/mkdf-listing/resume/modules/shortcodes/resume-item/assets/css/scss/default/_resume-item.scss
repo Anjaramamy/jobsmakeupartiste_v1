@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Resume Item shortcode style - begin
+   ========================================================================== */
+
+.mkdf-resume-item {
+
+    @include mkdfRelativeHolderLayout;
+    overflow:hidden;
+
+    a, img {
+        display: block;
+        border-radius: 10px;
+    }
+
+    a {
+        img {
+            @include mkdfTransition(box-shadow .3s ease-in-out);
+        }
+
+        &:hover {
+            img {
+                box-shadow: 0px 1px 23.28px 0.72px rgba(255, 51, 102, 0.07);
+            }
+        }
+    }
+
+    &:hover {
+        .mkdf-resume-item-img-holder {
+            &:after {
+                opacity: 0;
+                @include mkdfTransition(opacity .3s ease-in-out);
+            }
+        }
+
+        .mkdf-resume-item-content {
+            opacity: 0;
+            @include mkdfTransform(translate3d(-20%,0,0));
+            @include mkdfTransition(all .3s ease-in-out);
+        }
+    }
+
+    .mkdf-resume-item-img-holder {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #25282b;
+            opacity: .3;
+            border-radius: 10px;
+            @include mkdfTransition(opacity .3s ease-in-out);
+        }
+    }
+
+    .mkdf-resume-item-content {
+        @include mkdfTransition(opacity .3s ease-in-out);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 33px;
+
+        .mkdf-resume-item-title,
+        p {
+            margin: 0;
+            color: #fff;
+        }
+
+        .mkdf-resume-item-title {
+            line-height: 1em;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+
+}
+/* ==========================================================================
+Resume Item shortcode style - end
+   ========================================================================== */

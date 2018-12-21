@@ -1,0 +1,228 @@
+.page-template-user-dashboard{
+    .mkdf-membership-dashboard-content-holder{
+        
+        .job-manager-form{
+            margin: 0 -15px;
+            
+            .fieldset-job_region{
+                display: block;
+            }
+
+            .chosen-container{
+                display: none;
+            }
+            
+            .mkdf-ls-field-holder {
+                float: left;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0 18px;
+                box-sizing: border-box;
+                position: relative;
+                width: 50%;
+                
+                div.field,
+                label{
+
+                     float: none;
+                     width: 100%;
+                    .mkdf-checkbox-label{
+                        width: auto;
+                    }
+
+                }
+                label{
+                    &:not(.mkdf-checkbox-label){
+                        font-family: $default-text-font;
+                        font-size: 13px;
+                        margin-bottom: 10px;
+                        text-transform: uppercase;
+                    }
+                }
+                fieldset{
+                    border-bottom: none;
+                    margin-bottom: 0.7em;
+                }
+                
+                .field.account-sign-in{
+                    display: table;
+                    margin: 1.8em 0 -0.7em;
+                    
+                    span, div{
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                    div{
+                        text-align: right;
+                    }
+
+                    .mkdf-btn{
+                        border-color: $first-main-color;
+                        margin-left: 15px;
+
+                        &:hover{
+                            border-color: $default-border-color;
+                        }
+                    }
+                }
+                .fieldset-company_logo{
+                    
+                    .field{
+                        .job-manager-uploaded-files{
+                            float: left;
+                            display: inline-block;
+                            margin-right: 17px;
+                        }
+                        .wp-job-manager-file-upload, .description{
+                            width: auto;
+                            display: inline-block
+                        }
+                    }
+                    .job-manager-uploaded-file-preview{
+                        position: relative;
+                        display: block;
+                        
+                        .job-manager-remove-uploaded-file{
+                            visibility: hidden;
+                            
+                            &:after{
+                                content:"\e051";
+                                font-family: ElegantIcons;
+                                top: 0;
+                                right: 0;
+                                visibility: visible;
+                                font-size: 24px;
+                                font-style: normal;
+                            }
+                        }
+
+                        img{
+                            height: 140px;
+                        }
+                        .job-manager-remove-uploaded-file{
+                            position: absolute;
+                            right: 0;
+                            line-height: 1em;
+                            font-size: 24px;
+                            float: left;
+                        }
+                    }
+                }
+                
+                .fieldset-listing_twitter_url, .fieldset-listing_facebook_url, .fieldset-listing_instagram_url, .fieldset-listing_pinterest_url,
+                .fieldset-listing_soundcloud_url, .fieldset-listing_vimeo_url, .fieldset-listing_youtube_url, .fieldset-listing_skype_url{
+                    .field{
+                        &:before{
+                            display: inline-block;
+                            width: 50px;
+                            height: 50px;
+                            line-height: 50px;
+                            font-family: FontAwesome;
+                            vertical-align: middle;
+                            font-size: 50px;
+                            color: #19b5ee;
+                            position: absolute;
+                        }
+                        
+                        input{
+                            width: calc(100% - 55px);
+                            margin-left: 55px;
+                        }
+                    }
+                }
+                .fieldset-listing_twitter_url{
+                    .field:before{
+                        content: "\f081";
+                    }
+                }
+                .fieldset-listing_facebook_url{
+                    .field:before{
+                        content: "\f082";
+                    }
+                }
+                .fieldset-listing_instagram_url{
+                    .field:before{
+                        content: "\f16d";
+                    }
+                }
+                .fieldset-listing_pinterest_url{
+                    .field:before{
+                        content: "\f0d3";
+                    }
+                }
+                .fieldset-listing_soundcloud_url{
+                    .field:before{
+                        content: "\f1be";
+                        font-size: 38px;
+                    }
+                }
+                .fieldset-listing_vimeo_url{
+                    .field:before{
+                        content: "\f194";
+                    }
+                }
+                .fieldset-listing_youtube_url{
+                    .field:before{
+                        content: "\f166";
+                    }
+                }
+                .fieldset-listing_skype_url{
+                    .field:before{
+                        content: "\f17e";
+                    }
+                }
+            }
+
+            .mkdf-ls-field-holder-full-width{
+                clear: both;
+                width: 100%;
+                
+                fieldset{
+                    padding: 0 18px;
+                }
+            }
+            .mkdf-ls-full-width-field{
+                width: 100%;
+                text-align: left;
+            }
+            
+            input{
+                &.button{
+                    position: relative;
+                    display: inline-block;
+                    padding: 13px 25px;
+                    font-family: $default-text-font;
+                    font-size: 14px;
+                    background-color: $first-main-color;
+                    color: $default-background-color;
+                    line-height: 18px;
+                    letter-spacing: 0;
+                    font-weight: 400;
+                    border-radius: 2px;
+                    text-align: center;
+                    cursor: pointer;
+                    border: none;
+                    box-sizing: border-box;
+                    
+                    &:hover{
+                        background-color: #f42156;
+                    }
+                }
+            }
+
+            >p:last-of-type{
+                padding: 0 18px;
+            }
+
+            .mkdf-btn.mkdf-btn-fullwidth{
+                margin:  12px 0 70px;
+                border-color: $first-main-color;
+
+                &:hover{
+                    border-color: $default-border-color;
+                }
+            }
+            
+        }
+    }
+}

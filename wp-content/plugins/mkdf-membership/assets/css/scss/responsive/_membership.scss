@@ -1,0 +1,63 @@
+.page-template-user-dashboard {
+    @include ipad-landscape {
+        .mkdf-login-register-content {
+
+            &.mkdf-user-not-logged-in {
+                width: 300px;
+
+                ul {
+                    li {
+                        width: 100%;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @include ipad-portrait{
+        .mkdf-membership-dashboard-nav-holder {
+            width: 100%;
+            float: none;
+
+            .mkdf-membership-dashboard-nav{
+                display: block;
+                li{
+                    display: block;
+                    a {
+                        padding: 15px 0;
+                        text-align: left;
+                        .mkdf-dash-icon {
+
+                            min-width: 50px;
+                            text-align: center;
+                            font-size: 25px;
+                            display: inline-block;
+                            padding-bottom: 0;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mkdf-membership-dashboard-content-holder {
+            width: 100%;
+            float: none;
+            padding: 0;
+        }
+    }
+
+    @include phone-portrait {
+        .mkdf-login-register-content {
+
+            &.mkdf-user-not-logged-in {
+                width: 230px;
+            }
+
+            .mkdf-login-action-btn {
+                float: left;
+            }
+        }
+    }
+}

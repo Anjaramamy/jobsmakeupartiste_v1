@@ -1,0 +1,179 @@
+.mkdf-resume-archive-filter-holder{
+	margin-top: 33px;
+
+	.mkdf-resume-archive-filter-holder-inner {
+		position: relative;
+		display: table;
+		table-layout: fixed;
+		height: 100%;
+		width: 100%;
+		box-sizing: border-box;
+
+		.mkdf-resume-archive-filter-item {
+			position: relative;
+			display: table-cell;
+			height: 100%;
+			width: 100%;
+			vertical-align: middle;
+			box-sizing: border-box;
+			padding: 0 10px;
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			i {
+				position: absolute;
+				left: 25px;
+				top: 50%;
+				@include mkdfTransform(translateY(-50%));
+				font-size: 14px;
+				color: $additional-text-color;
+				z-index: 2;
+				margin-top: 2px;
+			}
+
+			input {
+				margin: 0;
+				font-size: 14px;
+				height:38px;
+				line-height:38px;
+				border: 1px solid #d4d7da;
+				padding: 10px 20px 11px 47px;
+				color: $additional-text-color;
+				border-radius: 2em;
+
+				@include mkdfPlaceholder {
+					color: $additional-text-color;
+				}
+			}
+
+			.select2-selection--single {
+				font-size: 14px;
+				height: 38px;
+				line-height: 35px;
+				border: 1px solid #d4d7da;
+				border-radius: 2em;
+
+				.select2-selection__rendered {
+					padding-left: 38px;
+				}
+			}
+
+			&:nth-child(2n+1) {
+				clear: both;
+			}
+
+			&.mkdf-full-width-item {
+				width: 100%;
+			}
+			&.mkdf-resume-radius-field {
+				padding: 0;
+				margin: 24px 0 23px;
+			}
+
+			& > label {
+				font-family: $default-text-font;
+				font-size: 13px;
+				text-transform: uppercase;
+				color: $default-heading-color;
+				margin: 20px 0 13px;
+				display: inline-block;
+			}
+
+			&.submit {
+				width: 75%;
+
+				button {
+					width: 100%;
+					padding: 6px 16px;
+					height: 38px;
+				}
+			}
+		}
+		.mkdf-resume-address-holder {
+			position: relative;
+			.mkdf-archive-current-location {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 17px;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.mkdf-resume-type-amenities-holder{
+		float: left;
+		clear: both;
+		margin: 0;
+		&.mkdf-opened{
+			margin: 0 -17px;
+			padding: 16px 17px 0;
+			box-sizing: content-box;
+			
+            .mkdf-resume-field-holder-title{
+                text-transform: uppercase;
+            }
+		}
+		&>label{
+			margin: 0 0 21px;
+		}
+	}
+
+	.mkdf-resume-archive-filter-type-holder {
+		clear: both;
+
+		.mkdf-archive-type-checkboxes {
+			margin-top: 26px;
+
+			.mkdf-rs-adv-search-field {
+				float: left;
+				margin-right: 31px;
+
+				input[type=checkbox] {
+					display: inline-block;
+					vertical-align: middle;
+					position: relative;
+					visibility: hidden;
+					width: 16px;
+					height: 16px;
+					margin: 0;
+
+					&:after, &:before {
+						content: '';
+						visibility: visible;
+						display: block;
+						width: 16px;
+						height: 16px;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						border: 1px solid $additional-border-color;
+						box-sizing: border-box;
+						border-radius: 50%;
+
+						@include mkdfTransform(translate(-50%, -50%));
+					}
+
+					&:checked:before {
+						content: '\4e';
+						color: #00b489;
+						font-family: 'ElegantIcons';
+						font-size: 10px;
+						text-align: center;
+						line-height: 16px;
+					}
+				}
+
+				label {
+					font-size: 15px;
+					display: inline-block;
+					vertical-align: middle;
+					font-weight: 500;
+					color: $default-heading-color;
+				}
+			}
+		}
+	}
+}

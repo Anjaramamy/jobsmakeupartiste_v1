@@ -1,0 +1,46 @@
+.page-template-user-dashboard {
+    .mkdf-membership-dashboard-content-holder{
+        .job-manager-form {
+            .mkdf-form-add-new-holder{
+                @include ipad-portrait{
+                    width: 100%;
+                }
+            }
+            .mkdf-ls-field-holder{
+                @include ipad-portrait{
+                    width: 100%;
+                }
+            } 
+        }
+    }
+}
+
+.mkdf-login-register-holder{
+    @include laptop-landscape-medium {
+        div.mkdf-login-register-content {
+            margin-top: 25px;
+
+            .mkdf-social-register-holder-inner {
+                padding: 10px 37px 0;
+            }
+
+
+            .mkdf-social-register-holder {
+                .mkdf-register-form-input-label ~ input {
+                    margin-bottom: 8px;
+                }
+            }
+
+            .mkdf-login-form-social-login{
+                .mkdf-login-social-title{
+                    margin-bottom: 5px;
+                }
+            }
+            .mkdf-register-content-inner{
+                .mkdf-login-form-social-login {
+                    padding: 8px 0;
+                }
+            }
+        }
+    }
+}

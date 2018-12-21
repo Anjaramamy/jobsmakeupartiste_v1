@@ -1,0 +1,196 @@
+.mkdf-resume-single-holder{
+	article{
+		.mkdf-rs-single-candidate-details-holder {
+			background: $default-heading-color;
+			text-align: left;
+			color: #fff;
+			padding: 49px 34px 45px 34px;
+
+			a,
+			h4,
+			h5 {
+				color: #fff;
+			}
+
+			a {
+				&:hover {
+					color: $first-main-color;
+				}
+			}
+
+			.mkdf-rs-item-image {
+				text-align: center;
+
+				a {
+					display: inline-block;
+				}
+
+				img {
+					display: block;
+					margin: 0 auto;
+					border-radius: 50%;
+				}
+			}
+
+			.mkdf-rs-item-author {
+				text-align: center;
+				font-weight: 500;
+				font-size: 22px;
+				text-transform: capitalize;
+				margin-top: 5px;
+			}
+
+			.mkdf-rs-item-profession {
+				text-align: center;
+				.mkdf-rs-item-profession-inner {
+					color: $additional-text-color;
+					font-weight: 400;
+					line-height: 1.15em;
+					margin: 0;
+				}
+			}
+
+			.mkdf-rs-candidate-details-inner {
+
+				> div {
+					margin-bottom: 5px;
+				}
+
+				.mkdf-rs-address-title {
+					text-transform: capitalize;
+					margin: 65px 0 19px;
+				}
+
+				.mkdf-resume-cat-wrapper {
+					display: inline-block;
+
+					a {
+						text-transform: capitalize;
+						display: inline-block;
+
+					}
+
+					&:before {
+						content: "\e04c";
+						font-family: "dripicons-v2" !important;
+						vertical-align: middle;
+						display: inline-block;
+						position: relative;
+						bottom: 2px;
+						padding-right: 10px;
+						font-size: 15px;
+					}
+				}
+
+				.mkdf-rs-rate-info {
+					.mkdf-rs-price-rate-holder,
+					.mkdf-rs-price-rate-label {
+						display: inline-block;
+					}
+
+					.mkdf-rs-price-rate-amount {
+						&:before {
+							content: "\e0ed";
+							font-family: ElegantIcons;
+							vertical-align: middle;
+							display: inline-block;
+							position: relative;
+							bottom: 2px;
+							padding-right: 10px;
+							font-size: 14px;
+						}
+					}
+				}
+
+				.mkdf-rs-adr-pin,
+				.mkdf-rs-adr-city {
+					display: inline-block;
+				}
+
+				.mkdf-rs-email-info,
+				.mkdf-rs-adr-pin {
+					i {
+						font-size: 14px;
+						padding-right: 10px;
+					}
+				}
+
+				.mkdf-rs-website-info {
+					i {
+						padding-right: 6px;
+					}
+				}
+			}
+
+			.mkdf-rs-single-candidate-details-button-holder {
+				text-align: center;
+				.mkdf-rs-single-contact-resume {
+					font-size: 14px;
+					border-radius: 0;
+					padding: 13px 62px;
+					letter-spacing: .03em;
+					margin: 20px 0 22px;
+					width: 100%;
+				}
+			}
+
+			.mkdf-rs-login-info {
+
+				.wp-job-manager-bookmarks-form {
+					text-align: center;
+					border: 0;
+					margin: 0;
+
+					a,
+					span {
+						font-size: 14px;
+					}
+
+					a.bookmark-notice {
+						padding: 0;
+						color: $additional-text-color;
+						&:before {
+							display: none;
+						}
+					}
+
+					a.remove-bookmark {
+						display: none;
+					}
+
+					span {
+						color: $additional-text-color;
+						letter-spacing: -0.02em;
+					}
+
+					.bookmark-details {
+						label {
+							font-size: 14px;
+						}
+
+						input[type=submit] {
+							font-size: 14px;
+							border-radius: 0;
+							padding: 13px 33px;
+							letter-spacing: .03em;
+							margin: 20px 0 5px;
+							width: 100%;
+							color: #fff;
+							background-color: #f36;
+							border: 1px solid transparent;
+							font-family: inherit;
+							position: relative;
+							outline: 0;
+							line-height: 2em;
+							font-weight: 600;
+							text-transform: uppercase;
+							box-sizing: border-box;
+							@include mkdfTransition(color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out);
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,212 @@
+/* ==========================================================================
+    Listing map - start
+========================================================================== */
+
+/* Map animations START */
+
+@keyframes mapPinAnimationScale {
+    0% {
+        @include mkdfTransform(scale(1.05));
+    }
+    50% {
+        @include mkdfTransform(scale(0.95));
+    }
+    100% {
+        @include mkdfTransform(scale(1.05));
+    }
+}
+
+@keyframes mapPinAnimationRotate {
+    0% {
+        @include mkdfTransform(rotate(0deg));
+    }
+    100% {
+        @include mkdfTransform(rotate(360deg));
+    }
+}
+
+/* Map animations END */
+
+#mkdf-ls-multiple-map-holder,
+#mkdf-ls-single-map-holder {
+    height: 545px;
+}
+
+.mkdf-map-marker-holder {
+    @include mkdfTransform(translate(-50%, -100%));
+    z-index: 10;
+
+    .mkdf-map-marker {
+        width: 27px;
+        height: 41px;
+        position: relative;
+        border-radius: 5px;
+        @include mkdfTransition(all 0.15s ease-out);
+
+        .mkdf-map-marker-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            > i,
+            > span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 100%;
+                height: 100%;
+                line-height: 65px;
+                border-radius: 2px;
+                font-size: 20px;
+                text-align: center;
+                @include mkdfTransition(all 0.1s ease-out);
+
+            }
+
+            .mkdf-pin-custom-image {
+                background-size: cover;
+                background-position: center;
+            }
+
+            .mkdf-map-marker-botom {
+                position: absolute;
+                bottom: 0;
+            }
+
+            svg {
+                width: 100%;
+                height: auto;
+
+                path {
+                    fill: $first-main-color;
+                }
+            }
+        }
+
+    }
+
+    .mkdf-info-window {
+        background-color: #fff;
+        text-align: center;
+        min-width: 162px;
+        display: none;
+        position: absolute;
+        top: -17px;
+        z-index: 10;
+        left: 50%;
+        border-radius: 5px;
+        padding: 12px 10px 5px;
+        box-sizing: border-box;
+        box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.15);
+
+        @include mkdfTransform(translate(-50%, -100%));
+        @include mkdfTransition(opacity 0.3s ease);
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            width: 0;
+            height: 0;
+            border-left: 13px solid transparent;
+            border-right: 13px solid transparent;
+            border-top: 12px solid #fff;
+            left: 50%;
+            margin: 0 auto;
+
+            @include mkdfTransform(translateX(-50%));
+        }
+
+        > a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .mkdf-info-window-company {
+            margin: 0;
+        }
+
+        .mkdf-info-window-title {
+            font-family: $default-text-font;
+            font-weight: 500;
+            font-size: 13px;
+            margin: 6px 0 10px;
+        }
+
+        .mkdf-info-window-image {
+
+        }
+
+    }
+
+    &.active {
+        z-index: 500;
+    }
+}
+
+.mkdf-cluster-marker {
+    width: 47px;
+    height: 47px;
+    line-height: 47px;
+
+    .mkdf-cluster-marker-inner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        background-color: $first-main-color;
+
+        .mkdf-cluster-marker-number {
+            position: absolute;
+            top: -2px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 1px;
+            font-size: 28px;
+            font-weight: 400;
+            color: #fff;
+            font-family: $default-text-font;
+            @include mkdfTransition(all 0.3s ease);
+        }
+
+        .mkdf-cluster-marker-spiner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mkdf-cluster-marker-spiner {
+
+            animation: mapPinAnimationRotate 10s infinite linear;
+
+            &:after {
+                content: ' ';
+                position: absolute;
+                border-radius: 50%;
+                top: -15%;
+                left: -15%;
+                width: 130%;
+                height: 130%;
+                border: 2px dotted $first-main-color;
+                box-sizing: border-box;
+
+                //animation
+                animation: mapPinAnimationScale 2s infinite linear;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+    Listing map - end
+========================================================================== */

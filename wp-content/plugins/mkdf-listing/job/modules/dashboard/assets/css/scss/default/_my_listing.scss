@@ -1,0 +1,100 @@
+.page-template-user-dashboard{
+    .mkdf-membership-dashboard-content-holder{
+
+        .mkdf-membership-dashboard-page-content {
+            p span {
+                color: $default-heading-color;
+                font-weight: 400;
+            }
+
+            .job-manager-form {
+                p:last-of-type {
+                    padding: 0 !important;
+                    margin: 0;
+
+                    input.button {
+                        @include mkdfButtonDefaultStyle;
+                        padding: 10px 28px;
+                        margin-top: 20px;
+                    }
+                }
+
+
+            }
+        }
+        
+        #job-manager-job-dashboard,
+        #resume-manager-candidate-dashboard {
+
+            .job-manager-pagination{
+                margin: 50px 70px;
+            }
+
+            table {
+                tr > th,
+                td {
+                    text-align: left;
+                    padding: 10px 20px;
+
+
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+
+                tr > th {
+                    color: $default-heading-color;
+                    border-right: 1px solid $default-border-color;
+
+                }
+
+                td {
+                    a {
+                        color: $additional-text-color;
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+
+                ul.job-dashboard-actions li,
+                ul.candidate-dashboard-actions li {
+                    display: inline-block;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+
+
+                    &:after {
+                        content: '';
+                    }
+
+                    a {
+                        color: $additional-text-color;
+
+                        &:hover {
+                            color: $default-heading-color;
+                        }
+                    }
+                }
+
+                ul.candidate-dashboard-actions li {
+                    display: inline;
+                    margin: 0;
+                }
+            }
+
+        }
+
+        #resume-manager-candidate-dashboard {
+            table {
+                td {
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+}
+
+
+

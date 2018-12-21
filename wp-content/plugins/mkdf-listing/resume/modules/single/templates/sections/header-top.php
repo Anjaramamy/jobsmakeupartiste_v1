@@ -1,0 +1,1 @@
+<?php echo mkdf_listing_resume_single_template_part('parts/image', '', $params);

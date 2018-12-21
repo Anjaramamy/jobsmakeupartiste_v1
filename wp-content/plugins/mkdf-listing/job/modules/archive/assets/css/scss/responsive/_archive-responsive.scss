@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Listing Archive responsive style - start
+   ========================================================================== */
+@include laptop-landscape-medium {
+    .mkdf-listing-archive-filter-holder {
+        .mkdf-listing-archive-filter-holder-inner {
+            .mkdf-listing-archive-filter-item {
+                width: 50%;
+                display: inline-block;
+                float: left;
+                margin-bottom: 10px;
+
+                &.submit {
+                    width: 50%;
+                    display: inline-block;
+                    float: left;
+                }
+
+                &:nth-child(3) {
+                    padding-left: 0;
+
+                    .select2-selection--single .select2-selection__rendered {
+                        padding-left: 47px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+    .mkdf-ls-archive-holder{
+        .mkdf-ls-archive-items-wrapper,
+        .mkdf-ls-archive-map-holder {
+            width: 100%;
+            position: relative;
+            float: left;
+
+            #mkdf-ls-multiple-map-holder {
+                height: 500px;
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+    .mkdf-ls-archive-holder {
+
+        .mkdf-listing-archive-filter-holder {
+            .mkdf-listing-archive-filter-item {
+                width: 100%;
+                padding: 0;
+
+                &:nth-child(2) {
+
+                    .select2-selection--single .select2-selection__rendered {
+                        padding-left: 47px;
+                    }
+                }
+            }
+        }
+
+        .mkdf-ls-archive-items.mkdf-ls-archive-two-columns article {
+            width: 100%;
+        }
+    }
+}
+/* ==========================================================================
+   Listing Archive responsive style - end
+   ========================================================================== */

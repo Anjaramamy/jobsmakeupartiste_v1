@@ -1,0 +1,318 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+@import '../../../../../../themes/staffscout/assets/css/scss/variables';
+@import '../../../../../../themes/staffscout/assets/css/scss/mixins';
+
+@mixin mkdfStarsStyle() {
+	content: '\f005 \f005 \f005 \f005 \f005 ';
+	display: inline-block;
+	font-family: 'FontAwesome';
+	letter-spacing: 3px;
+	font-size: 10px;
+	overflow: hidden;
+	position: relative;
+	vertical-align: middle;
+	text-align: left;
+}
+
+@mixin mkdfListingCategory() {
+	font-size: 13px;
+	font-weight: 800;
+	letter-spacing: .04em;
+	color: #c6c6c6;
+	text-transform: uppercase;
+}
+
+$checkbox-size: 18px;
+$checkbox-border-width: 1px;
+%checkbox-style {
+	position: relative;
+	margin-bottom: 5px;
+	input[type=checkbox] {
+		width: $checkbox-size;
+		height: $checkbox-size;
+		max-height: $checkbox-size;
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		top: 0;
+		left: 0;
+		margin: 0;
+	}
+	input[type=checkbox] + label {
+		display: inline-block;
+		pointer-events: none;
+		cursor: pointer;;
+		position: absolute;
+		top: 0;
+		left: 0;
+		line-height: 0;
+	}
+	input[type=checkbox] + label span.mkdf-label-text {
+		padding-left: 8px;
+		display: inline-block;
+		line-height: $checkbox-size;
+	}
+	input[type=checkbox] + label .mkdf-label-view {
+		display: inline-block;
+		width: $checkbox-size;
+		height: $checkbox-size;
+		box-sizing: border-box;
+		vertical-align: top;
+		cursor: pointer;
+		border: $checkbox-border-width solid $default-border-color;
+		background-color: $default-background-color;
+		border-radius: 2px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	input[type=checkbox] + label .mkdf-label-view:after {
+		content: '';
+		width: $checkbox-size / 2 - $checkbox-border-width;
+		height: $checkbox-size / 2 - $checkbox-border-width;
+		position: absolute;
+		top: ($checkbox-size - ($checkbox-size / 2 - $checkbox-border-width)) / 2;
+		left: ($checkbox-size - ($checkbox-size / 2 - $checkbox-border-width)) / 2;
+		background-color: $first-main-color;
+		opacity: 0;
+		@include mkdfTransition(opacity 0.3s ease-in-out);
+	}
+	input[type=checkbox]:checked + label .mkdf-label-view:after {
+		opacity: 1;
+	}
+}
+
+%single-item-style {
+	@include mkdfRelativeHolderLayout();
+	vertical-align: top;
+	box-sizing: border-box;
+	float: left;
+
+	.mkdf-ls-item-holder {
+		@include mkdfTransition(all 0.15s ease-out);
+
+		&:hover {
+			box-shadow: 0 1px 23.28px 0.72px rgba(255,51,102,.07);
+			@include mkdfTransition(all 0.2s ease-out);
+
+			.mkdf-ls-item-image {
+				.mkdf-ls-item-author-image {
+					opacity: 0;
+					@include mkdfTransform(translate3d(-50%,-50%,0) scale(1.1));
+					@include mkdfTransition(all 0.2s ease-in-out);
+				}
+
+				&:after {
+					opacity: 0;
+					@include mkdfTransition(all 0.2s ease-in-out);
+				}
+			}
+		}
+	}
+
+	.mkdf-ls-item-image {
+		@include mkdfRelativeHolderLayout();
+		background-size: cover;
+		height: 240px;
+		background-position: center;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 1;
+			background-color: rgba($default-heading-color, .6);
+			z-index: 10;
+			@include mkdfTransition(opacity 0.2s ease-out);
+		}
+
+		> a {
+			display: block;
+
+			img {
+				vertical-align: middle;
+				width: 100%;
+			}
+
+			&.mkdf-ls-item-author-image {
+				opacity: 1;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				@include mkdfTransform(translate(-50%, -50%));
+				@include mkdfTransition(opacity 0.2s ease-in-out);
+				z-index: 11;
+			}
+
+		}
+
+		.mkdf-ls-item-image-link {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 11;
+		}
+	}
+	.mkdf-listing-title {
+		margin: 3px 0 10px;
+	}
+	.mkdf-listing-cat-wrapper {
+		& > a {
+			color: $default-heading-color;
+			&:hover {
+				color: $first-main-color;
+			}
+			&:not(:last-child) {
+				padding-right: 10px;
+			}
+		}
+		.mkdf-tax-icon {
+			padding-right: 10px;
+			img {
+				display: inline-block;
+				width: 50px;
+			}
+		}
+
+		.mkdf-tax-name {
+			font-size: 14px;
+		}
+	}
+
+	.mkdf-listing-type-wrapper {
+		position: relative;
+		font-size: 13px;
+		z-index: 20;
+
+		a {
+			@include mkdfRelativeHolderLayout();
+			background-color: $first-main-color;
+			width: auto;
+			color: $header-light-color;
+			font-weight: 600;
+			text-transform: uppercase;
+			border-radius: 50px;
+			margin: 0 10px 10px;
+			padding: 0 13px;
+			line-height: 24px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			span {
+				position: relative;
+			}
+
+			img {
+				display: inline-block;
+				width: 50px;
+			}
+		}
+	}
+
+	.mkdf-listing-rating-holder {
+
+		.mkdf-average-rating {
+			@include mkdfRelativeHolderLayout();
+			width: auto;
+			font-size: 14px;
+			color: $default-heading-color;
+		}
+		.mkdf-listing-rating-stars-holder {
+			@include mkdfRelativeHolderLayout();
+			width: auto;
+			color: $first-main-color;
+			&:before {
+				@include mkdfStarsStyle();
+			}
+			span {
+				&:before {
+					@include mkdfStarsStyle();
+				}
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow: hidden;
+				color: $first-main-color;
+				max-height: 20px;
+			}
+		}
+	}
+
+	.mkdf-ls-price-range-holder {
+		> * {
+			margin: 0;
+			padding-right: 3px;
+			color: rgba($default-text-color, 0.7);
+			&.active {
+				color: $default-text-color;
+			}
+		}
+	}
+
+	.mkdf-ls-item-inner {
+		box-sizing: border-box;
+		padding: 19px 26px;
+		background-color: #fff;
+
+		.mkdf-ls-item-location {
+			margin-bottom: 15px;
+
+			.mkdf-ls-adr-pin {
+				position: relative;
+				top: 2px;
+				padding-right: 9px;
+				font-size: 16px;
+				display: inline-block;
+
+				a {
+					color: $additional-text-color;
+
+					&:hover {
+						color: $first-main-color;
+					}
+				}
+			}
+
+			.mkdf-ls-adr-city {
+				display: inline-block;
+				color: $additional-text-color;
+
+				a {
+					color: $additional-text-color;
+				}
+			}
+		}
+
+		.mkdf-listing-title {
+			margin: 5px 0 13px;
+		}
+
+		.mkdf-ls-item-type {
+			margin: 32px 0 0;
+		}
+
+		.mkdf-listing-rating-holder {
+			margin: 0 0 8px;
+		}
+	}
+}
+
+/* ==========================================================================
+   Custom Post Types styles
+   ========================================================================== */
+@import 'plugins/*.scss';
+@import '../../../modules/archive/assets/css/scss/default/*.scss';
+@import '../../../modules/dashboard/assets/css/scss/default/*.scss';
+@import '../../../modules/maps/assets/css/scss/default/*.scss';
+@import '../../../modules/shortcodes/**/assets/css/scss/default/*.scss';
+@import '../../../modules/single/assets/css/scss/default/**/*.scss';
+@import '../../../modules/single/assets/css/scss/default/*.scss';

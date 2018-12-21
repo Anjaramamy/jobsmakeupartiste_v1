@@ -1,0 +1,442 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Resume Archive responsive style - start
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .mkdf-resume-archive-filter-holder .mkdf-resume-archive-filter-holder-inner .mkdf-resume-archive-filter-item {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 10px;
+  }
+  .mkdf-resume-archive-filter-holder .mkdf-resume-archive-filter-holder-inner .mkdf-resume-archive-filter-item.submit {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+  .mkdf-resume-archive-filter-holder .mkdf-resume-archive-filter-holder-inner .mkdf-resume-archive-filter-item:nth-child(3) {
+    padding-left: 0;
+  }
+  .mkdf-resume-archive-filter-holder .mkdf-resume-archive-filter-holder-inner .mkdf-resume-archive-filter-item:nth-child(3) .select2-selection--single .select2-selection__rendered {
+    padding-left: 47px;
+  }
+  .mkdf-rs-archive-holder .mkdf-rs-archive-items {
+    margin-top: 11px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-rs-archive-holder .mkdf-rs-archive-items-wrapper,
+  .mkdf-rs-archive-holder .mkdf-rs-archive-map-holder {
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+  .mkdf-rs-archive-holder .mkdf-rs-archive-items-wrapper #mkdf-rs-multiple-map-holder,
+  .mkdf-rs-archive-holder .mkdf-rs-archive-map-holder #mkdf-rs-multiple-map-holder {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-rs-archive-holder .mkdf-resume-archive-filter-holder .mkdf-resume-archive-filter-item {
+    width: 100%;
+    padding: 0;
+  }
+  .mkdf-rs-archive-holder .mkdf-resume-archive-filter-holder .mkdf-resume-archive-filter-item:nth-child(2) .select2-selection--single .select2-selection__rendered {
+    padding-left: 47px;
+  }
+  .mkdf-rs-archive-holder .mkdf-rs-archive-items.mkdf-rs-archive-two-columns article {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Resume Archive responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Resume Advanced Search responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder article.mkdf-rs-item.mkdf-rs-item-type-list .mkdf-rs-item-tax-date-holder {
+    width: 20%;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder article.mkdf-rs-item.mkdf-rs-item-type-list .mkdf-rs-item-image {
+    width: 15%;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder.mkdf-rs-adr-four-columns article {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder.mkdf-rs-adr-four-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder.mkdf-rs-adr-five-columns article {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder.mkdf-rs-adr-five-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-content-holder .mkdf-rs-adv-search-items-holder .mkdf-rs-item.mkdf-rs-item-type-list .mkdf-rs-item-image {
+    width: 12%;
+  }
+  .mkdf-rs-adv-search-holder.mkdf-rs-adv-with-sidebar .mkdf-rs-adv-search-content-holder .mkdf-rs-adv-search-items-holder .mkdf-rs-item.mkdf-rs-item-type-list .mkdf-rs-item-image {
+    width: 18%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-rs-adv-search-holder.mkdf-rs-adv-with-map .mkdf-rs-adv-search-map-holder .mkdf-rs-adv-search-keyword-holder .mkdf-rs-adv-search-keyword-holder-inner {
+    width: 70%;
+  }
+  .mkdf-rs-adv-search-holder.mkdf-rs-adv-with-sidebar .mkdf-rs-adv-search-content-holder {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .mkdf-rs-adv-search-holder.mkdf-rs-adv-with-sidebar .mkdf-rs-adv-search-sidebar-holder {
+    width: 100%;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder article.mkdf-rs-item.mkdf-rs-item-type-list .mkdf-rs-item-tax-date-holder {
+    width: 24%;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder article.mkdf-rs-item.mkdf-rs-item-type-list .mkdf-rs-item-image {
+    width: 20%;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder article.mkdf-rs-item.mkdf-rs-item-type-standard {
+    width: 33.3333%;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder.mkdf-rs-adr-three-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder.mkdf-rs-adr-three-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder.mkdf-rs-adr-four-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder.mkdf-rs-adr-four-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder.mkdf-rs-adr-five-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder.mkdf-rs-adr-five-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-keyword-holder {
+    width: 100%;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-fields-holder .mkdf-rs-adv-search-banner-holder .mkdf-rs-banner-text {
+    padding: 20px 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-keyword-holder .mkdf-rs-adv-search-submit-button .mkdf-rs-adv-search-keyword-button {
+    padding: 10px 20px;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-fields-holder {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-filters-holder .mkdf-rs-adv-search-filters {
+    float: left;
+    width: 100%;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-filters-holder .mkdf-rs-adv-search-filters .mkdf-rs-adv-search-filters-inner > div {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-filters-holder .mkdf-rs-adv-search-submit-button {
+    float: left;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder {
+    width: 100%;
+    padding: 0;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder article.mkdf-rs-item.mkdf-rs-item-type-list {
+    width: 100%;
+    display: block;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder article.mkdf-rs-item.mkdf-rs-item-type-list .mkdf-rs-item-tax-date-holder,
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder article.mkdf-rs-item.mkdf-rs-item-type-list .mkdf-rs-item-inner,
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder article.mkdf-rs-item.mkdf-rs-item-type-list .mkdf-rs-item-image {
+    width: 100%;
+    display: inline-block;
+    float: left;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder article.mkdf-rs-item.mkdf-rs-item-type-list .mkdf-rs-item-image img {
+    display: inline-block;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder article.mkdf-rs-item.mkdf-rs-item-type-standard {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder .mkdf-rs-adv-search-keyword-holder-inner {
+    width: 70%;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder article {
+    width: 100% !important;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-fields-holder {
+    margin-left: 15px;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-keyword-holder {
+    width: 80%;
+  }
+  .vc_row {
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-keyword-holder .mkdf-rs-adv-search-keyword-field,
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-keyword-holder .mkdf-rs-adv-search-submit-button {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-keyword-holder .mkdf-rs-adv-search-submit-button {
+    margin-bottom: 20px;
+  }
+  .mkdf-rs-adv-search-holder .mkdf-rs-adv-search-items-holder.mkdf-rs-adr-normal-space article {
+    margin-bottom: 20px;
+  }
+}
+
+/* ==========================================================================
+   Resume Advanced Search responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Resume List responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder.mkdf-rs-list-four-columns article {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder.mkdf-rs-list-four-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder.mkdf-rs-list-five-columns article {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder.mkdf-rs-list-five-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder.mkdf-rs-list-three-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder.mkdf-rs-list-three-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder.mkdf-rs-list-four-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder.mkdf-rs-list-four-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder.mkdf-rs-list-five-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder.mkdf-rs-list-five-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder.mkdf-resume-list-simple .mkdf-rs-list-items-text-holder {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+  }
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder.mkdf-resume-list-simple .mkdf-rs-list-items-holder-inner {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder article {
+    width: 100% !important;
+  }
+  .mkdf-rs-list-holder .mkdf-rs-list-items-holder.mkdf-resume-list-simple {
+    padding: 15px;
+  }
+}
+
+/* ==========================================================================
+   Resume List responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Single Resume  responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .mkdf-resume-single-holder article .mkdf-rs-single-candidate-details-holder .mkdf-rs-single-candidate-details-button-holder .mkdf-rs-single-contact-resume {
+    padding: 13px 35px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-resume-single-holder article .mkdf-rs-single-candidate-details-holder {
+    padding: 49px 35px 45px;
+  }
+  .mkdf-resume-single-holder article .mkdf-rs-single-candidate-details-holder .mkdf-rs-adr-city,
+  .mkdf-resume-single-holder article .mkdf-rs-single-candidate-details-holder .mkdf-rs-price-rate-amount,
+  .mkdf-resume-single-holder article .mkdf-rs-single-candidate-details-holder .mkdf-resume-cat-wrapper a,
+  .mkdf-resume-single-holder article .mkdf-rs-single-candidate-details-holder .mkdf-rs-website-info a,
+  .mkdf-resume-single-holder article .mkdf-rs-single-candidate-details-holder .mkdf-rs-email-info a {
+    font-size: 14px;
+  }
+  .mkdf-resume-single-holder article .mkdf-rs-single-candidate-details-holder .mkdf-rs-single-candidate-details-button-holder .mkdf-rs-single-contact-resume {
+    padding: 13px 46px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-resume-single-holder article .mkdf-rs-single-section-inner.left, .mkdf-resume-single-holder article .mkdf-rs-single-section-inner.right {
+    width: 100%;
+    padding: 0;
+  }
+  .mkdf-resume-single-holder article .mkdf-rs-single-section-inner.right {
+    padding-top: 20px;
+  }
+  .mkdf-resume-single-holder article .mkdf-rs-single-section-inner.left {
+    padding-top: 40px;
+  }
+  .mkdf-resume-single-holder article.mkdf-rs-single-item.featured-image .mkdf-rs-single-details-map-holder {
+    top: auto;
+  }
+  .mkdf-resume-single-holder article .mkdf-rs-single-details-map-holder .mkdf-rs-single-candidate-details-holder {
+    text-align: center;
+  }
+  .mkdf-resume-single-holder article #mkdf-rs-single-map-holder {
+    max-width: 100%;
+  }
+  .mkdf-resume-single-holder article .mkdf-rs-single-social-network-holder {
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-resume-single-holder article .mkdf-rs-single-section-inner.left .mkdf-rs-single-content-holder,
+  .mkdf-resume-single-holder article .mkdf-rs-single-section-inner.left .mkdf-rs-single-share-holder {
+    width: 100%;
+  }
+  .mkdf-resume-single-holder article .mkdf-rs-single-section-inner.left .mkdf-social-share-holder.mkdf-list {
+    margin: 20px 0;
+  }
+  .mkdf-resume-single-holder article .mkdf-rs-single-section-inner.left .mkdf-social-share-holder.mkdf-list li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e9ebec;
+    border-right: none;
+  }
+  .mkdf-resume-single-holder article .mkdf-rs-single-section-inner.left .mkdf-social-share-holder.mkdf-list li:last-child {
+    margin-bottom: 0;
+    border-right: 1px solid #e9ebec;
+  }
+  .mkdf-resume-single-holder article .mkdf-rs-single-social-network-holder {
+    margin-bottom: 12px;
+  }
+}
+
+/* ==========================================================================
+   Single Resume responsive style - end
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  #mkdf-rs-multiple-map-holder,
+  #mkdf-rs-single-map-holder {
+    height: 376px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #mkdf-rs-multiple-map-holder,
+  #mkdf-rs-single-map-holder {
+    height: 336px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #mkdf-rs-multiple-map-holder,
+  #mkdf-rs-single-map-holder {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #mkdf-rs-multiple-map-holder,
+  #mkdf-rs-single-map-holder {
+    height: 258px;
+  }
+}
+
+/*# sourceMappingURL=../../../../../plugins/mkdf-listing/resume/assets/css/resume-responsive.css.map */

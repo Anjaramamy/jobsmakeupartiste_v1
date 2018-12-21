@@ -1,0 +1,192 @@
+.mkdf-twitter-list-holder {
+    @include mkdfRelativeHolderLayout();
+    clear: both;
+
+    &:not(.mkdf-tl-one-column) {
+
+        .mkdf-tl-item {
+            float: left;
+        }
+    }
+
+    .mkdf-twitter-list {
+        @include mkdfRelativeHolderLayout();
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mkdf-tl-item {
+        @include mkdfRelativeHolderLayout();
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .mkdf-tli-inner {
+        @include mkdfRelativeHolderLayout();
+        background-color: #ffffff;
+        @include mkdfTransition(all .2s ease-in-out);
+
+        &:hover {
+            -webkit-box-shadow: -2px 4px 13px 0 rgba(81,137,162,.05);
+            -moz-box-shadow: -2px 4px 13px 0 rgba(81,137,162,.05);
+            box-shadow: -2px 4px 13px 0 rgba(81,137,162,.05);
+            @include mkdfTransform(translateY(-3px));
+        }
+    }
+
+    .mkdf-tli-content {
+        @include mkdfRelativeHolderLayout();
+        box-sizing: border-box;
+        padding: 35px 23px;
+        border: 1px solid #f2f2f2;
+    }
+
+    .mkdf-twitter-content-top {
+        @include mkdfRelativeHolderLayout();
+        box-sizing: border-box;
+        margin-bottom: 25px;
+    }
+
+    .mkdf-twitter-link-over {
+        a {
+            @include mkdfAbsoluteHolderLayout();
+            z-index: 1;
+        }
+    }
+
+    .mkdf-twitter-user {
+        display: inline-block;
+        padding-right: 30px;
+        width: 100%;
+        box-sizing: border-box;
+
+        .mkdf-twitter-image {
+            display: inline-block;
+            float: left;
+            width: 56px;
+            height: 56px;
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .mkdf-twitter-name {
+            display: inline-block;
+            float: left;
+            width: calc(100% - 56px);
+            padding-left: 15px;
+            box-sizing: border-box;
+            * {
+                margin: 0;
+            }
+        }
+    }
+
+    .mkdf-twitter-icon {
+        display: inline-block;
+        width: 20px;
+        text-align: right;
+        position: absolute;
+        top: -7px;
+        right: 3px;
+        font-size: 24px;
+        color: $first-main-color;
+    }
+
+    .mkdf-tweet-text {
+        padding-left: 12px;
+        box-sizing: border-box;
+        a {
+            color:#808080;
+            position: relative;
+            z-index: 2;
+            &:hover {
+                color: $first-main-color;
+            }
+        }
+    }
+
+    .mkdf-twitter-profile {
+        a {
+            font-size: 14px;
+            color: #808080;
+            position: relative;
+            z-index: 2;
+            &:hover {
+                color: $first-main-color;
+            }
+        }
+    }
+
+    $columns_number: ('two', 'three', 'four', 'five');
+
+    @for $i from 0 to length($columns_number) {
+        &.mkdf-tl-#{nth($columns_number,$i+1)}-columns {
+
+            .mkdf-tl-item {
+                width: 100% / ($i+2);
+            }
+
+            @if ($i > 1) { // set different break point for four and five columns
+                @media only screen and (min-width: $laptop-landscape-medium-plus-pixel) {
+                    .mkdf-tl-item {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else if ($i == 1 ) { // set different break point for three columns
+                @media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+                    .mkdf-tl-item {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    .mkdf-tl-item {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /***** Columns Space style - begin *****/
+
+    $columns_space_label: ('no', 'tiny', 'small', 'normal');
+    $columns_space: (0, 5, 10, 15);
+
+    @for $i from 0 to length($columns_space_label) {
+        &.mkdf-tl-#{nth($columns_space_label,$i+1)}-space {
+            $column_width: nth($columns_space, $i+1);
+            $column_width_margin: $column_width * 2;
+
+            .mkdf-tl-wrapper {
+                @if($column_width == 0) {
+                    margin: 0;
+                } @else {
+                    margin: 0 -#{$column_width}px;
+                }
+            }
+
+            .mkdf-tl-item {
+                padding: 0 #{$column_width}px;
+                margin: 0 0 #{$column_width_margin}px;
+            }
+        }
+    }
+
+    /***** Columns Space style - end *****/
+}

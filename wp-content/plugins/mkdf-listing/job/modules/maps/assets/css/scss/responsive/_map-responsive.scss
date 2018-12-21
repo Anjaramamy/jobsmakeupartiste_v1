@@ -1,0 +1,27 @@
+@include laptop-landscape-medium {
+	#mkdf-ls-multiple-map-holder,
+	#mkdf-ls-single-map-holder {
+		height: 376px;
+	}
+}
+
+@include ipad-landscape {
+	#mkdf-ls-multiple-map-holder,
+	#mkdf-ls-single-map-holder {
+		height: 336px;
+	}
+}
+
+@include ipad-portrait {
+	#mkdf-ls-multiple-map-holder,
+	#mkdf-ls-single-map-holder {
+		height: 400px;
+	}
+}
+
+@include phone-landscape {
+	#mkdf-ls-multiple-map-holder,
+	#mkdf-ls-single-map-holder {
+		height: 258px;
+	}
+}
